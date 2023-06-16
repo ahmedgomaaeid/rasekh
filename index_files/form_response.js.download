@@ -1,0 +1,46 @@
+jQuery(document).ready(function(){
+	jQuery('#fmecc_clear_cart_custom_button').click(function(e){
+		e.preventDefault();
+		fmecc_clear_cart_button_click_listener();
+	});
+	function fmecc_clear_cart_button_click_listener () {
+		var ajaxurl = fmecc_ajax_frontend.admin_url;
+		var nonce = fmecc_ajax_frontend.fmecc_wp_nonce;
+		var redirece_check = fmecc_ajax_frontend.fmecc_redirect_check;
+		var redirect_url = fmecc_ajax_frontend.fmecc_redirect_url;
+		var show_confirmation_dialog = fmecc_ajax_frontend.fmecc_show_confirmation_dialog;
+		var dat1a = {
+			action: 'fmecc_clear_cart_button_ajax_call'
+		};
+		if(show_confirmation_dialog == 1){
+			if(confirm("Are you sure you want to empty this cart?")){
+				jQuery.ajax({
+				   type : 'post',
+				   url : ajaxurl,
+				   data: dat1a,
+				   success: function (response) {
+					   window.location.href=window.location.href;
+					  if ( redirece_check == '1' ) {
+						 location.assign(redirect_url);
+					 }
+				 },
+			 });
+			}
+			else{
+				return false;
+			}
+		}else {
+			jQuery.ajax({
+				type : 'post',
+				url : ajaxurl,
+				data: dat1a,
+				success: function (response) {
+					window.location.href=window.location.href;
+					if ( redirece_check == '1' ) {
+						location.assign(redirect_url);
+					}
+				},
+			});
+		}
+	}
+}); 	
