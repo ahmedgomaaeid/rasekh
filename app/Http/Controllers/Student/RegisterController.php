@@ -28,7 +28,7 @@ class RegisterController extends Controller
         $student->email = $request->email;
         $student->password = bcrypt($request->password);
         $student->phone = $request->phone;
-        $student->remember_token = generateRandomString();
+        $student->token = generateRandomString();
         $student->save();
         //send email
         Mail::to($student->email)->send(new StudentVerify($student));
@@ -38,7 +38,7 @@ class RegisterController extends Controller
     }
     public function verify($token)
     {
-        $student = Student::where('remember_token', $token)->first();
+        $student = Student::where('token', $token)->first();
         if ($student) {
             $student->email_verified_at = now();
             $student->save();
