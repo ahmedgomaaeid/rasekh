@@ -32,7 +32,68 @@
                                                             </ul>
                                                         </div>
                                                     </div>
-                                                    <div class="panel-body tabs-menu-body border-0 pt-0">
+                                                    <div class="panel-body tabs-menu-body border-0 pt-0" style="height: 500px; overflow:scroll; margin-bottom:30px;">
+                                                        <h3>البطاقات المتاحة</h3>
+                                                        <div class="tab-content">
+                                                            <div class="tab-pane active" id="tab5">
+                                                                <div class="table-responsive">
+                                                                    <table id="data-table"
+                                                                        class="table table-bordered text-nowrap mb-0">
+                                                                        <thead class="border-top">
+                                                                            <tr>
+                                                                                <th
+                                                                                    class="bg-transparent border-bottom-0">
+                                                                                    رقم البطاقة</th>
+                                                                                <th
+                                                                                    class="bg-transparent border-bottom-0">
+                                                                                    قيمة البطاقة</th>
+                                                                                <th class="bg-transparent border-bottom-0"
+                                                                                    style="width: 5%;">العمليات</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            @foreach ($free_cards as $card)
+                                                                                <tr class="border-bottom">
+                                                                                    <td class="text-center">
+                                                                                        <div class="mt-0 mt-sm-2 d-block">
+                                                                                            <h6
+                                                                                                class="mb-0 fs-14 fw-semibold">
+                                                                                                
+                                                                                                {{$card->card_number}}</h6>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <div class="d-flex">
+                                                                                            <div
+                                                                                                class="mt-0 mt-sm-3 d-block">
+                                                                                                <h6
+                                                                                                    class="mb-0 fs-14 fw-semibold">
+                                                                                                        {{$card->points}}</h6>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                    <div class="g-2">
+                                                                                        <a class="btn text-primary btn-sm"
+                                                                                            data-bs-toggle="tooltip"
+                                                                                            data-bs-original-title="Edit" href="{{route('get.admin.charging-card.edit',$card->id)}}"><span
+                                                                                                class="fe fe-edit fs-14"></span></a>
+                                                                                        <a class="btn text-danger btn-sm"
+                                                                                            data-bs-toggle="tooltip"
+                                                                                            data-bs-original-title="Delete" href="{{route('get.admin.charging-card.delete',$card->id)}}"><span
+                                                                                                class="fe fe-trash-2 fs-14"></span></a>
+                                                                                    </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            @endforeach
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="panel-body tabs-menu-body border-0 pt-0" style="height: 500px; overflow:scroll; margin-bottom:30px;">
+                                                        <h3>البطاقات المستخدمة</h3>
                                                         <div class="tab-content">
                                                             <div class="tab-pane active" id="tab5">
                                                                 <div class="table-responsive">
@@ -54,7 +115,7 @@
                                                                             </tr>
                                                                         </thead>
                                                                         <tbody>
-                                                                            @foreach ($cards as $card)
+                                                                            @foreach ($used_cards as $card)
                                                                                 <tr class="border-bottom">
                                                                                     <td class="text-center">
                                                                                         <div class="mt-0 mt-sm-2 d-block">
@@ -70,7 +131,7 @@
                                                                                                 class="mt-0 mt-sm-3 d-block">
                                                                                                 <h6
                                                                                                     class="mb-0 fs-14 fw-semibold">
-                                                                                                        @if($card->student != null) {{$card->student->name}} @else غير مستخدم @endif</h6>
+                                                                                                    {{$card->student->name}}</h6>
                                                                                             </div>
                                                                                         </div>
                                                                                     </td>

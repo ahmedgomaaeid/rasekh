@@ -10,8 +10,9 @@ class ChargingCardController extends Controller
 {
     public function index()
     {
-        $cards = ChargingCard::all()->sortByDesc('id');
-        return view('admin.charging-cards.index', compact('cards'));
+        $used_cards = ChargingCard::where('student_id', '!=', null)->get();
+        $free_cards = ChargingCard::where('student_id', null)->get();
+        return view('admin.charging-cards.index', compact('used_cards', 'free_cards'));
     }
     public function create()
     {
