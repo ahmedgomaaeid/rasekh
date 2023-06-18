@@ -166,7 +166,7 @@
           <!-- start copy -->
           <tr>
             <td align="left" bgcolor="#ffffff" style="padding: 24px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px;">
-              <p style="margin: 0; text-align:right;">اضغط على الزر لتأكيد بريدك الالكترونى اذا لم تقم بانشاء حساب في <a href="route('index')">راسخ</a> يمكنك حذف هذا البريد الالكترونى</p>
+              <p style="margin: 0; text-align:right;">اضغط على الزر لتأكيد بريدك الالكترونى اذا لم تقم بانشاء حساب في <a href="route('index')">منصة راسخ التعليمية</a> يمكنك حذف هذا البريد الالكترونى</p>
             </td>
           </tr>
           <!-- end copy -->

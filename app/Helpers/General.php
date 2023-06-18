@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\ChargingCard;
 use App\Models\Course;
 use Illuminate\Support\Facades\Auth;
 
@@ -15,7 +16,13 @@ function generateRandomString($length = 60) {
     return substr(str_shuffle(str_repeat($x='0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ', ceil($length/strlen($x)) )),1,$length);
 }
 function generateRandomNumber($length = 9) {
-    return substr(str_shuffle(str_repeat($x='0123456789', ceil($length/strlen($x)) )),1,$length);
+    $num = substr(str_shuffle(str_repeat($x='0123456789', ceil($length/strlen($x)) )),1,$length);
+    //check num is unique and length = 9
+    if (ChargingCard::where('card_number', $num)->first() || strlen($num) != 9) {
+        generateRandomNumber();
+    }else{
+        return $num;
+    }
 }
 function dbz($denominator)
 {
