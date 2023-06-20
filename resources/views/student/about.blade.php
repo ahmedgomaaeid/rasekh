@@ -5,7 +5,7 @@
 @section('content')
 <div id="content" class="site-content">
 
-    <div id="breadcrumbs" class="bb-yoast-breadcrumbs"><span><span><a href="https://rasekhpal.com/">الرئيسية</a> » <span class="breadcrumb_last" aria-current="page">About</span></span></span></div>
+    <div id="breadcrumbs" class="bb-yoast-breadcrumbs"><span><span><a href="https://watad.me/">الرئيسية</a> » <span class="breadcrumb_last" aria-current="page">About</span></span></span></div>
     <div class="container">
         <div class="bb-grid site-content-grid">
             <div id="primary" class="content-area bb-grid-cell">
@@ -82,8 +82,8 @@
                                             <div class="elementor-shape elementor-shape-bottom" data-negative="false">
                                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
                                                     <path class="elementor-shape-fill" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7
-	c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4
-	c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"></path>
+                                                        c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4
+                                                        c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"></path>
                                                 </svg> </div>
                                             <div class="elementor-container elementor-column-gap-default">
                                                 <div class="elementor-row">
@@ -130,7 +130,7 @@
                                                                                     <div class="elementor-widget-wrap">
                                                                                         <div class="elementor-element elementor-element-1c6e59f elementor-widget elementor-widget-smartvideo" data-id="1c6e59f" data-element_type="widget" data-widget_type="smartvideo.default">
                                                                                             <div class="elementor-widget-container">
-                                                                                                <div id="video_260377" preload="none" class="swarm-fluid smartvideo-player vjs-swarmify-theme fitvidsignore dimensions-video_260377 vjs-paused vjs-controls-enabled vjs-user-inactive" src="" style=""><video src="blob:https://rasekhpal.com/462c0ed9-7f49-46dd-83ed-b0cb8c15611a" class="vjs-tech" preload="none" id="video_260377_html5_api"></video>
+                                                                                                <div id="video_260377" preload="none" class="swarm-fluid smartvideo-player vjs-swarmify-theme fitvidsignore dimensions-video_260377 vjs-paused vjs-controls-enabled vjs-user-inactive" src="" style=""><video src="blob:https://watad.me/462c0ed9-7f49-46dd-83ed-b0cb8c15611a" class="vjs-tech" preload="none" id="video_260377_html5_api"></video>
                                                                                                     <div></div>
                                                                                                     <div class="vjs-poster" tabindex="-1" style="display: none;"></div>
                                                                                                     <div class="vjs-loading-spinner"></div>
@@ -181,7 +181,7 @@
                                                                                                                 </g>
                                                                                                             </g>
                                                                                                         </svg></div>
-                                                                                                    <div class="vjs-swarmify-watermark vjs-swarmify-watermark-bottom-right" role="button" aria-live="polite" tabindex="0" aria-label="watermark"><a rel="noopener" target="_blank" href="https://swarmify.com/player/learn-more/?utm_campaign=wtrmrk&amp;utm_medium=player&amp;utm_source=rasekhpal.com"><img src="https://assets.swarmcdn.com/cross/images/swarmify_logo_grey.png" loading="lazy" width="2265" height="567" alt="Swarmify Video Hosting"></a></div>
+                                                                                                    <div class="vjs-swarmify-watermark vjs-swarmify-watermark-bottom-right" role="button" aria-live="polite" tabindex="0" aria-label="watermark"><a rel="noopener" target="_blank" href="https://swarmify.com/player/learn-more/?utm_campaign=wtrmrk&amp;utm_medium=player&amp;utm_source=watad.me"><img src="https://assets.swarmcdn.com/cross/images/swarmify_logo_grey.png" loading="lazy" width="2265" height="567" alt="Swarmify Video Hosting"></a></div>
                                                                                                     <div class="vjs-control-bar" style="">
                                                                                                         <div class="vjs-play-control vjs-control " role="button" aria-live="polite" tabindex="0">
                                                                                                             <div class="vjs-control-content"><span class="vjs-control-text">Play</span></div>
@@ -349,10 +349,18 @@
                                                 </div>
                                             </div>
                                         </section>
-                                        <section class="elementor-section elementor-top-section elementor-element elementor-element-daadd6e elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="daadd6e" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+
+                                        <!-- make every 5 teachers in one section -->
+                                        @php
+                                            $count = 0;
+                                        @endphp
+                                        @foreach($teachers as $teacher)
+                                            @if($count % 6 == 0)
+                                                <section class="elementor-section elementor-top-section elementor-element elementor-element-daadd6e elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="daadd6e" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
                                             <div class="elementor-container elementor-column-gap-default">
                                                 <div class="elementor-row">
-                                                    <div class="elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-0536d17" data-id="0536d17" data-element_type="column">
+                                            @endif
+                                                            <div class="elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-0536d17" data-id="0536d17" data-element_type="column">
                                                         <div class="elementor-column-wrap elementor-element-populated">
                                                             <div class="elementor-widget-wrap">
                                                                 <div class="elementor-element elementor-element-a9edb6e elementor-widget elementor-widget-exad-team-member" data-id="a9edb6e" data-element_type="widget" data-widget_type="exad-team-member.default">
@@ -360,11 +368,17 @@
                                                                         <div id="exad-team-member-a9edb6e" class="exad-team-item">
                                                                             <div class="exad-team-member-rounded">
                                                                                 <div class="exad-team-member-thumb">
-                                                                                    <img decoding="async" src="https://assets-watad-me.fra1.digitaloceanspaces.com/wp-content/uploads/2021/03/1-8.jpg" class="circled" alt="حسام العبسي">
+                                                                                    <img decoding="async" style="aspect-ratio: 1 / 1;" src="
+                                                                                    @if($teacher->photo != null)
+                                                                                    {{route('index')}}/assets/images/teachers/{{$teacher->photo}}" class="circled" alt="{{$teacher->name}}
+                                                                                    @else
+                                                                                    {{route('index')}}/assets/images/orders/10.jpg" class="circled" alt="{{$teacher->name}}
+                                                                                    @endif
+                                                                                    ">
                                                                                 </div>
                                                                                 <div class="exad-team-member-content">
-                                                                                    <h2 class="exad-team-member-name">حسام العبسي</h2>
-                                                                                    <span class="exad-team-member-designation">الرياضيات العلمي </span>
+                                                                                    <h2 class="exad-team-member-name">{{$teacher->name}}</h2>
+                                                                                    <span class="exad-team-member-designation">{{$teacher->description}}</span>
                                                                                     <p class="exad-team-member-about">
                                                                                     </p>
                                                                                 </div>
@@ -375,597 +389,26 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-f01750a" data-id="f01750a" data-element_type="column">
-                                                        <div class="elementor-column-wrap elementor-element-populated">
-                                                            <div class="elementor-widget-wrap">
-                                                                <div class="elementor-element elementor-element-73db048 elementor-widget elementor-widget-exad-team-member" data-id="73db048" data-element_type="widget" data-widget_type="exad-team-member.default">
-                                                                    <div class="elementor-widget-container">
-                                                                        <div id="exad-team-member-73db048" class="exad-team-item">
-                                                                            <div class="exad-team-member-rounded">
-                                                                                <div class="exad-team-member-thumb">
-                                                                                    <img decoding="async" src="https://assets-watad-me.fra1.digitaloceanspaces.com/wp-content/uploads/2021/03/1-16.jpg" class="circled" alt="محمد حميدي">
-                                                                                </div>
-                                                                                <div class="exad-team-member-content">
-                                                                                    <h2 class="exad-team-member-name">محمد حميدي</h2>
-                                                                                    <span class="exad-team-member-designation">الرياضيات العلمي </span>
-                                                                                    <p class="exad-team-member-about">
-                                                                                    </p>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                                            @php
+                                                $count++;
+                                            @endphp
+                                            @if($count % 6 == 0)
                                                         </div>
                                                     </div>
-                                                    <div class="elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-2887feb" data-id="2887feb" data-element_type="column">
-                                                        <div class="elementor-column-wrap elementor-element-populated">
-                                                            <div class="elementor-widget-wrap">
-                                                                <div class="elementor-element elementor-element-dacd181 elementor-widget elementor-widget-exad-team-member" data-id="dacd181" data-element_type="widget" data-widget_type="exad-team-member.default">
-                                                                    <div class="elementor-widget-container">
-                                                                        <div id="exad-team-member-dacd181" class="exad-team-item">
-                                                                            <div class="exad-team-member-rounded">
-                                                                                <div class="exad-team-member-thumb">
-                                                                                    <img decoding="async" src="https://assets-watad-me.fra1.digitaloceanspaces.com/wp-content/uploads/2021/03/1-10.jpg" class="circled" alt="سامر رشاد">
-                                                                                </div>
-                                                                                <div class="exad-team-member-content">
-                                                                                    <h2 class="exad-team-member-name">سامر رشاد</h2>
-                                                                                    <span class="exad-team-member-designation">الرياضيات العلمي </span>
-                                                                                    <p class="exad-team-member-about">
-                                                                                    </p>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                                                </section>
+                                            @endif
+                                        @endforeach
+                                        @if($count %6  != 0)
                                                         </div>
                                                     </div>
-                                                    <div class="elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-88dee64" data-id="88dee64" data-element_type="column">
-                                                        <div class="elementor-column-wrap elementor-element-populated">
-                                                            <div class="elementor-widget-wrap">
-                                                                <div class="elementor-element elementor-element-ffa793e elementor-widget elementor-widget-exad-team-member" data-id="ffa793e" data-element_type="widget" data-widget_type="exad-team-member.default">
-                                                                    <div class="elementor-widget-container">
-                                                                        <div id="exad-team-member-ffa793e" class="exad-team-item">
-                                                                            <div class="exad-team-member-rounded">
-                                                                                <div class="exad-team-member-thumb">
-                                                                                    <img decoding="async" src="https://assets-watad-me.fra1.digitaloceanspaces.com/wp-content/uploads/2021/03/2-8.jpg" class="circled" alt="مراد الغرابلي">
-                                                                                </div>
-                                                                                <div class="exad-team-member-content">
-                                                                                    <h2 class="exad-team-member-name">مراد الغرابلي</h2>
-                                                                                    <span class="exad-team-member-designation">الفيزياء العلمي</span>
-                                                                                    <p class="exad-team-member-about">
-                                                                                    </p>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-fbd8ff4" data-id="fbd8ff4" data-element_type="column">
-                                                        <div class="elementor-column-wrap elementor-element-populated">
-                                                            <div class="elementor-widget-wrap">
-                                                                <div class="elementor-element elementor-element-582c844 elementor-widget elementor-widget-exad-team-member" data-id="582c844" data-element_type="widget" data-widget_type="exad-team-member.default">
-                                                                    <div class="elementor-widget-container">
-                                                                        <div id="exad-team-member-582c844" class="exad-team-item">
-                                                                            <div class="exad-team-member-rounded">
-                                                                                <div class="exad-team-member-thumb">
-                                                                                    <img decoding="async" src="https://assets-watad-me.fra1.digitaloceanspaces.com/wp-content/uploads/2021/03/1-4.jpg" class="circled" alt="أحمد علي">
-                                                                                </div>
-                                                                                <div class="exad-team-member-content">
-                                                                                    <h2 class="exad-team-member-name">أحمد علي</h2>
-                                                                                    <span class="exad-team-member-designation">الفيزياء العلمي</span>
-                                                                                    <p class="exad-team-member-about">
-                                                                                    </p>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-513e808" data-id="513e808" data-element_type="column">
-                                                        <div class="elementor-column-wrap elementor-element-populated">
-                                                            <div class="elementor-widget-wrap">
-                                                                <div class="elementor-element elementor-element-bf11505 elementor-widget elementor-widget-exad-team-member" data-id="bf11505" data-element_type="widget" data-widget_type="exad-team-member.default">
-                                                                    <div class="elementor-widget-container">
-                                                                        <div id="exad-team-member-bf11505" class="exad-team-item">
-                                                                            <div class="exad-team-member-rounded">
-                                                                                <div class="exad-team-member-thumb">
-                                                                                    <img decoding="async" src="https://assets-watad-me.fra1.digitaloceanspaces.com/wp-content/uploads/2021/03/1-18.jpg" class="circled" alt="يوسف غيث">
-                                                                                </div>
-                                                                                <div class="exad-team-member-content">
-                                                                                    <h2 class="exad-team-member-name">يوسف غيث</h2>
-                                                                                    <span class="exad-team-member-designation">الفيزياء العلمي</span>
-                                                                                    <p class="exad-team-member-about">
-                                                                                    </p>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </section>
-                                        <section class="elementor-section elementor-top-section elementor-element elementor-element-b75a6aa elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b75a6aa" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                                            <div class="elementor-container elementor-column-gap-default">
-                                                <div class="elementor-row">
-                                                    <div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-16aa68a" data-id="16aa68a" data-element_type="column">
-                                                        <div class="elementor-column-wrap elementor-element-populated">
-                                                            <div class="elementor-widget-wrap">
-                                                                <div class="elementor-element elementor-element-e8922e9 elementor-widget elementor-widget-exad-team-member" data-id="e8922e9" data-element_type="widget" data-widget_type="exad-team-member.default">
-                                                                    <div class="elementor-widget-container">
-                                                                        <div id="exad-team-member-e8922e9" class="exad-team-item">
-                                                                            <div class="exad-team-member-rounded">
-                                                                                <div class="exad-team-member-thumb">
-                                                                                    <img decoding="async" src="https://assets-watad-me.fra1.digitaloceanspaces.com/wp-content/uploads/2021/03/1-1.jpg" class="circled" alt="بهاء ابو هيض">
-                                                                                </div>
-                                                                                <div class="exad-team-member-content">
-                                                                                    <h2 class="exad-team-member-name">بهاء ابو هيض</h2>
-                                                                                    <span class="exad-team-member-designation">الكيمياء العلمي </span>
-                                                                                    <p class="exad-team-member-about">
-                                                                                    </p>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-6577353" data-id="6577353" data-element_type="column">
-                                                        <div class="elementor-column-wrap elementor-element-populated">
-                                                            <div class="elementor-widget-wrap">
-                                                                <div class="elementor-element elementor-element-ad61584 elementor-widget elementor-widget-exad-team-member" data-id="ad61584" data-element_type="widget" data-widget_type="exad-team-member.default">
-                                                                    <div class="elementor-widget-container">
-                                                                        <div id="exad-team-member-ad61584" class="exad-team-item">
-                                                                            <div class="exad-team-member-rounded">
-                                                                                <div class="exad-team-member-thumb">
-                                                                                    <img decoding="async" src="https://assets-watad-me.fra1.digitaloceanspaces.com/wp-content/uploads/2021/03/2-2.jpg" class="circled" alt="أيمن ابو شاويش">
-                                                                                </div>
-                                                                                <div class="exad-team-member-content">
-                                                                                    <h2 class="exad-team-member-name">أيمن ابو شاويش</h2>
-                                                                                    <span class="exad-team-member-designation">الكيمياء العلمي </span>
-                                                                                    <p class="exad-team-member-about">
-                                                                                    </p>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-8975be8" data-id="8975be8" data-element_type="column">
-                                                        <div class="elementor-column-wrap elementor-element-populated">
-                                                            <div class="elementor-widget-wrap">
-                                                                <div class="elementor-element elementor-element-a9154b1 elementor-widget elementor-widget-exad-team-member" data-id="a9154b1" data-element_type="widget" data-widget_type="exad-team-member.default">
-                                                                    <div class="elementor-widget-container">
-                                                                        <div id="exad-team-member-a9154b1" class="exad-team-item">
-                                                                            <div class="exad-team-member-rounded">
-                                                                                <div class="exad-team-member-thumb">
-                                                                                    <img decoding="async" src="https://assets-watad-me.fra1.digitaloceanspaces.com/wp-content/uploads/2021/03/1-12.jpg" class="circled" alt="عارف النابلسي">
-                                                                                </div>
-                                                                                <div class="exad-team-member-content">
-                                                                                    <h2 class="exad-team-member-name">عارف النابلسي</h2>
-                                                                                    <span class="exad-team-member-designation">الكيمياء العلمي </span>
-                                                                                    <p class="exad-team-member-about">
-                                                                                    </p>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-1cba247" data-id="1cba247" data-element_type="column">
-                                                        <div class="elementor-column-wrap elementor-element-populated">
-                                                            <div class="elementor-widget-wrap">
-                                                                <div class="elementor-element elementor-element-fb591a1 elementor-widget elementor-widget-exad-team-member" data-id="fb591a1" data-element_type="widget" data-widget_type="exad-team-member.default">
-                                                                    <div class="elementor-widget-container">
-                                                                        <div id="exad-team-member-fb591a1" class="exad-team-item">
-                                                                            <div class="exad-team-member-rounded">
-                                                                                <div class="exad-team-member-thumb">
-                                                                                    <img decoding="async" src="https://assets-watad-me.fra1.digitaloceanspaces.com/wp-content/uploads/2021/03/2-9.jpg" class="circled" alt="مصعب القطاوي">
-                                                                                </div>
-                                                                                <div class="exad-team-member-content">
-                                                                                    <h2 class="exad-team-member-name">مصعب القطاوي</h2>
-                                                                                    <span class="exad-team-member-designation">العلوم الحياتية العلمي</span>
-                                                                                    <p class="exad-team-member-about">
-                                                                                    </p>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-b8e79bd" data-id="b8e79bd" data-element_type="column">
-                                                        <div class="elementor-column-wrap elementor-element-populated">
-                                                            <div class="elementor-widget-wrap">
-                                                                <div class="elementor-element elementor-element-4eb623f elementor-widget elementor-widget-exad-team-member" data-id="4eb623f" data-element_type="widget" data-widget_type="exad-team-member.default">
-                                                                    <div class="elementor-widget-container">
-                                                                        <div id="exad-team-member-4eb623f" class="exad-team-item">
-                                                                            <div class="exad-team-member-rounded">
-                                                                                <div class="exad-team-member-thumb">
-                                                                                    <img decoding="async" src="https://assets-watad-me.fra1.digitaloceanspaces.com/wp-content/uploads/2021/03/2-6.jpg" class="circled" alt="علاء أبو زيتون">
-                                                                                </div>
-                                                                                <div class="exad-team-member-content">
-                                                                                    <h2 class="exad-team-member-name">علاء أبو زيتون</h2>
-                                                                                    <span class="exad-team-member-designation">العلوم الحياتية العلمي </span>
-                                                                                    <p class="exad-team-member-about">
-                                                                                    </p>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </section>
-                                        <section class="elementor-section elementor-top-section elementor-element elementor-element-353f311 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="353f311" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                                            <div class="elementor-container elementor-column-gap-default">
-                                                <div class="elementor-row">
-                                                    <div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-a70e833" data-id="a70e833" data-element_type="column">
-                                                        <div class="elementor-column-wrap elementor-element-populated">
-                                                            <div class="elementor-widget-wrap">
-                                                                <div class="elementor-element elementor-element-770a5d4 elementor-widget elementor-widget-exad-team-member" data-id="770a5d4" data-element_type="widget" data-widget_type="exad-team-member.default">
-                                                                    <div class="elementor-widget-container">
-                                                                        <div id="exad-team-member-770a5d4" class="exad-team-item">
-                                                                            <div class="exad-team-member-rounded">
-                                                                                <div class="exad-team-member-thumb">
-                                                                                    <img decoding="async" src="https://assets-watad-me.fra1.digitaloceanspaces.com/wp-content/uploads/2021/03/1-15.jpg" class="circled" alt="محمد مشعل">
-                                                                                </div>
-                                                                                <div class="exad-team-member-content">
-                                                                                    <h2 class="exad-team-member-name">محمد مشعل</h2>
-                                                                                    <span class="exad-team-member-designation">اللغة الانجليزية</span>
-                                                                                    <p class="exad-team-member-about">
-                                                                                    </p>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-2b0f7d9" data-id="2b0f7d9" data-element_type="column">
-                                                        <div class="elementor-column-wrap elementor-element-populated">
-                                                            <div class="elementor-widget-wrap">
-                                                                <div class="elementor-element elementor-element-4914e88 elementor-widget elementor-widget-exad-team-member" data-id="4914e88" data-element_type="widget" data-widget_type="exad-team-member.default">
-                                                                    <div class="elementor-widget-container">
-                                                                        <div id="exad-team-member-4914e88" class="exad-team-item">
-                                                                            <div class="exad-team-member-rounded">
-                                                                                <div class="exad-team-member-thumb">
-                                                                                    <img decoding="async" src="https://assets-watad-me.fra1.digitaloceanspaces.com/wp-content/uploads/2021/03/2-4.jpg" class="circled" alt="سيف عويمر">
-                                                                                </div>
-                                                                                <div class="exad-team-member-content">
-                                                                                    <h2 class="exad-team-member-name">سيف عويمر</h2>
-                                                                                    <span class="exad-team-member-designation">اللغة الانجليزية</span>
-                                                                                    <p class="exad-team-member-about">
-                                                                                    </p>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-c250d74" data-id="c250d74" data-element_type="column">
-                                                        <div class="elementor-column-wrap elementor-element-populated">
-                                                            <div class="elementor-widget-wrap">
-                                                                <div class="elementor-element elementor-element-28245ea elementor-widget elementor-widget-exad-team-member" data-id="28245ea" data-element_type="widget" data-widget_type="exad-team-member.default">
-                                                                    <div class="elementor-widget-container">
-                                                                        <div id="exad-team-member-28245ea" class="exad-team-item">
-                                                                            <div class="exad-team-member-rounded">
-                                                                                <div class="exad-team-member-thumb">
-                                                                                    <img decoding="async" src="https://assets-watad-me.fra1.digitaloceanspaces.com/wp-content/uploads/2021/03/1-17.jpg" class="circled" alt="يزن العقرباوي">
-                                                                                </div>
-                                                                                <div class="exad-team-member-content">
-                                                                                    <h2 class="exad-team-member-name">يزن العقرباوي</h2>
-                                                                                    <span class="exad-team-member-designation">الرياضيات الادبي</span>
-                                                                                    <p class="exad-team-member-about">
-                                                                                    </p>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-e4f93c1" data-id="e4f93c1" data-element_type="column">
-                                                        <div class="elementor-column-wrap elementor-element-populated">
-                                                            <div class="elementor-widget-wrap">
-                                                                <div class="elementor-element elementor-element-6e4f334 elementor-widget elementor-widget-exad-team-member" data-id="6e4f334" data-element_type="widget" data-widget_type="exad-team-member.default">
-                                                                    <div class="elementor-widget-container">
-                                                                        <div id="exad-team-member-6e4f334" class="exad-team-item">
-                                                                            <div class="exad-team-member-rounded">
-                                                                                <div class="exad-team-member-thumb">
-                                                                                    <img decoding="async" src="https://assets-watad-me.fra1.digitaloceanspaces.com/wp-content/uploads/2021/03/1-9.jpg" class="circled" alt="خالد عزازمة">
-                                                                                </div>
-                                                                                <div class="exad-team-member-content">
-                                                                                    <h2 class="exad-team-member-name">خالد عزازمة</h2>
-                                                                                    <span class="exad-team-member-designation">الرياضيات الادبي</span>
-                                                                                    <p class="exad-team-member-about">
-                                                                                    </p>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-117edd3" data-id="117edd3" data-element_type="column">
-                                                        <div class="elementor-column-wrap elementor-element-populated">
-                                                            <div class="elementor-widget-wrap">
-                                                                <div class="elementor-element elementor-element-2be3114 elementor-widget elementor-widget-exad-team-member" data-id="2be3114" data-element_type="widget" data-widget_type="exad-team-member.default">
-                                                                    <div class="elementor-widget-container">
-                                                                        <div id="exad-team-member-2be3114" class="exad-team-item">
-                                                                            <div class="exad-team-member-rounded">
-                                                                                <div class="exad-team-member-thumb">
-                                                                                    <img decoding="async" src="https://assets-watad-me.fra1.digitaloceanspaces.com/wp-content/uploads/2021/03/2-5.jpg" class="circled" alt="عصام الاشهب">
-                                                                                </div>
-                                                                                <div class="exad-team-member-content">
-                                                                                    <h2 class="exad-team-member-name">عصام الاشهب</h2>
-                                                                                    <span class="exad-team-member-designation">الرياضيات الادبي</span>
-                                                                                    <p class="exad-team-member-about">
-                                                                                    </p>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </section>
-                                        <section class="elementor-section elementor-top-section elementor-element elementor-element-5b342cd elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5b342cd" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                                            <div class="elementor-container elementor-column-gap-default">
-                                                <div class="elementor-row">
-                                                    <div class="elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-e8d646a" data-id="e8d646a" data-element_type="column">
-                                                        <div class="elementor-column-wrap elementor-element-populated">
-                                                            <div class="elementor-widget-wrap">
-                                                                <div class="elementor-element elementor-element-e45eee1 elementor-widget elementor-widget-exad-team-member" data-id="e45eee1" data-element_type="widget" data-widget_type="exad-team-member.default">
-                                                                    <div class="elementor-widget-container">
-                                                                        <div id="exad-team-member-e45eee1" class="exad-team-item">
-                                                                            <div class="exad-team-member-rounded">
-                                                                                <div class="exad-team-member-thumb">
-                                                                                    <img decoding="async" src="https://assets-watad-me.fra1.digitaloceanspaces.com/wp-content/uploads/2021/03/2-10.jpg" class="circled" alt="معن الدقامسة">
-                                                                                </div>
-                                                                                <div class="exad-team-member-content">
-                                                                                    <h2 class="exad-team-member-name">معن الدقامسة</h2>
-                                                                                    <span class="exad-team-member-designation">اللغة العربية</span>
-                                                                                    <p class="exad-team-member-about">
-                                                                                    </p>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-f4dc2ea" data-id="f4dc2ea" data-element_type="column">
-                                                        <div class="elementor-column-wrap elementor-element-populated">
-                                                            <div class="elementor-widget-wrap">
-                                                                <div class="elementor-element elementor-element-146a3b7 elementor-widget elementor-widget-exad-team-member" data-id="146a3b7" data-element_type="widget" data-widget_type="exad-team-member.default">
-                                                                    <div class="elementor-widget-container">
-                                                                        <div id="exad-team-member-146a3b7" class="exad-team-item">
-                                                                            <div class="exad-team-member-rounded">
-                                                                                <div class="exad-team-member-thumb">
-                                                                                    <img decoding="async" src="https://assets-watad-me.fra1.digitaloceanspaces.com/wp-content/uploads/2021/03/2-11.jpg" class="circled" alt="اوس العزة">
-                                                                                </div>
-                                                                                <div class="exad-team-member-content">
-                                                                                    <h2 class="exad-team-member-name">اوس العزة</h2>
-                                                                                    <span class="exad-team-member-designation">اللغة العربية</span>
-                                                                                    <p class="exad-team-member-about">
-                                                                                    </p>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-baa502b" data-id="baa502b" data-element_type="column">
-                                                        <div class="elementor-column-wrap elementor-element-populated">
-                                                            <div class="elementor-widget-wrap">
-                                                                <div class="elementor-element elementor-element-786ca5a elementor-widget elementor-widget-exad-team-member" data-id="786ca5a" data-element_type="widget" data-widget_type="exad-team-member.default">
-                                                                    <div class="elementor-widget-container">
-                                                                        <div id="exad-team-member-786ca5a" class="exad-team-item">
-                                                                            <div class="exad-team-member-rounded">
-                                                                                <div class="exad-team-member-thumb">
-                                                                                    <img decoding="async" src="https://assets-watad-me.fra1.digitaloceanspaces.com/wp-content/uploads/2021/03/1-13.jpg" class="circled" alt="عبد الفتاح البرغوثي">
-                                                                                </div>
-                                                                                <div class="exad-team-member-content">
-                                                                                    <h2 class="exad-team-member-name">عبد الفتاح البرغوثي</h2>
-                                                                                    <span class="exad-team-member-designation">اللغة العربية</span>
-                                                                                    <p class="exad-team-member-about">
-                                                                                    </p>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-d7aca62" data-id="d7aca62" data-element_type="column">
-                                                        <div class="elementor-column-wrap elementor-element-populated">
-                                                            <div class="elementor-widget-wrap">
-                                                                <div class="elementor-element elementor-element-a5fed06 elementor-widget elementor-widget-exad-team-member" data-id="a5fed06" data-element_type="widget" data-widget_type="exad-team-member.default">
-                                                                    <div class="elementor-widget-container">
-                                                                        <div id="exad-team-member-a5fed06" class="exad-team-item">
-                                                                            <div class="exad-team-member-rounded">
-                                                                                <div class="exad-team-member-thumb">
-                                                                                    <img decoding="async" src="https://assets-watad-me.fra1.digitaloceanspaces.com/wp-content/uploads/2021/03/1-20.jpg" class="circled" alt="احمد شهاب">
-                                                                                </div>
-                                                                                <div class="exad-team-member-content">
-                                                                                    <h2 class="exad-team-member-name">احمد شهاب</h2>
-                                                                                    <span class="exad-team-member-designation">الحاسوب</span>
-                                                                                    <p class="exad-team-member-about">
-                                                                                    </p>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-3b490de" data-id="3b490de" data-element_type="column">
-                                                        <div class="elementor-column-wrap elementor-element-populated">
-                                                            <div class="elementor-widget-wrap">
-                                                                <div class="elementor-element elementor-element-8a428b5 elementor-widget elementor-widget-exad-team-member" data-id="8a428b5" data-element_type="widget" data-widget_type="exad-team-member.default">
-                                                                    <div class="elementor-widget-container">
-                                                                        <div id="exad-team-member-8a428b5" class="exad-team-item">
-                                                                            <div class="exad-team-member-rounded">
-                                                                                <div class="exad-team-member-thumb">
-                                                                                    <img decoding="async" src="https://assets-watad-me.fra1.digitaloceanspaces.com/wp-content/uploads/2021/03/1-2.jpg" class="circled" alt="احمد صالح">
-                                                                                </div>
-                                                                                <div class="exad-team-member-content">
-                                                                                    <h2 class="exad-team-member-name">احمد صالح</h2>
-                                                                                    <span class="exad-team-member-designation">الحاسوب</span>
-                                                                                    <p class="exad-team-member-about">
-                                                                                    </p>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-1dbcd35" data-id="1dbcd35" data-element_type="column">
-                                                        <div class="elementor-column-wrap elementor-element-populated">
-                                                            <div class="elementor-widget-wrap">
-                                                                <div class="elementor-element elementor-element-34aa63c elementor-widget elementor-widget-exad-team-member" data-id="34aa63c" data-element_type="widget" data-widget_type="exad-team-member.default">
-                                                                    <div class="elementor-widget-container">
-                                                                        <div id="exad-team-member-34aa63c" class="exad-team-item">
-                                                                            <div class="exad-team-member-rounded">
-                                                                                <div class="exad-team-member-thumb">
-                                                                                    <img decoding="async" src="https://assets-watad-me.fra1.digitaloceanspaces.com/wp-content/uploads/2021/03/1-11.jpg" class="circled" alt="طارق القاسم">
-                                                                                </div>
-                                                                                <div class="exad-team-member-content">
-                                                                                    <h2 class="exad-team-member-name">طارق القاسم</h2>
-                                                                                    <span class="exad-team-member-designation">تاريخ الاردن</span>
-                                                                                    <p class="exad-team-member-about">
-                                                                                    </p>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </section>
-                                        <section class="elementor-section elementor-top-section elementor-element elementor-element-0b83724 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="0b83724" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                                            <div class="elementor-container elementor-column-gap-default">
-                                                <div class="elementor-row">
-                                                    <div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-915d0d1" data-id="915d0d1" data-element_type="column">
-                                                        <div class="elementor-column-wrap">
-                                                            <div class="elementor-widget-wrap">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-5b95e3c" data-id="5b95e3c" data-element_type="column">
-                                                        <div class="elementor-column-wrap elementor-element-populated">
-                                                            <div class="elementor-widget-wrap">
-                                                                <div class="elementor-element elementor-element-82ed817 elementor-widget elementor-widget-exad-team-member" data-id="82ed817" data-element_type="widget" data-widget_type="exad-team-member.default">
-                                                                    <div class="elementor-widget-container">
-                                                                        <div id="exad-team-member-82ed817" class="exad-team-item">
-                                                                            <div class="exad-team-member-rounded">
-                                                                                <div class="exad-team-member-thumb">
-                                                                                    <img decoding="async" src="https://assets-watad-me.fra1.digitaloceanspaces.com/wp-content/uploads/2021/03/1-14.jpg" class="circled" alt="عبد الكريم ابو الحاج">
-                                                                                </div>
-                                                                                <div class="exad-team-member-content">
-                                                                                    <h2 class="exad-team-member-name">عبد الكريم ابو الحاج</h2>
-                                                                                    <span class="exad-team-member-designation">المالية</span>
-                                                                                    <p class="exad-team-member-about">
-                                                                                    </p>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-b747913" data-id="b747913" data-element_type="column">
-                                                        <div class="elementor-column-wrap elementor-element-populated">
-                                                            <div class="elementor-widget-wrap">
-                                                                <div class="elementor-element elementor-element-515099b elementor-widget elementor-widget-exad-team-member" data-id="515099b" data-element_type="widget" data-widget_type="exad-team-member.default">
-                                                                    <div class="elementor-widget-container">
-                                                                        <div id="exad-team-member-515099b" class="exad-team-item">
-                                                                            <div class="exad-team-member-rounded">
-                                                                                <div class="exad-team-member-thumb">
-                                                                                    <img decoding="async" src="https://assets-watad-me.fra1.digitaloceanspaces.com/wp-content/uploads/2021/03/2-3.jpg" class="circled" alt="سامر ضرار">
-                                                                                </div>
-                                                                                <div class="exad-team-member-content">
-                                                                                    <h2 class="exad-team-member-name">سامر ضرار</h2>
-                                                                                    <span class="exad-team-member-designation">التربية الاسلامية</span>
-                                                                                    <p class="exad-team-member-about">
-                                                                                    </p>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-c4cdfd2" data-id="c4cdfd2" data-element_type="column">
-                                                        <div class="elementor-column-wrap elementor-element-populated">
-                                                            <div class="elementor-widget-wrap">
-                                                                <div class="elementor-element elementor-element-03b6528 elementor-widget elementor-widget-exad-team-member" data-id="03b6528" data-element_type="widget" data-widget_type="exad-team-member.default">
-                                                                    <div class="elementor-widget-container">
-                                                                        <div id="exad-team-member-03b6528" class="exad-team-item">
-                                                                            <div class="exad-team-member-rounded">
-                                                                                <div class="exad-team-member-thumb">
-                                                                                    <img decoding="async" src="https://assets-watad-me.fra1.digitaloceanspaces.com/wp-content/uploads/2021/03/1-5.jpg" class="circled" alt="محمد الحجاوي ">
-                                                                                </div>
-                                                                                <div class="exad-team-member-content">
-                                                                                    <h2 class="exad-team-member-name">محمد الحجاوي </h2>
-                                                                                    <span class="exad-team-member-designation">الفندقي</span>
-                                                                                    <p class="exad-team-member-about">
-                                                                                    </p>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-570f6ac" data-id="570f6ac" data-element_type="column">
-                                                        <div class="elementor-column-wrap">
-                                                            <div class="elementor-widget-wrap">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </section>
+                                                </section>
+                                        @endif
+                                        <!-- end of teachers section -->
+                                        
+
+
+
+
                                         <section class="elementor-section elementor-top-section elementor-element elementor-element-734c085 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="734c085" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
                                             <div class="elementor-container elementor-column-gap-default">
                                                 <div class="elementor-row">
@@ -1210,7 +653,7 @@
                                                                                                 <div
                                                                                                     class="elementor-button-wrapper">
                                                                                                     <a
-                                                                                                        href="tel:0597455888"
+                                                                                                        href="tel:0788334399"
                                                                                                         url=""
                                                                                                         class="elementor-button-link
                                                                                                         elementor-button
@@ -1223,7 +666,7 @@
                                                                                                                     aria-hidden="true"
                                                                                                                     class="fas
                                                                                                                     fa-phone-square"></i>
-                                                                                                                0597455888
+                                                                                                                0788334399
                                                                                                             </span>
                                                                                                         </span>
                                                                                                     </a>
