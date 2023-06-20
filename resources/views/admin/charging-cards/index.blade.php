@@ -34,10 +34,11 @@
                                                     </div>
                                                     <div class="panel-body tabs-menu-body border-0 pt-0" style="height: 500px; overflow:scroll; margin-bottom:30px;">
                                                         <h3>البطاقات المتاحة</h3>
+                                                        <div id="data-table_filter" class="dataTables_filter"><label><input type="search" id="myInput" onkeyup="myFunction()" class="form-control form-control" placeholder="ابحث..." aria-controls="data-table"></label></div>
                                                         <div class="tab-content">
                                                             <div class="tab-pane active" id="tab5">
                                                                 <div class="table-responsive">
-                                                                    <table id="data-table"
+                                                                    <table id="myTable"
                                                                         class="table table-bordered text-nowrap mb-0">
                                                                         <thead class="border-top">
                                                                             <tr>
@@ -94,10 +95,12 @@
                                                     </div>
                                                     <div class="panel-body tabs-menu-body border-0 pt-0" style="height: 500px; overflow:scroll; margin-bottom:30px;">
                                                         <h3>البطاقات المستخدمة</h3>
+                                                                                                                <div id="data-table_filter" class="dataTables_filter"><label><input type="search" id="myInput2" onkeyup="myFunction2()" class="form-control form-control" placeholder="ابحث..." aria-controls="data-table"></label></div>
+
                                                         <div class="tab-content">
                                                             <div class="tab-pane active" id="tab5">
                                                                 <div class="table-responsive">
-                                                                    <table id="data-table"
+                                                                    <table id="myTable2"
                                                                         class="table table-bordered text-nowrap mb-0">
                                                                         <thead class="border-top">
                                                                             <tr>
@@ -177,4 +180,48 @@
                     <!-- CONTAINER END -->
                 </div>
             </div>
+            <script>
+    function myFunction() {
+        // Declare variables
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable");
+        tr = table.getElementsByTagName("tr");
+
+        // Loop through all table rows, and hide those who don't match the search query
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td != null ) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1 ) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+    function myFunction2() {
+        // Declare variables
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("myInput2");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable2");
+        tr = table.getElementsByTagName("tr");
+
+        // Loop through all table rows, and hide those who don't match the search query
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td != null ) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1 ) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+            </script>
 @endsection
