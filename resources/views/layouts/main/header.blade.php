@@ -358,13 +358,34 @@
 
             <nav class="main-navigation" data-menu-space="120">
                 <ul id="menu-mobile-menu" class="bb-primary-menu mobile-menu buddypanel-menu side-panel-menu">
-                    <li id="menu-item-1239548" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-1239548"><a href="{{route('index')}}"><i class="bb-icon-l bb-icon-file bb-custom-icon"></i><span class="link-text">الصفحة الرئيسية</span></a></li>
-                    <li id="menu-item-1239550" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1239550"><a href="{{route('allCourses')}}"><i class="bb-icon-l bb-icon-file bb-custom-icon"></i><span class="link-text">جميع المواد</span></a></li>
-                    <li id="menu-item-1239552" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1239552"><a href="{{route('about')}}"><i class="bb-icon-l bb-icon-file bb-custom-icon"></i><span class="link-text">عن راسخ</span></a></li>
-                    <li id="menu-item-1239554" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1239554"><a href="{{route('cards')}}"><i class="bb-icon-l bb-icon-file bb-custom-icon"></i><span class="link-text">نقاط بيع بطاقات راسخ</span></a></li>
-                    <li id="menu-item-1239555" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1239555"><a href="{{route('contact')}}"><i class="bb-icon-l bb-icon-file bb-custom-icon"></i><span class="link-text">اتصل بنا</span></a></li>
+                    <li id="menu-item-1239548" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1239548
+                    @if(Request::segment(1) == "")
+                    current_page_item
+                    @endif
+                    "><a href="{{route('index')}}"><i class="bb-icon-l bb-icon-file bb-custom-icon"></i><span class="link-text">الصفحة الرئيسية</span></a></li>
+                    <li id="menu-item-1239550" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1239550
+                    @if(Request::segment(1) == "all-courses" or Request::segment(1) == "teachers" or Request::segment(1) == "courses")
+                    current_page_item
+                    @endif
+                    "><a href="{{route('allCourses')}}"><i class="bb-icon-l bb-icon-file bb-custom-icon"></i><span class="link-text">جميع المواد</span></a></li>
+                    <li id="menu-item-1239552" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1239552
+                    @if(Request::segment(1) == "about")
+                    current_page_item
+                    @endif
+                    "><a href="{{route('about')}}"><i class="bb-icon-l bb-icon-file bb-custom-icon"></i><span class="link-text">عن راسخ</span></a></li>
+                    <li id="menu-item-1239554" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1239554
+                    @if(Request::segment(1) == "cards")
+                    current_page_item
+                    @endif
+                    "><a href="{{route('cards')}}"><i class="bb-icon-l bb-icon-file bb-custom-icon"></i><span class="link-text">نقاط بيع بطاقات راسخ</span></a></li>
+                    <li id="menu-item-1239555" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1239555
+                    @if(Request::segment(1) == "contact")
+                    current_page_item
+                    @endif
+                    "><a href="{{route('contact')}}"><i class="bb-icon-l bb-icon-file bb-custom-icon"></i><span class="link-text">اتصل بنا</span></a></li>
                     @if(Auth::guard('student')->check())
-                    <li id="menu-item-1239557" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1239557"><a href="{{route('charging')}}"><i class="bb-icon-l bb-icon-file bb-custom-icon"></i><span class="link-text">النقاط</span></a></li>
+                    <li id="menu-item-1239557" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1239557
+                    "><a href="{{route('charging')}}"><i class="bb-icon-l bb-icon-file bb-custom-icon"></i><span class="link-text">النقاط</span></a></li>
                     <li id="menu-item-1239555" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1239555"><a href="{{route('logout')}}"><i class="bb-icon-l bb-icon-file bb-custom-icon"></i><span class="link-text">تسجيل الخروج</span></a></li>
                     @else
                     <li id="menu-item-1239562" class="bp-menu bp-login-nav menu-item menu-item-type-custom menu-item-object-custom menu-item-1239562"><a href="{{route('login')}}"><i class="fa-sharp fa-solid fa-right-to-bracket"></i><span>تسجيل الدخول</span></a></li>
