@@ -96,7 +96,7 @@
 
   <!-- start preheader -->
   <div class="preheader" style="display: none; max-width: 0; max-height: 0; overflow: hidden; font-size: 1px; line-height: 1px; color: #fff; opacity: 0;">
-    A preheader is the short summary text that follows the subject line when an email is viewed in the inbox.
+  تاكيد البريد الالكتروني لمنصة راسخ التعليمية
   </div>
   <!-- end preheader -->
 
@@ -115,7 +115,7 @@
           <tr>
             <td align="center" valign="top" style="padding: 36px 24px;">
               <a href="{{route('index')}}" target="_blank" style="display: inline-block;">
-                <img src="https://www.blogdesire.com/wp-content/uploads/2019/07/blogdesire-1.png" alt="Logo" border="0" width="48" style="display: block; width: 48px; max-width: 48px; min-width: 48px;">
+                <img src="{{route('index')}}/webassets/fav-icon.png" alt="Logo" border="0" width="48" style="display: block; width: 48px; max-width: 48px; min-width: 48px;">
               </a>
             </td>
           </tr>
@@ -165,8 +165,17 @@
 
           <!-- start copy -->
           <tr>
-            <td align="left" bgcolor="#ffffff" style="padding: 24px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px;">
-              <p style="margin: 0; text-align:right;">اضغط على الزر لتأكيد بريدك الالكترونى اذا لم تقم بانشاء حساب في <a href="route('index')">منصة راسخ التعليمية</a> يمكنك حذف هذا البريد الالكترونى</p>
+            <td align="left" bgcolor="#ffffff" style="padding: 24px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 20px; line-height: 24px;">
+              <p style="margin: 0; text-align:right;">
+                اضغط على الزر ادناه لتأكيد بريدك الالكترونى
+              </p>
+              <p style="margin: 0; text-align:right; font-size: 16px; color: gray;">
+                اذا لم تقم بالتسجيل فى 
+                  <a href="{{route('index')}}">
+                    منصة راسخ التعليمية
+                  </a>
+                 يمكنك تجاهل هذا البريد الالكترونى
+              </p>
             </td>
           </tr>
           <!-- end copy -->
@@ -179,8 +188,8 @@
                   <td align="center" bgcolor="#ffffff" style="padding: 12px;">
                     <table border="0" cellpadding="0" cellspacing="0">
                       <tr>
-                        <td align="center" bgcolor="#1a82e2" style="border-radius: 6px;">
-                          <a href="{{route('student.verify',$student->token)}}" target="_blank" style="display: inline-block; padding: 16px 36px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; color: #ffffff; text-decoration: none; border-radius: 6px;">تأكيد الحساب</a>
+                        <td align="center" bgcolor="#65905d" style="border-radius: 6px;">
+                          <a href="{{route('student.verify',$student->token)}}" target="_blank" style="display: inline-block; padding: 16px 36px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; color: #ffffff; text-decoration: none; border-radius: 6px;">اضغط هنا لتفعيل الحساب</a>
                         </td>
                       </tr>
                     </table>
@@ -190,15 +199,6 @@
             </td>
           </tr>
           <!-- end button -->
-
-          <!-- start copy -->
-          <tr>
-            <td align="left" bgcolor="#ffffff" style="padding: 24px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px;">
-              <p style="margin: 0;text-align:right;">اذا لم يعمل انسخ هذا الرابط فى متصفحك</p>
-              <p style="margin: 0;"><a href="{{route('student.verify',$student->token)}}" target="_blank">{{route('student.verify',$student->token)}}</a></p>
-            </td>
-          </tr>
-          <!-- end copy -->
 
         </table>
         <!--[if (gte mso 9)|(IE)]>
