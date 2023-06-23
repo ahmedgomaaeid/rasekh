@@ -26,13 +26,33 @@
 
 
 
-                    <li id="menu-item-241612" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-241612 no-icon"><a href="{{route('index')}}" aria-current="page"><span>الصفحة الرئيسية</span></a></li>
-                    <li id="menu-item-1508" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1508 no-icon"><a href="{{route('allCourses')}}"><span>جميع المواد</span></a></li>
-                    <li id="menu-item-1509" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1509 no-icon"><a href="{{route('about')}}"><span>عن راسخ</span></a></li>
-                    <li id="menu-item-25489" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-25489 no-icon"><a href="{{route('cards')}}"><span>نقاط بيع بطاقات راسخ</span></a></li>
-                    <li id="menu-item-1506" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1506 no-icon"><a href="{{route('contact')}}"><span>اتصل بنا</span></a></li>
+                    <li id="menu-item-241612" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1509 no-icon
+                    @if(Request::segment(1) == "")
+                    current_page_item
+                    @endif
+                    "><a href="{{route('index')}}" aria-current="page"><span>الصفحة الرئيسية</span></a></li>
+                    <li id="menu-item-1508" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1508 no-icon
+                    @if(Request::segment(1) == "all-courses" or Request::segment(1) == "teachers" or Request::segment(1) == "courses")
+                    current_page_item
+                    @endif
+                    "><a href="{{route('allCourses')}}"><span>جميع المواد</span></a></li>
+                    <li id="menu-item-1509" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1509 no-icon
+                    @if(Request::segment(1) == "about")
+                    current_page_item
+                    @endif"><a href="{{route('about')}}"><span>عن راسخ</span></a></li>
+                    <li id="menu-item-25489" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-25489 no-icon
+                    @if(Request::segment(1) == "cards")
+                    current_page_item
+                    @endif"><a href="{{route('cards')}}"><span>نقاط بيع بطاقات راسخ</span></a></li>
+                    <li id="menu-item-1506" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1506 no-icon
+                    @if(Request::segment(1) == "contact")
+                    current_page_item
+                    @endif"><a href="{{route('contact')}}"><span>اتصل بنا</span></a></li>
                     @if(Auth::guard('student')->check())
-                    <li id="menu-item-1507" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1507 no-icon"><a href="{{route('myCourses')}}"><span>دوراتي</span></a></li>
+                    <li id="menu-item-1507" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1507 no-icon
+                    @if(Request::segment(1) == "my-courses" or Request::segment(1) == "course")
+                    current_page_item
+                    @endif"><a href="{{route('myCourses')}}"><span>دوراتي</span></a></li>
                     @endif
                 </ul>
                 <div id="navbar-collapse" class="">

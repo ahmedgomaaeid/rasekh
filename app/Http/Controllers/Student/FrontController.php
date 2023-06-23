@@ -19,7 +19,7 @@ class FrontController extends Controller
     }
     public function about()
     {
-        $teachers = Teacher::where('status', 1)->get();
+        $teachers = Teacher::where('status', 1)->where('approved', 1)->get();
         return view('student.about', compact('teachers'));
     }
     public function cards()
