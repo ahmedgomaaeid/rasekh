@@ -17,12 +17,28 @@ class RegisterController extends Controller
     }
     public function register(Request $request)
     {
-        $this->validate($request, [
+        //make validation with messages
+        $request->validate([
             'name' => 'required|string|max:255',
-            'email' => 'required|string|email|max:255|unique:students',
-            'phone' => 'required|numeric|unique:students',
-            'password' => 'required|string|min:6',
+            'email' => 'required|email|unique:students',
+            'password' => 'required|confirmed|min:8',
+            'phone' => 'required|numeric',
+        ], [
+            'name.required' => 'الاسم مطلوب',
+            'name.string' => 'الاسم يجب ان يكون نص',
+            'name.max' => 'الاسم يجب ان لا يزيد عن 255 حرف',
+            'email.required' => 'البريد الالكتروني مطلوب',
+            'email.email' => 'البريد الالكتروني يجب ان يكون بريد الكتروني',
+            'email.unique' => 'البريد الالكتروني مستخدم من قبل',
+            'password.required' => 'كلمة المرور مطلوبة',
+            'password.confirmed' => 'كلمة المرور غير متطابقة',
+            'password.min' => 'كلمة المرور يجب ان لا تقل عن 8 احرف',
+            'phone.required' => 'رقم الهاتف مطلوب',
+            'phone.numeric' => 'رقم الهاتف يجب ان يكون ارقام فقط',
+            'phone.unique' => 'رقم الهاتف مستخدم من قبل',
         ]);
+        
+
         $student = new Student();
         $student->name = $request->name;
         $student->email = $request->email;

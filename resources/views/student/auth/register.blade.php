@@ -28,7 +28,7 @@
         <div class="user-pass-wrap">
             <div class="wp-pwd">
                 <i class="fa-solid fa-phone" style="position: absolute; padding: 13px 16px;"></i>
-                <input type="text" name="phone" class="input" value="" size="20" autocomplete="current-password" placeholder="رقم الجوال">
+                <input type="text" name="phone" class="input" value="" size="20"  placeholder="رقم الجوال">
                 @error('phone')
                 <div class="invalid-feedback" style="display:block;">{{$message}}</div>
                 @enderror
@@ -39,6 +39,15 @@
                 <i class="fa-solid fa-lock" style="position: absolute; padding: 13px 16px;"></i>
                 <input type="password" name="password" id="user_pass" class="input password-input" value="" size="20" autocomplete="current-password" placeholder="كلمة السر ">
                 @error('password')
+                <div class="invalid-feedback" style="display:block;">{{$message}}</div>
+                @enderror
+            </div>
+        </div>
+        <div class="user-pass-wrap">
+            <div class="wp-pwd">
+                <i class="fa-solid fa-lock" style="position: absolute; padding: 13px 16px;"></i>
+                <input type="password" name="password_confirmation" id="user_pass_conf" class="input password-input" value="" size="20" placeholder="تاكيد كلمة السر">
+                @error('password_confirmation')
                 <div class="invalid-feedback" style="display:block;">{{$message}}</div>
                 @enderror
             </div>
