@@ -5,6 +5,7 @@ namespace App\Mail;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
+use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
 
 class StudentVerify extends Mailable
@@ -20,6 +21,13 @@ class StudentVerify extends Mailable
     public function __construct($student)
     {
         $this->student = $student;
+    }
+
+    public function envelope()
+    {
+        return new envelope(
+            subject: 'منصة راسخ',
+        );
     }
     /**
      * Build the message.
