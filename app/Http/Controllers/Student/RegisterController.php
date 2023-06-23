@@ -35,7 +35,6 @@ class RegisterController extends Controller
             'password.min' => 'كلمة المرور يجب ان لا تقل عن 8 احرف',
             'phone.required' => 'رقم الهاتف مطلوب',
             'phone.numeric' => 'رقم الهاتف يجب ان يكون ارقام فقط',
-            'phone.unique' => 'رقم الهاتف مستخدم من قبل',
         ]);
         
 

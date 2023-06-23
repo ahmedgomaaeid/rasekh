@@ -300,10 +300,7 @@
     </script>
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <meta name="viewport" content="width=device-width">
-    <link rel="icon" href="https://watad.me/wp-content/uploads/2020/01/cropped-watad-fav-icon-512-32x32.png" sizes="32x32">
-    <link rel="icon" href="https://watad.me/wp-content/uploads/2020/01/cropped-watad-fav-icon-512-192x192.png" sizes="192x192">
-    <link rel="apple-touch-icon" href="https://watad.me/wp-content/uploads/2020/01/cropped-watad-fav-icon-512-180x180.png">
-    <meta name="msapplication-TileImage" content="https://watad.me/wp-content/uploads/2020/01/cropped-watad-fav-icon-512-270x270.png">
+    <link rel="icon" href="{{route('index')}}/webassets/fav-icon.png">
     <style id="buddyboss_theme_options-dynamic-css" title="dynamic-css" class="redux-options-output">
         .site-header .site-title {
             font-family: Tajawal;
