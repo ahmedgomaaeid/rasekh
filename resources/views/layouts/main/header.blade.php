@@ -360,7 +360,7 @@
                 <ul id="menu-mobile-menu" class="bb-primary-menu mobile-menu buddypanel-menu side-panel-menu">
                     <li id="menu-item-1239548" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1239548
                     @if(Request::segment(1) == "")
-                    current_page_item
+                    current_page_item 
                     @endif
                     "><a href="{{route('index')}}"><i class="bb-icon-l bb-icon-file bb-custom-icon"></i><span class="link-text">الصفحة الرئيسية</span></a></li>
                     <li id="menu-item-1239550" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1239550
