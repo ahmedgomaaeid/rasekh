@@ -6,7 +6,7 @@
             <h2>تسجيل الدخول</h2><span><a rel="nofollow" href="{{route('register')}}">إنشاء حساب جديد </a></span>
         </div>
         @if(session()->has('status'))
-            <div style="display:block; color:red;">
+            <div style="display:block; color:green;">
                 {{session()->get('status')}}
             </div>
         @endif
