@@ -96,7 +96,7 @@
 
   <!-- start preheader -->
   <div class="preheader" style="display: none; max-width: 0; max-height: 0; overflow: hidden; font-size: 1px; line-height: 1px; color: #fff; opacity: 0;">
-    A preheader is the short summary text that follows the subject line when an email is viewed in the inbox.
+    استعادة كلمة المرور الخاصة بك
   </div>
   <!-- end preheader -->
 
@@ -115,7 +115,7 @@
           <tr>
             <td align="center" valign="top" style="padding: 36px 24px;">
               <a href="{{route('index')}}" target="_blank" style="display: inline-block;">
-                <img src="https://www.blogdesire.com/wp-content/uploads/2019/07/blogdesire-1.png" alt="Logo" border="0" width="48" style="display: block; width: 48px; max-width: 48px; min-width: 48px;">
+                <img src="https://lh3.googleusercontent.com/drive-viewer/AFGJ81oUz_q5KYbG04ANcYLBZn5ZGhYFGe2kKP-H9up1JGRS2bklIN31aR4K0i3Nq-ICFXuKLDcIjM_fnZKPxcffueJsm4wF=s1600" alt="Logo" border="0" width="48" style="display: block; width: 219px;">
               </a>
             </td>
           </tr>
@@ -140,7 +140,7 @@
         <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
           <tr>
             <td align="left" bgcolor="#ffffff" style="padding: 36px 24px 0; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; border-top: 3px solid #d4dadf;">
-              <h1 style="margin: 0; font-size: 32px; font-weight: 700; letter-spacing: -1px; line-height: 48px; text-align:right;">تأكيد بريدك الالكترونى</h1>
+              <h1 style="margin: 0; font-size: 32px; font-weight: 700; letter-spacing: -1px; line-height: 48px; text-align:right;">استعادة كلمة المرور الخاصة بك</h1>
             </td>
           </tr>
         </table>
