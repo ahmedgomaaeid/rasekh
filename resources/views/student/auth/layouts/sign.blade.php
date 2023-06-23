@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>دخول › موقع راسخ التعليمي — ووردبريس</title>
+    <title> موقع راسخ التعليمي</title>
     <meta name="robots" content="noindex, follow">
     <link rel="dns-prefetch" href="https://fonts.googleapis.com/">
     <link rel="dns-prefetch" href="https://s.w.org/">
