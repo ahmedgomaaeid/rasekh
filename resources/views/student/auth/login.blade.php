@@ -3,6 +3,7 @@
     <div id="login">
         <h1 style="height: 50px;"><a href="{{route('index')}}"><img class="bs-cs-login-logo" src="{{route('index')}}/webassets/loggg.png"></a></h1>
         <div class="login-heading">
+        <img src="{{route('index')}}/webassets/loggg.png">
             <h2>تسجيل الدخول</h2><span><a rel="nofollow" href="{{route('register')}}">إنشاء حساب جديد </a></span>
         </div>
         @if(session()->has('status'))
