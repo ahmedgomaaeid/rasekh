@@ -1,7 +1,8 @@
 @extends('student.auth.layouts.sign')
 @section('content')
 <div id="login">
-    <h1 style="height: 50px;"><a href="{{route('index')}}"><img class="bs-cs-login-logo" src="{{route('index')}}/webassets/loggg.png"></a></h1>
+    <h1 style="height: 50px;"><a href="{{route('index')}}"><img class="bs-cs-login-logo" src="{{route('index')}}/webassets/loggg.png" style="visibility: visible;">
+    </a></h1>
     <div class="login-heading">
         <h2>إنشاء حساب جديد</h2><span>او <a rel="nofollow" href="{{route('login')}}">تسجيل الدخول</a></span>
     </div>
