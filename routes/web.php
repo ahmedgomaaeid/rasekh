@@ -36,7 +36,7 @@ Route::group(['namespace' => 'Student'], function () {
         Route::get('/course/{id}/lesson/{lesson}', 'VideoController@lesson')->name('lesson');
         Route::post('lesson/completed', 'VideoController@lessonCompleted')->name('lesson.completed');
         Route::post('send-quiz', 'VideoController@sendQuiz')->name('sendQuiz');
-        Route::post('send-question', 'VideoController@sendQuestion')->name('sendQuestion');
+        Route::post('send-question', 'VideoController@sendQuestion')->name('sendQuestion'); 
         Route::get('/payments/verify/{payment?}',[PaymentController::class,'payment_callback'])->name('verify-payment');
         Route::get('/charging', 'PaymentController@charging')->name('charging');
         Route::post('/charge', 'PaymentController@charge')->name('charge');
