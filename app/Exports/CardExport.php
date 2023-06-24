@@ -26,7 +26,7 @@ class CardExport implements FromCollection, WithHeadings
     }
     public function collection()
     {
-        $charging_cards = ChargingCard::whereBetween('created_at', [$this->from, $this->to])->get();
+        $charging_cards = ChargingCard::whereBetween('created_at', [$this->from, $this->to])->orderBy('id', 'desc')->get();
         $data = [];
         foreach ($charging_cards as $charging_card) {
             $data[] = [
