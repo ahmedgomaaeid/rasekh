@@ -24,6 +24,7 @@
 # ^ = start of string
 # [NC] = case insensitive search
 RewriteCond %{HTTP_REFERER} !^https://rasekhpal.com/ [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.rasekhpal.com/ [NC]
  
 # \ = match any
 # . = any character

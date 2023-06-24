@@ -15,6 +15,7 @@
         "laravel/tinker": "^2.0",
         "laravel/ui": "4.0",
         "livewire/livewire": "^2.11",
+        "maatwebsite/excel": "^3.1",
         "mckenziearts/laravel-notify": "^2.3",
         "nafezly/payments": "^2.4",
         "realrashid/sweet-alert": "^5.1"
