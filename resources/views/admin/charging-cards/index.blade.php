@@ -84,6 +84,8 @@
                                                                         رقم البطاقة</th>
                                                                     <th class="bg-transparent border-bottom-0">
                                                                         قيمة البطاقة</th>
+                                                                    <th class="bg-transparent border-bottom-0">
+                                                                        تاريخ الانشاء</th>
                                                                     <th class="bg-transparent border-bottom-0" style="width: 5%;">العمليات</th>
                                                                 </tr>
                                                             </thead>
@@ -102,6 +104,14 @@
                                                                             <div class="mt-0 mt-sm-3 d-block">
                                                                                 <h6 class="mb-0 fs-14 fw-semibold">
                                                                                     {{$card->points}}</h6>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="d-flex">
+                                                                            <div class="mt-0 mt-sm-3 d-block">
+                                                                                <h6 class="mb-0 fs-14 fw-semibold">
+                                                                                    {{$card->created_at}}</h6>
                                                                             </div>
                                                                         </div>
                                                                     </td>
