@@ -528,7 +528,7 @@
                                                                         <div id="respond" class="comment-respond">
                                                                             <h3 id="reply-title" class="comment-reply-title">اسئل سؤالك
                                                                                 <small></small></h3>
-                                                                            <form action="{{route('sendQuestion')}}" method="post" id="commentform" class="comment-form" novalidate="novalidate">
+                                                                            <form action="{{route('sendQuestion')}}" method="POST" id="commentform" class="comment-form" novalidate="novalidate">
                                                                                 @csrf
                                                                                 <input type="hidden" name="teacher_id" value="{{$lesson->course->teacher_id}}">
                                                                                 <input type="hidden" name="lesson_id" value="{{$lesson->id}}">
