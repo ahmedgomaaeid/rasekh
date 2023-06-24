@@ -67,6 +67,7 @@ Route::namespace('Admin')->group(function () {
             Route::get('/edit/{id}', 'ChargingCardController@edit')->name('get.admin.charging-card.edit');
             Route::post('/edit/{id}', 'ChargingCardController@update')->name('post.admin.charging-card.edit');
             Route::get('/delete/{id}', 'ChargingCardController@destroy')->name('get.admin.charging-card.delete');
+            Route::get('/export', 'ChargingCardController@export')->name('get.admin.charging-card.export');
         });
         Route::prefix('shops')->group(function () {
             Route::get('/', 'ShopController@index')->name('get.admin.shops');

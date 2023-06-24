@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Exports\CardExport;
 use App\Http\Controllers\Controller;
 use App\Models\ChargingCard;
+use Maatwebsite\Excel\Facades\Excel;
 use Illuminate\Http\Request;
 
 class ChargingCardController extends Controller
@@ -51,5 +53,13 @@ class ChargingCardController extends Controller
         $card = ChargingCard::find($id);
         $card->delete();
         return redirect()->route('get.admin.charging-card')->with('success', 'تم حذف البطاقة بنجاح');
+    }
+    public function export(Request $request)
+    {
+        $date = explode('/', $request->from);
+        $date1 = explode('/', $request->to);
+        $from = $date[2].'-'.$date[0].'-'.$date[1];
+        $to = $date1[2].'-'.$date1[0].'-'.$date1[1].' 23:59:59';
+        return Excel::download(new CardExport($from, $to), 'cards.xlsx');
     }
 }
