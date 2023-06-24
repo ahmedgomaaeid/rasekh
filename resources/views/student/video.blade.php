@@ -528,13 +528,13 @@
                                                                         <div id="respond" class="comment-respond">
                                                                             <h3 id="reply-title" class="comment-reply-title">اسئل سؤالك
                                                                                 <small></small></h3>
-                                                                            <form action="{{route('sendQuestion')}}" method="POST" id="commentform" class="comment-form" novalidate="novalidate">
+                                                                            <form method="post" action="{{route('sendQuestion')}}"  class="comment-form" >
                                                                                 @csrf
                                                                                 <input type="hidden" name="teacher_id" value="{{$lesson->course->teacher_id}}">
                                                                                 <input type="hidden" name="lesson_id" value="{{$lesson->id}}">
                                                                                 <p class="comment-form-comment"><label for="comment">السؤال <span class="required" aria-hidden="true">*</span></label>
-                                                                                    <textarea id="comment" name="question" cols="45" rows="8" maxlength="65525" required=""></textarea></p>
-                                                                                <p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="إرسال السؤال"> <input type="hidden" name="comment_post_ID" value="1067706" id="comment_post_ID">
+                                                                                    <textarea name="question" cols="45" rows="8" maxlength="65525" required=""></textarea></p>
+                                                                                <p class="form-submit"><input name="submit" type="submit" class="submit" value="إرسال السؤال"> 
                                                                                     <input type="hidden" name="comment_parent" id="comment_parent" value="0">
                                                                                 </p> 
                                                                             </form>
