@@ -30,7 +30,7 @@ class CardExport implements FromCollection, WithHeadings
         $data = [];
         foreach ($charging_cards as $charging_card) {
             $data[] = [
-                'قيمة البطاقة' => $charging_card->value,
+                'قيمة البطاقة' => $charging_card->points,
                 'رقم البطاقة' => $charging_card->card_number,
                 'تاريخ الانشاء' => $charging_card->created_at,
             ];
