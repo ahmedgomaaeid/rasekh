@@ -78,9 +78,6 @@ class VideoController extends Controller
     public function sendQuestion(Request $request)
     {
         checkIfStudentHasCourse($request->course_id);
-        $this->validate($request, [
-            'question' => 'required'
-        ]);
         $mess = Message::firstOrCreate([
             'teacher_id' => $request->teacher_id,
             'student_id' => Auth::guard('student')->user()->id,
@@ -94,9 +91,9 @@ class VideoController extends Controller
             'message_id' => Message::where('teacher_id', $request->teacher_id)->where('student_id', Auth::guard('student')->user()->id)->where('lesson_id', $request->lesson_id)->first()->id,
             'sender_id' => Auth::guard('student')->user()->id,
             'sender_type' => 0,
-            'text' => $request->question
+            'text' => $request->question,
         ]);
-        return redirect()->back();
+        return redirect()->route('lesson',[$request->course_id,$request->lesson_id]);
     }
     public function meeting()
     {
