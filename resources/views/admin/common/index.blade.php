@@ -64,12 +64,12 @@
                                                                                     <div class="g-2">
                                                                                         <a class="btn text-primary btn-sm"
                                                                                             data-bs-toggle="tooltip"
-                                                                                            data-bs-original-title="Edit" href="{{route('post.admin.common-question.edit',$question->id)}}
+                                                                                            data-bs-original-title="Edit" href="{{route('get.admin.common-question.edit',$question->id)}}
                                                                                             "><span
                                                                                                 class="fe fe-edit fs-14"></span></a>
                                                                                             <a class="btn text-danger btn-sm"
                                                                                             data-bs-toggle="tooltip"
-                                                                                            data-bs-original-title="Delete" href="{{route('post.admin.common-question.delete',$question->id)}}"><span
+                                                                                            data-bs-original-title="Delete" href="{{route('get.admin.common-question.delete',$question->id)}}"><span
                                                                                                 class="fe fe-trash-2 fs-14"></span></a>
                                                                                     </div>
                                                                                 </td>
