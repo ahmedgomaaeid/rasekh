@@ -29,4 +29,27 @@ class CommonQuestionController extends Controller
         $question->save();
         return redirect()->route('get.admin.common-question')->with('success', 'تم اضافة السؤال بنجاح');
     }
+    public function edit($id)
+    {
+        $question = CommonQuestion::find($id);
+        return view('admin.common.edit', compact('question'));
+    }
+    public function update(Request $request, $id)
+    {
+        $request->validate([
+            'question' => 'required',
+            'answer' => 'required',
+        ]);
+        $question = CommonQuestion::find($id);
+        $question->question = $request->question;
+        $question->answer = $request->answer;
+        $question->save();
+        return redirect()->route('get.admin.common-question')->with('success', 'تم تعديل السؤال بنجاح');
+    }
+    public function destroy($id)
+    {
+        $question = CommonQuestion::find($id);
+        $question->delete();
+        return redirect()->route('get.admin.common-question')->with('success', 'تم حذف السؤال بنجاح');
+    }
 }
