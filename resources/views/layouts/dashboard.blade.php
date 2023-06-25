@@ -100,6 +100,12 @@
                                             class="side-menu__label">المشرفون</span></a>
                                 </li>
                             @endif
+                            <li class="slide">
+                                <a class="side-menu__item has-link" data-bs-toggle="slide" href="{{route('get.admin.common-question')}}"><i
+                                        class="side-menu__icon fe fe-help-circle"></i><span
+                                        class="side-menu__label">الاسئلة الشائعة</span></a>
+                            </li>
+
 
                             <li class="sub-category">
                                 <h3>بطاقات الشحن</h3>
