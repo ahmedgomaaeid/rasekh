@@ -77,7 +77,6 @@ class VideoController extends Controller
     }
     public function sendQuestion(Request $request)
     {
-        //checkIfStudentHasCourse($request->course_id);
         $mess = Message::firstOrCreate([
             'teacher_id' => $request->teacher_id,
             'student_id' => Auth::guard('student')->user()->id,
