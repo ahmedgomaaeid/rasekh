@@ -13,24 +13,20 @@
                 elementor-col-100
                 elementor-inner-column
                 elementor-element
-                elementor-element-20e7504a" data-id="20e7504a" data-element_type="column"
-                data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                elementor-element-20e7504a" data-id="20e7504a" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
                 <div class="elementor-column-wrap
                     elementor-element-populated">
                     <div class="elementor-widget-wrap">
                         <div class="elementor-element
                             elementor-element-dae0d7e
                             elementor-widget
-                            elementor-widget-accordion" data-id="dae0d7e" data-element_type="widget"
-                            data-widget_type="accordion.default">
+                            elementor-widget-accordion" data-id="dae0d7e" data-element_type="widget" data-widget_type="accordion.default">
                             <div class="elementor-widget-container">
                                 <div class="elementor-accordion" role="tablist">
                                     @foreach ($questions as $question)
-                                        <div class="elementor-accordion-item">
+                                    <div class="elementor-accordion-item">
                                         <div id="elementor-tab-title-{{$question->id}}" class="elementor-tab-title
-                                            elementor-active" data-tab="1" role="tab"
-                                            aria-controls="elementor-tab-content-{{$question->id}}" aria-expanded="true" tabindex="0"
-                                            aria-selected="true">
+                                            elementor-active" data-tab="{{$question->id}}" role="tab" aria-controls="elementor-tab-content-{{$question->id}}" aria-expanded="true" tabindex="0" aria-selected="true">
                                             <span class="elementor-accordion-icon
                                                 elementor-accordion-icon-right" aria-hidden="true">
                                                 <span class="elementor-accordion-icon-closed"><i class="fas
@@ -39,21 +35,20 @@
                                                         fa-caret-down"></i></span>
                                             </span>
                                             <a class="elementor-accordion-title" href="{{route('index')}}/">ممكن
-                                                {{ $question->question }}   
+                                                {{ $question->question }}
                                             </a>
                                         </div>
                                         <div id="elementor-tab-content-{{$question->id}}" class="elementor-tab-content
                                             elementor-clearfix
-                                            elementor-active" data-tab="1" role="tabpanel"
-                                            aria-labelledby="elementor-tab-title-{{$question->id}}" style="display:
+                                            elementor-active" data-tab="{{$question->id}}" role="tabpanel" aria-labelledby="elementor-tab-title-{{$question->id}}" style="display:
                                             block;">
                                             <p>
-                                               {{ $question->answer }} 
+                                                {{ $question->answer }}
                                             </p>
                                         </div>
                                     </div>
                                     @endforeach
-                                    
+
                                 </div>
                             </div>
                         </div>
