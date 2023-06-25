@@ -27,6 +27,6 @@ class CommonQuestionController extends Controller
         $question->question = $request->question;
         $question->answer = $request->answer;
         $question->save();
-        return redirect()->route('admin.common.index')->with('success', 'تم اضافة السؤال بنجاح');
+        return redirect()->route('get.admin.common-question')->with('success', 'تم اضافة السؤال بنجاح');
     }
 }
