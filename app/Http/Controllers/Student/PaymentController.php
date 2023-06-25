@@ -54,7 +54,7 @@ class PaymentController extends Controller
                 $purchase->course_price = $item->price;
                 $purchase->finnished_at = date('Y-m-d',strtotime('+'.$item->finnish_after.' days',strtotime(date('Y-m-d')))).PHP_EOL;
                 $purchase->save();
-                $message = 'اشترى الطالب '.$student->name.' كورس'.$item->name;
+                $message = 'اشترى الطالب '.$student->name.' كورس '.$item->name;
                 $notify = new Notify();
                 $notify->teacher_id = $item->teacher_id;
                 $notify->text = $message;
@@ -87,7 +87,7 @@ class PaymentController extends Controller
                 $purchase->course_price = $item->price;
                 $purchase->finnished_at = date('Y-m-d',strtotime('+'.$item->finnish_after.' days',strtotime(date('Y-m-d')))).PHP_EOL;
                 $purchase->save();
-                $message = 'اشترى الطالب '.$student->name.' كورس'.$item->name;
+                $message = 'اشترى الطالب '.$student->name.' كورس '.$item->name;
                 $notify = new Notify();
                 $notify->teacher_id = $item->teacher_id;
                 $notify->text = $message;
