@@ -48,15 +48,7 @@ Route::namespace('Admin')->group(function () {
                 Route::post('/edit/{id}', 'MainCategoryController@update')->name('post.admin.main-category.edit');
                 Route::get('/delete/{id}', 'MainCategoryController@destroy')->name('get.admin.main-category.delete');
             });
-            ################################Common Question##############################################
-            Route::prefix('common-question')->group(function () {
-                Route::get('/', 'CommonQuestionController@index')->name('get.admin.common-question');
-                Route::get('/create', 'CommonQuestionController@create')->name('get.admin.common-question.create');
-                Route::post('/create', 'CommonQuestionController@store')->name('post.admin.common-question.create');
-                Route::get('/edit/{id}', 'CommonQuestionController@edit')->name('get.admin.common-question.edit');
-                Route::post('/edit/{id}', 'CommonQuestionController@update')->name('post.admin.common-question.edit');
-                Route::get('/delete/{id}', 'CommonQuestionController@destroy')->name('get.admin.common-question.delete');
-            });
+            
             ##############################sub-category##############################################
             Route::prefix('sub-category')->group(function () {
                 Route::get('/', 'SubCategoryController@index')->name('get.admin.sub-category');
@@ -66,6 +58,15 @@ Route::namespace('Admin')->group(function () {
                 Route::post('/edit/{id}', 'SubCategoryController@update')->name('post.admin.sub-category.edit');
                 Route::get('/delete/{id}', 'SubCategoryController@destroy')->name('get.admin.sub-category.delete');
             });
+        });
+        ################################Common Question##############################################
+        Route::prefix('common-question')->group(function () {
+            Route::get('/', 'CommonQuestionController@index')->name('get.admin.common-question');
+            Route::get('/create', 'CommonQuestionController@create')->name('get.admin.common-question.create');
+            Route::post('/create', 'CommonQuestionController@store')->name('post.admin.common-question.create');
+            Route::get('/edit/{id}', 'CommonQuestionController@edit')->name('get.admin.common-question.edit');
+            Route::post('/edit/{id}', 'CommonQuestionController@update')->name('post.admin.common-question.edit');
+            Route::get('/delete/{id}', 'CommonQuestionController@destroy')->name('get.admin.common-question.delete');
         });
 
         ##############################charging-card##############################################
