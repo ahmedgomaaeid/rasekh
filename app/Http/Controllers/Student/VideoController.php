@@ -93,7 +93,7 @@ class VideoController extends Controller
             'sender_type' => 0,
             'text' => $request->question,
         ]);
-        return redirect()->route('lesson',[$request->course_id,$request->lesson_id]);
+        return redirect()->back();
     }
     public function meeting()
     {
