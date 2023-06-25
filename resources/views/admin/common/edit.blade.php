@@ -9,7 +9,7 @@
 
                         <!-- PAGE-HEADER -->
                         <div class="page-header">
-                            <h1 class="page-title">تعديل درس</h1>
+                            <h1 class="page-title">تعديل سؤال</h1>
                         </div>
                         <!-- PAGE-HEADER END -->
 
