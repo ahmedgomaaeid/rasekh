@@ -27,9 +27,9 @@
                                 <div class="elementor-accordion" role="tablist">
                                     @foreach ($questions as $question)
                                         <div class="elementor-accordion-item">
-                                        <div id="elementor-tab-title-2291" class="elementor-tab-title
+                                        <div id="elementor-tab-title-{{$question->id}}" class="elementor-tab-title
                                             elementor-active" data-tab="1" role="tab"
-                                            aria-controls="elementor-tab-content-2291" aria-expanded="true" tabindex="0"
+                                            aria-controls="elementor-tab-content-{{$question->id}}" aria-expanded="true" tabindex="0"
                                             aria-selected="true">
                                             <span class="elementor-accordion-icon
                                                 elementor-accordion-icon-right" aria-hidden="true">
@@ -42,10 +42,10 @@
                                                 {{ $question->question }}   
                                             </a>
                                         </div>
-                                        <div id="elementor-tab-content-2291" class="elementor-tab-content
+                                        <div id="elementor-tab-content-{{$question->id}}" class="elementor-tab-content
                                             elementor-clearfix
                                             elementor-active" data-tab="1" role="tabpanel"
-                                            aria-labelledby="elementor-tab-title-2291" style="display:
+                                            aria-labelledby="elementor-tab-title-{{$question->id}}" style="display:
                                             block;">
                                             <p>
                                                {{ $question->answer }} 

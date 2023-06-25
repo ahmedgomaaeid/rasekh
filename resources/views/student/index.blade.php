@@ -1100,12 +1100,12 @@
                                                                                         class="elementor-widget-wrap">
                                                                                         <div
                                                                                             class="elementor-element
-                                                                                            elementor-element-{{$question->id}}
+                                                                                            elementor-element-277858e7
                                                                                             elementor-position-top
                                                                                             elementor-vertical-align-top
                                                                                             elementor-widget
                                                                                             elementor-widget-image-box"
-                                                                                            data-id="{{$question->id}}"
+                                                                                            data-id="277858e7"
                                                                                             data-element_type="widget"
                                                                                             data-widget_type="image-box.default">
                                                                                             <div
