@@ -14,6 +14,6 @@ class IndexController extends Controller
         
         $mainCategories = MainCategory::where('status', 1)->get();
         $questions = CommonQuestion::all();
-        return view('student.index', compact('mainCategories'));
+        return view('student.index', compact('mainCategories', 'questions'));
     }
 }
