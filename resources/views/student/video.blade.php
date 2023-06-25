@@ -292,22 +292,22 @@
                                                                         <div class="ld-progress-steps">
                                                                             {{$course->seen_video_number->count()}}/{{$course->lesson_number->count()}} Steps </div>
                                                                         @if($firstZoomMeeting != null)
-                                                                            @if ($firstZoomMeeting->start_time < now() && $firstZoomMeeting->start_time > now()->subMinutes(60))
-                                                                                <a href="{{route('meet',$firstZoomMeeting->id)}}" title="بث مباشر" class="bb-lesson-head flex">
-                                                                                    <div class="flex-1 push-left bb-not-completed-item">
-                                                                                        <div class="bb-lesson-title" style="font-weight: bold;">دخول البث</div>
-                                                                                    </div>
+                                                                        @if ($firstZoomMeeting->start_time < now() && $firstZoomMeeting->start_time > now()->subMinutes(60))
+                                                                            <a href="{{route('meet',$firstZoomMeeting->id)}}" title="بث مباشر" class="bb-lesson-head flex">
+                                                                                <div class="flex-1 push-left bb-not-completed-item">
+                                                                                    <div class="bb-lesson-title" style="font-weight: bold;">دخول البث</div>
+                                                                                </div>
 
-                                                                                    <div class="flex align-items-center bb-check-not-completed">
-                                                                                        <div class="bb-lms-progress-wrap" data-balloon-pos="left" data-balloon="مكتمل">
-                                                                                            <div class="i-progress" style="color: #fd0000; font-size:22px;"><i class="fa-brands fa-youtube"></i></div>
-                                                                                        </div>
+                                                                                <div class="flex align-items-center bb-check-not-completed">
+                                                                                    <div class="bb-lms-progress-wrap" data-balloon-pos="left" data-balloon="مكتمل">
+                                                                                        <div class="i-progress" style="color: #fd0000; font-size:22px;"><i class="fa-brands fa-youtube"></i></div>
                                                                                     </div>
-                                                                                </a>
+                                                                                </div>
+                                                                            </a>
                                                                             @else
-                                                                                <p> موعد البث القادم: {{$firstZoomMeeting->start_time}}</p>
+                                                                            <p> موعد البث القادم: {{$firstZoomMeeting->start_time}}</p>
                                                                             @endif
-                                                                        @endif
+                                                                            @endif
                                                                     </div>
                                                                     <!--/.ld-progress-stats-->
                                                                 </div>
@@ -453,13 +453,14 @@
                                                                                     height: 45px;
                                                                                     position: relative;
                                                                                 }
-                                                                                .result p
-                                                                                {
+
+                                                                                .result p {
                                                                                     position: absolute;
                                                                                     top: 50%;
                                                                                     left: 50%;
                                                                                     transform: translate(-50%, -50%);
                                                                                 }
+
                                                                             </style>
                                                                             <div class="result">
                                                                                 <p>درجتك السابقة @if($result->quiz_result==null) 0 @else {{$result->quiz_result}} @endif / {{$questions->sum('points')}}</p>
@@ -528,15 +529,15 @@
                                                                         <div id="respond" class="comment-respond">
                                                                             <h3 id="reply-title" class="comment-reply-title">اسئل سؤالك
                                                                                 <small></small></h3>
-                                                                            <form method="post" action="{{route('sendQuestion')}}"  class="comment-form" >
+                                                                            <form method="POST" action="{{route('sendQuestion')}}" class="comment-form">
                                                                                 @csrf
                                                                                 <input type="hidden" name="teacher_id" value="{{$lesson->course->teacher_id}}">
                                                                                 <input type="hidden" name="lesson_id" value="{{$lesson->id}}">
                                                                                 <p class="comment-form-comment"><label for="comment">السؤال <span class="required" aria-hidden="true">*</span></label>
                                                                                     <textarea name="question" cols="45" rows="8" maxlength="65525" required=""></textarea></p>
-                                                                                <p class="form-submit"><input name="submit" type="submit" class="submit" value="إرسال السؤال"> 
+                                                                                <p class="form-submit"><input name="submit" type="submit" class="submit" value="إرسال السؤال">
                                                                                     <input type="hidden" name="comment_parent" id="comment_parent" value="0">
-                                                                                </p> 
+                                                                                </p>
                                                                             </form>
                                                                         </div><!-- #respond -->
                                                                     </div>
