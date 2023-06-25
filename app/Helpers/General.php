@@ -18,7 +18,7 @@ function generateRandomString($length = 60) {
 function generateRandomNumber($length = 9) {
     $num = substr(str_shuffle(str_repeat($x='0123456789', ceil($length/strlen($x)) )),1,$length);
     //check num is unique and length = 9 and not start with 0
-    if (ChargingCard::where('card_number', $num)->first() || strlen($num) != 9 || $num[0] == 0) {
+    if (ChargingCard::where('card_number', $num)->first() || strlen($num) != 9) {
         generateRandomNumber();
     }else{
         return $num;
