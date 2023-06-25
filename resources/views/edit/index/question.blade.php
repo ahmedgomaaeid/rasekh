@@ -34,7 +34,7 @@
                                                 <span class="elementor-accordion-icon-opened"><i class="fas
                                                         fa-caret-down"></i></span>
                                             </span>
-                                            <a class="elementor-accordion-title" href="{{route('index')}}/">ممكن
+                                            <a class="elementor-accordion-title" href="{{route('index')}}/">
                                                 {{ $question->question }}
                                             </a>
                                         </div>
