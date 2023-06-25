@@ -507,7 +507,7 @@
                                                                             <input type="hidden" value="{{$lesson->id}}" name="lesson_id">
                                                                             <input type="hidden" value="{{$course->id}}" name="course_id">
                                                                             <input type="hidden" value="@if($next_lesson_id) {{$next_lesson_id}} @else {{$lesson->id}} @endif" name="next_lesson">
-                                                                            <input type="submit" value="أكملت الاطلاع على المحتوى" class="learndash_mark_complete_button">
+                                                                            <input type="submit" value="أكملت الاطلاع على المحتوى" class="learndash_mark_complete_button" style="background-color: var(--bb-primary-button-background-regular) !important;">
                                                                         </form>
                                                                     </div>
                                                                     @endif
