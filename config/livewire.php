@@ -54,7 +54,7 @@ return [
     |
     */
 
-    'asset_url' => 'http://localhost/study',
+    'asset_url' => 'https://rasekhpal.com/',
 
     /*
     |--------------------------------------------------------------------------
@@ -68,7 +68,7 @@ return [
     |
     */
 
-    'app_url' => 'http://localhost/study',
+    'app_url' => 'https://rasekhpal.com/',
 
     /*
     |--------------------------------------------------------------------------
