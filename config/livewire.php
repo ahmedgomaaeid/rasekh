@@ -54,7 +54,7 @@ return [
     |
     */
 
-    'asset_url' => 'https://rasekhpal.com/',
+    'asset_url' => 'https://rasekhpal.com/public/',
 
     /*
     |--------------------------------------------------------------------------
