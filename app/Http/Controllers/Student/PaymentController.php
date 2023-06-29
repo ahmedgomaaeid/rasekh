@@ -90,6 +90,7 @@ class PaymentController extends Controller
                 $purchase->finnished_at = date('Y-m-d',strtotime('+'.$item->finnish_after.' days',strtotime(date('Y-m-d')))).PHP_EOL;
                 $purchase->save();
                 $teacher = Teacher::find($item->teacher_id);
+                dd($teacher);
                 $teacher->dues += $item->price * $item->teacher_percentage/100;
                 $teacher->save();
                 $message = 'اشترى الطالب '.$student->name.' كورس '.$item->name;
