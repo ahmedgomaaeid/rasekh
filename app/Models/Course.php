@@ -19,7 +19,7 @@ class Course extends Model
     }
     public function teacher()
     {
-        return $this->belongsTo(Teacher::class,'teacher_id');
+        return $this->belongsTo(Teacher::class,'publisher_id');
     }
     public function admin()
     {
