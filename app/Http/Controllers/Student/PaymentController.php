@@ -8,6 +8,7 @@ use App\Models\Notify;
 use App\Models\Payment;
 use App\Models\Purchase;
 use App\Models\Student;
+use App\Models\Teacher;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Cookie;
@@ -55,7 +56,7 @@ class PaymentController extends Controller
                 $purchase->finnished_at = date('Y-m-d',strtotime('+'.$item->finnish_after.' days',strtotime(date('Y-m-d')))).PHP_EOL;
                 $purchase->save();
                 $message = 'اشترى الطالب '.$student->name.' كورس '.$item->name;
-                $item->steacher->dues += $item->price * $item->teacher_percentage / 100;
+                $item->steacher->dues += $item->price * $item->teacher_percentage/100;
                 $notify = new Notify();
                 $notify->teacher_id = $item->teacher_id;
                 $notify->text = $message;
@@ -88,6 +89,9 @@ class PaymentController extends Controller
                 $purchase->course_price = $item->price;
                 $purchase->finnished_at = date('Y-m-d',strtotime('+'.$item->finnish_after.' days',strtotime(date('Y-m-d')))).PHP_EOL;
                 $purchase->save();
+                $teacher = Teacher::find($item->teacher_id);
+                $teacher->dues += $item->price * $item->teacher_percentage/100;
+                $teacher->save();
                 $message = 'اشترى الطالب '.$student->name.' كورس '.$item->name;
                 $notify = new Notify();
                 $notify->teacher_id = $item->teacher_id; 
