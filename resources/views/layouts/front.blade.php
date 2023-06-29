@@ -53,10 +53,10 @@
                 </div>
                 <div class="footer-bottom-right push-right">
                     <ul class="footer-socials">
-                        <li><a href="https://www.facebook.com/watadtawjihi" target="_blank" data-balloon-pos="up" data-balloon="facebook"><i class="fab fa-facebook"></i></a></li>
-                        <li><a href="https://www.instagram.com/watadme/" target="_blank" data-balloon-pos="up" data-balloon="instagram"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="https://twitter.com/WatadTawjihi" target="_blank" data-balloon-pos="up" data-balloon="twitter"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="https://www.youtube.com/channel/UCAESH-bUEmwpQXkfhEEXjZw" target="_blank" data-balloon-pos="up" data-balloon="youtube"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="https://www.facebook.com/rasekhpal/" target="_blank" data-balloon-pos="up" data-balloon="facebook"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="https://t.me/rasekhpal" target="_blank" data-balloon-pos="up" data-balloon="telegram"><i class="fab fa-telegram"></i></a></li>
+                        <li><a href="https://twitter.com/rasekhpal" target="_blank" data-balloon-pos="up" data-balloon="twitter"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.youtube.com/@rasekhpal" target="_blank" data-balloon-pos="up" data-balloon="youtube"><i class="fab fa-youtube"></i></a></li>
                     </ul>
                     <div class="footer-desc">
                         <div><a href="https://watad.me/terms-of-service/">شروط الخدمة و سياسة الخصوصية</a></div>

@@ -5,7 +5,7 @@
 @section('content')
 <div id="content" class="site-content">
 
-    <div id="breadcrumbs" class="bb-yoast-breadcrumbs"><span><span><a href="https://watad.me/">الرئيسية</a> » <span class="breadcrumb_last" aria-current="page">About</span></span></span></div>
+    <div id="breadcrumbs" class="bb-yoast-breadcrumbs"><span><span><a href="https://rasekhpal.com/">الرئيسية</a> » <span class="breadcrumb_last" aria-current="page">About</span></span></span></div>
     <div class="container">
         <div class="bb-grid site-content-grid">
             <div id="primary" class="content-area bb-grid-cell">
@@ -48,7 +48,7 @@
                                                                                                 <div class="elementor-image-box-wrapper">
                                                                                                     <div class="elementor-image-box-content">
                                                                                                         <h1 class="elementor-image-box-title">عن راسخ</h1>
-                                                                                                        <p class="elementor-image-box-description">راسخ هي منصة تعليمية إلكترونية توفر لطلاب المراحل الثانوية، وخاصة مرحلة التوجيهي، بيئة تعليمية متطورة</p>
+                                                                                                        <p class="elementor-image-box-description">راسخ هي منصة تعليمية إلكترونية توفر لطلاب المراحل الأساسية والثانوية، وخاصة مرحلة التوجيهي، بيئة تعليمية متطورة تسعى وبأسلوب حديث ومبسط لمساعدة الطلاب في كافة المناطق على النجاح والتفوق في اجتياز امتحان الثانوية العامة.</p>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
@@ -119,7 +119,7 @@
                                                                                         <div class="elementor-element elementor-element-3c4b297 elementor-widget elementor-widget-text-editor" data-id="3c4b297" data-element_type="widget" data-widget_type="text-editor.default">
                                                                                             <div class="elementor-widget-container">
                                                                                                 <div class="elementor-text-editor elementor-clearfix">
-                                                                                                    <strong style="color:#65905d;">راسخ..طريقك للنجاح</strong> </div>
+                                                                                                    <strong style="color:#65905d;">راسخ..نجاحك؟ يبدأ من هنا</strong> </div>
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
@@ -130,7 +130,7 @@
                                                                                     <div class="elementor-widget-wrap">
                                                                                         <div class="elementor-element elementor-element-1c6e59f elementor-widget elementor-widget-smartvideo" data-id="1c6e59f" data-element_type="widget" data-widget_type="smartvideo.default">
                                                                                             <div class="elementor-widget-container">
-                                                                                                <div id="video_260377" preload="none" class="swarm-fluid smartvideo-player vjs-swarmify-theme fitvidsignore dimensions-video_260377 vjs-paused vjs-controls-enabled vjs-user-inactive" src="" style=""><video src="blob:https://watad.me/462c0ed9-7f49-46dd-83ed-b0cb8c15611a" class="vjs-tech" preload="none" id="video_260377_html5_api"></video>
+                                                                                                <div id="video_260377" preload="none" class="swarm-fluid smartvideo-player vjs-swarmify-theme fitvidsignore dimensions-video_260377 vjs-paused vjs-controls-enabled vjs-user-inactive" src="" style=""><video src="blob:https://rasekhpal.com/462c0ed9-7f49-46dd-83ed-b0cb8c15611a" class="vjs-tech" preload="none" id="video_260377_html5_api"></video>
                                                                                                     <div></div>
                                                                                                     <div class="vjs-poster" tabindex="-1" style="display: none;"></div>
                                                                                                     <div class="vjs-loading-spinner"></div>
@@ -465,8 +465,8 @@
                                                                                             <div class="elementor-widget-container">
                                                                                                 <div class="elementor-image-box-wrapper">
                                                                                                     <div class="elementor-image-box-content">
-                                                                                                        <h3 class="elementor-image-box-title">100+</h3>
-                                                                                                        <p class="elementor-image-box-description">مادة توجيهي وثانوي</p>
+                                                                                                        <h3 class="elementor-image-box-title">40+</h3>
+                                                                                                        <p class="elementor-image-box-description">مادة توجيهي</p>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
@@ -481,7 +481,7 @@
                                                                                             <div class="elementor-widget-container">
                                                                                                 <div class="elementor-image-box-wrapper">
                                                                                                     <div class="elementor-image-box-content">
-                                                                                                        <h3 class="elementor-image-box-title">50+</h3>
+                                                                                                        <h3 class="elementor-image-box-title">20+</h3>
                                                                                                         <p class="elementor-image-box-description">أستاذ وخبير</p>
                                                                                                     </div>
                                                                                                 </div>
@@ -497,7 +497,7 @@
                                                                                             <div class="elementor-widget-container">
                                                                                                 <div class="elementor-image-box-wrapper">
                                                                                                     <div class="elementor-image-box-content">
-                                                                                                        <h3 class="elementor-image-box-title">2000+</h3>
+                                                                                                        <h3 class="elementor-image-box-title">500+</h3>
                                                                                                         <p class="elementor-image-box-description">ورقة عمل ودوسيه مجانيه</p>
                                                                                                     </div>
                                                                                                 </div>
@@ -653,7 +653,7 @@
                                                                                                 <div
                                                                                                     class="elementor-button-wrapper">
                                                                                                     <a
-                                                                                                        href="tel:0788334399"
+                                                                                                        href="tel:0593552240"
                                                                                                         url=""
                                                                                                         class="elementor-button-link
                                                                                                         elementor-button
@@ -666,7 +666,7 @@
                                                                                                                     aria-hidden="true"
                                                                                                                     class="fas
                                                                                                                     fa-phone-square"></i>
-                                                                                                                0788334399
+                                                                                                                0593552240
                                                                                                             </span>
                                                                                                         </span>
                                                                                                     </a>

@@ -245,7 +245,7 @@
                                                                                                             elementor-social-icon
                                                                                                             elementor-social-icon-facebook
                                                                                                             elementor-repeater-item-54f1722"
-                                                                                                            href="https://www.facebook.com/watadtawjihi/"
+                                                                                                            href="https://www.facebook.com/rasekhpal/"
                                                                                                             target="_blank">
                                                                                                             <span
                                                                                                                 class="elementor-screen-only">Facebook</span>
@@ -261,7 +261,7 @@
                                                                                                             elementor-social-icon
                                                                                                             elementor-social-icon-youtube
                                                                                                             elementor-repeater-item-38a97f5"
-                                                                                                            href="https://www.youtube.com/c/watadme"
+                                                                                                            href="https://www.youtube.com/@rasekhpal"
                                                                                                             target="_blank">
                                                                                                             <span
                                                                                                                 class="elementor-screen-only">Youtube</span>
@@ -277,7 +277,7 @@
                                                                                                             elementor-social-icon
                                                                                                             elementor-social-icon-telegram
                                                                                                             elementor-repeater-item-9a5449d"
-                                                                                                            href="https://t.me/watadtawjihi"
+                                                                                                            href="https://t.me/rasekhpal"
                                                                                                             target="_blank">
                                                                                                             <span
                                                                                                                 class="elementor-screen-only">Telegram</span>
@@ -291,15 +291,15 @@
                                                                                                         <a
                                                                                                             class="elementor-icon
                                                                                                             elementor-social-icon
-                                                                                                            elementor-social-icon-instagram
+                                                                                                            elementor-social-icon-twitter
                                                                                                             elementor-repeater-item-4a70523"
-                                                                                                            href="https://www.instagram.com/watadme/"
+                                                                                                            href="https://twitter.com/rasekhpal"
                                                                                                             target="_blank">
                                                                                                             <span
-                                                                                                                class="elementor-screen-only">Instagram</span>
+                                                                                                                class="elementor-screen-only">Twitter</span>
                                                                                                             <i
                                                                                                                 class="fab
-                                                                                                                fa-instagram"></i>
+                                                                                                                fa-twitter"></i>
                                                                                                         </a>
                                                                                                     </span>
                                                                                                 </div>
@@ -348,21 +348,13 @@
                                                                                                     <img
                                                                                                         width="640"
                                                                                                         height="416"
-                                                                                                        src="{{route('index')}}/webassets/your_way_watad-8.png"
+                                                                                                        src="{{route('index')}}/webassets/your_way_rasekh-8.png"
                                                                                                         class="attachment-large
                                                                                                         size-large"
                                                                                                         alt=""
                                                                                                         loading="lazy"
-                                                                                                        srcset="https://assets-watad-me.fra1.digitaloceanspaces.com/wp-content/uploads/2020/05/your_way_watad-8.png
-                                                                                                        703w,
-                                                                                                        https://assets-watad-me.fra1.digitaloceanspaces.com/wp-content/uploads/2020/05/your_way_watad-8-300x195.png
-                                                                                                        300w,
-                                                                                                        https://assets-watad-me.fra1.digitaloceanspaces.com/wp-content/uploads/2020/05/your_way_watad-8-600x390.png
-                                                                                                        600w,
-                                                                                                        https://assets-watad-me.fra1.digitaloceanspaces.com/wp-content/uploads/2020/05/your_way_watad-8-400x260.png
-                                                                                                        400w,
-                                                                                                        https://assets-watad-me.fra1.digitaloceanspaces.com/wp-content/uploads/2020/05/your_way_watad-8-624x406.png
-                                                                                                        624w"
+                                                                                                       
+                                                                                                     
                                                                                                         sizes="(max-width:
                                                                                                         640px)
                                                                                                         100vw,
@@ -475,7 +467,7 @@
                                                                                                         <a
                                                                                                             class="elementor-icon
                                                                                                             elementor-animation-pulse"
-                                                                                                            href="https://watad.me/about/">
+                                                                                                            href="https://rasekhpal.com/about/">
                                                                                                             <i
                                                                                                                 aria-hidden="true"
                                                                                                                 class="fas
@@ -487,7 +479,7 @@
                                                                                                         <h3
                                                                                                             class="elementor-icon-box-title">
                                                                                                             <a
-                                                                                                                href="https://watad.me/about/">
+                                                                                                                href="https://rasekhpal.com/about/">
                                                                                                                 مميزات
                                                                                                                 راسخ
                                                                                                             </a>
@@ -521,7 +513,7 @@
                                                                                                             وقت
                                                                                                             <br><br>
                                                                                                             <a
-                                                                                                                href="https://watad.me/about/">
+                                                                                                                href="https://rasekhpal.com/about/">
                                                                                                                 لمعرفة
                                                                                                                 المزيد
                                                                                                                 <i
@@ -569,7 +561,7 @@
                                                                                                         <a
                                                                                                             class="elementor-icon
                                                                                                             elementor-animation-"
-                                                                                                            href="https://watad.me/%D9%86%D9%82%D8%A7%D8%B7-%D8%A8%D9%8A%D8%B9-%D8%A8%D8%B7%D8%A7%D9%82%D8%A7%D8%AA-%D9%88%D8%AA%D8%AF/">
+                                                                                                            href="https://rasekhpal.com/cards/">
                                                                                                             <i
                                                                                                                 aria-hidden="true"
                                                                                                                 class="fas
@@ -581,7 +573,7 @@
                                                                                                         <h3
                                                                                                             class="elementor-icon-box-title">
                                                                                                             <a
-                                                                                                                href="https://watad.me/%D9%86%D9%82%D8%A7%D8%B7-%D8%A8%D9%8A%D8%B9-%D8%A8%D8%B7%D8%A7%D9%82%D8%A7%D8%AA-%D9%88%D8%AA%D8%AF/">
+                                                                                                                href="https://rasekhpal.com/cards/">
                                                                                                                 بطاقات
                                                                                                                 مدفوعة
                                                                                                                 مسبقاً
@@ -612,7 +604,7 @@
                                                                                                             بشرائها
                                                                                                             <br><br>
                                                                                                             <a
-                                                                                                                href="https://watad.me/%D9%86%D9%82%D8%A7%D8%B7-%D8%A8%D9%8A%D8%B9-%D8%A8%D8%B7%D8%A7%D9%82%D8%A7%D8%AA-%D9%88%D8%AA%D8%AF/">
+                                                                                                                href="https://rasekhpal.com/cards/">
                                                                                                                 لمعرفة
                                                                                                                 المزيد
                                                                                                                 <i
@@ -660,7 +652,7 @@
                                                                                                         <a
                                                                                                             class="elementor-icon
                                                                                                             elementor-animation-"
-                                                                                                            href="https://watad.me/all-courses/">
+                                                                                                            href="https://rasekhpal.com/all-courses/">
                                                                                                             <i
                                                                                                                 aria-hidden="true"
                                                                                                                 class="fas
@@ -672,7 +664,7 @@
                                                                                                         <h3
                                                                                                             class="elementor-icon-box-title">
                                                                                                             <a
-                                                                                                                href="https://watad.me/all-courses/">
+                                                                                                                href="https://rasekhpal.com/all-courses/">
                                                                                                                 خطة
                                                                                                                 دراسية
                                                                                                                 متكاملة
@@ -710,7 +702,7 @@
                                                                                                             تام
                                                                                                             <br><br>
                                                                                                             <a
-                                                                                                                href="https://watad.me/all-courses/">
+                                                                                                                href="https://rasekhpal.com/all-courses/">
                                                                                                                 لمعرفة
                                                                                                                 المزيد
                                                                                                                 <i
@@ -1339,7 +1331,7 @@
                                                                                                 <div
                                                                                                     class="elementor-button-wrapper">
                                                                                                     <a
-                                                                                                        href="tel:0597455888"
+                                                                                                        href="tel:0593552240"
                                                                                                         url=""
                                                                                                         class="elementor-button-link
                                                                                                         elementor-button
@@ -1352,7 +1344,7 @@
                                                                                                                     aria-hidden="true"
                                                                                                                     class="fas
                                                                                                                     fa-phone-square"></i>
-                                                                                                                0597455888
+                                                                                                                0593552240
                                                                                                             </span>
                                                                                                         </span>
                                                                                                     </a>

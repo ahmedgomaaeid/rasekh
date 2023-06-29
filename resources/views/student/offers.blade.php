@@ -119,8 +119,8 @@
                                                                                             <div class="elementor-widget-container">
                                                                                                 <div class="elementor-image-box-wrapper">
                                                                                                     <div class="elementor-image-box-content">
-                                                                                                        <p class="elementor-image-box-description">إذا كنتَ بحاجة لمساعدة مباشرة ، يرجى الاتّصال على الرقم التالي : <br><a href="tel: 0597455888"><i aria-hidden="true" style="font-weight: bold;"></i><b> 0795431740</b></a><b><br></b> من الساعة العاشرة صباحاً وحتى السادسة مساءً<hidden="true" style="font-weight: bold;"><b> </b><b><br></b>
-                                                                                                                او من خلال الواتس آب من الساعه 10 صباحاً و لغاية الساعه 6 مساءً من السبت الى الخميس</hidden="true">
+                                                                                                        <p class="elementor-image-box-description">لمعرفة اخر العروض يرجى الاتّصال على الرقم التالي : <br><a href="tel: 0597455888"><i aria-hidden="true" style="font-weight: bold;"></i><b> 0593552240</b></a><b><br></b> من الساعة العاشرة صباحاً وحتى السادسة مساءً<hidden="true" style="font-weight: bold;"><b> </b><b><br></b>
+                                                                                                                او من خلال الواتساب في اي وقت من السبت وحتى يوم الخميس</hidden="true">
                                                                                                         </p>
                                                                                                     </div>
                                                                                                 </div>
@@ -129,7 +129,7 @@
                                                                                         <div class="elementor-element elementor-element-4d05b13 elementor-align-center elementor-widget elementor-widget-button" data-id="4d05b13" data-element_type="widget" data-widget_type="button.default">
                                                                                             <div class="elementor-widget-container">
                                                                                                 <div class="elementor-button-wrapper">
-                                                                                                    <a href="https://api.whatsapp.com/send?phone=962795431740" class="elementor-button-link elementor-button elementor-size-lg" role="button" style="background-color: #0E9813;">
+                                                                                                    <a href="https://api.whatsapp.com/send?phone=972593552240" class="elementor-button-link elementor-button elementor-size-lg" role="button" style="background-color: #0E9813;">
                                                                                                         <span class="elementor-button-content-wrapper">
                                                                                                             <span class="elementor-button-text" style="color: #fff;"> &nbsp; التواصل مع قسم العروض على WhatsApp</span>
                                                                                                         </span>

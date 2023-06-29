@@ -5,7 +5,7 @@
 @section('content')
 <div id="content" class="site-content">
 
-    <div id="breadcrumbs" class="bb-yoast-breadcrumbs"><span><span><a href="https://watad.me/">الرئيسية</a> » <span class="breadcrumb_last" aria-current="page">نقاط بيع بطاقات راسخ</span></span></span></div>
+    <div id="breadcrumbs" class="bb-yoast-breadcrumbs"><span><span><a href="https://rasekhpal.com/">الرئيسية</a> » <span class="breadcrumb_last" aria-current="page">نقاط بيع بطاقات راسخ</span></span></span></div>
     <div class="container">
         <div class="bb-grid site-content-grid">
             <div id="primary" class="content-area bb-grid-cell">
@@ -46,10 +46,10 @@
                                                                                         <div class="elementor-element elementor-element-18ce8ab4 elementor-position-top elementor-vertical-align-top elementor-widget elementor-widget-image-box" data-id="18ce8ab4" data-element_type="widget" data-widget_type="image-box.default">
                                                                                             <div class="elementor-widget-container">
                                                                                                 <div class="elementor-image-box-wrapper">
-                                                                                                    <figure class="elementor-image-box-img"><img decoding="async" width="4374" height="2482" src="https://assets-watad-me.fra1.digitaloceanspaces.com/wp-content/uploads/2022/08/%D9%83%D9%84-%D8%A7%D9%84%D8%A8%D8%B7%D8%A7%D9%82%D8%A7%D8%AA2-1.png" class="attachment-full size-full" alt="" loading="lazy"></figure>
+                                                                                                    <figure class="elementor-image-box-img"><img decoding="async" width="4374" height="2482" src="https://rasekhpal.com/webassets/cards.png" class="attachment-full size-full" alt="" loading="lazy"></figure>
                                                                                                     <div class="elementor-image-box-content">
                                                                                                         <h1 class="elementor-image-box-title">بطاقات راسخ المدفوعة مسبقاً</h1>
-                                                                                                        <p class="elementor-image-box-description">نقوم من خلال موقع راسخ التعليمي بتقديم 4 فئات من البطاقات المدفوعة مسبقاً، يمكن للطالب استخدام الفئة المناسبة للمادة/المواد التي يرغب بشرائها ، وجميع البطاقات صالحة ومفعلة مع الطالب حتى تقديم الامتحانات الوزارية .</p>
+                                                                                                        <p class="elementor-image-box-description">نقوم من خلال موقع راسخ التعليمي بتقديم 5 فئات من البطاقات المدفوعة مسبقاً، يمكن للطالب استخدام الفئة المناسبة للمادة/المواد التي يرغب بشرائها .</p>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
@@ -114,11 +114,10 @@
                                                                                         <div class="elementor-element elementor-element-93c0207 elementor-widget elementor-widget-text-editor" data-id="93c0207" data-element_type="widget" data-widget_type="text-editor.default">
                                                                                             <div class="elementor-widget-container">
                                                                                                 <div class="elementor-text-editor elementor-clearfix">
-                                                                                                    <p>الرياضيات <b>50 دينارًا</b> لكل فصل</p>
-                                                                                                    <p>الفيزياء <b>35 دينارًا</b> لكل فصل</p>
-                                                                                                    <p>الكيمياء <b>35دينارًا</b> لكل فصل</p>
-                                                                                                    <p>العلوم الحياتية <b>35 دينارًا</b> لكل فصل&nbsp;</p>
-                                                                                                    <p>علوم الارض والبيئة <b>35 دينارًا</b> للفصلين&nbsp;</p>
+                                                                                                    <p>الرياضيات <b>500 شيكل</b> لكل فصل</p>
+                                                                                                    <p>الفيزياء <b>500 شيكل</b> لكل فصل</p>
+                                                                                                    <p>الكيمياء <b>500 شيكل</b> لكل فصل</p>
+                                                                                                    <p>الاحياء  <b>500 شيكل</b> لكل فصل</p>
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
@@ -136,9 +135,10 @@
                                                                                         <div class="elementor-element elementor-element-cdca1d4 elementor-widget elementor-widget-text-editor" data-id="cdca1d4" data-element_type="widget" data-widget_type="text-editor.default">
                                                                                             <div class="elementor-widget-container">
                                                                                                 <div class="elementor-text-editor elementor-clearfix">
-                                                                                                    <p>الرياضيات <b>35 دينارًا</b> لكل فصل</p>
-                                                                                                    <p>اللغة العربية التخصص <b>35 دينارًا</b> لكل فصل</p>
-                                                                                                    <p>الثقاقة المالية <b>35 دينارًا</b>&nbsp;للفصلين</p>
+                                                                                                    <p>الرياضيات <b>400 شيكل</b> لكل فصل</p>
+                                                                                                    <p>الأدب <b>400 شيكل</b> لكل فصل</p>
+                                                                                                    <p>البلاغة <b>400 شيكل</b> لكل فصل</p>
+																									<p>الثقافة العلمية <b>600 شيكل</b> للفصلين</p>
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
@@ -156,9 +156,9 @@
                                                                                         <div class="elementor-element elementor-element-c22cc5c elementor-widget elementor-widget-text-editor" data-id="c22cc5c" data-element_type="widget" data-widget_type="text-editor.default">
                                                                                             <div class="elementor-widget-container">
                                                                                                 <div class="elementor-text-editor elementor-clearfix">
-                                                                                                    <p>اللغة العربية المشتركة <b>35 دينارًا</b> لكل فصل</p>
-                                                                                                    <p>اللغة الانجليزية <b>35 دينارًا</b> لكل فصل</p>
-                                                                                                    <p>علوم الحاسوب <b>35 دينارًا</b> للفصلين</p>
+                                                                                                    <p>اللغة العربية المشتركة <b>250 شيكل</b> لكل فصل</p>
+                                                                                                    <p>اللغة الانجليزية <b>250 شيكل</b> لكل فصل</p>
+                                                                                                    <p>تكنولوجيا المعلومات <b>500 شيكل</b> للفصلين</p>
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
@@ -182,53 +182,16 @@
                                                                                         <div class="elementor-element elementor-element-06b7699 elementor-widget elementor-widget-text-editor" data-id="06b7699" data-element_type="widget" data-widget_type="text-editor.default">
                                                                                             <div class="elementor-widget-container">
                                                                                                 <div class="elementor-text-editor elementor-clearfix">
-                                                                                                    <p>الرياضيات <b>50 دينارًا</b> لكل فصل</p>
-                                                                                                    <p>اللغة الانجليزية <b>35 دينارًا</b> لكل المادة<br><br>مواد التخصص والرسم&nbsp; <b>50 دينارًا</b> لكل المادة</p>
+                                                                                                    <p>الرياضيات <b>400 شيكل</b> لكل فصل</p>
+                                                                                                    <p>اللغة الانجليزية <b>250 شيكل</b> لكل المادة<br>
+																									<br>مواد التخصص والرسم <b>400 شيكل</b> لكل المادة</p>
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-d8774d0" data-id="d8774d0" data-element_type="column">
-                                                                                <div class="elementor-column-wrap elementor-element-populated">
-                                                                                    <div class="elementor-widget-wrap">
-                                                                                        <div class="elementor-element elementor-element-4071561 elementor-widget elementor-widget-heading" data-id="4071561" data-element_type="widget" data-widget_type="heading.default">
-                                                                                            <div class="elementor-widget-container">
-                                                                                                <h3 class="elementor-heading-title elementor-size-default"> الفرع الفندقي</h3>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div class="elementor-element elementor-element-0925a4d elementor-widget elementor-widget-text-editor" data-id="0925a4d" data-element_type="widget" data-widget_type="text-editor.default">
-                                                                                            <div class="elementor-widget-container">
-                                                                                                <div class="elementor-text-editor elementor-clearfix">
-                                                                                                    <p>الرياضيات <b>35 دينارًا</b> لكل فصل</p>
-                                                                                                    <p>اللغة الفرنسية <b>50 دينارًا</b> لكل المادة</p>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-b16fc48" data-id="b16fc48" data-element_type="column">
-                                                                                <div class="elementor-column-wrap elementor-element-populated">
-                                                                                    <div class="elementor-widget-wrap">
-                                                                                        <div class="elementor-element elementor-element-b75c746 elementor-widget elementor-widget-heading" data-id="b75c746" data-element_type="widget" data-widget_type="heading.default">
-                                                                                            <div class="elementor-widget-container">
-                                                                                                <h3 class="elementor-heading-title elementor-size-default"> الصفوف الأساسية والأول الثانوي</h3>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div class="elementor-element elementor-element-0e67a22 elementor-widget elementor-widget-text-editor" data-id="0e67a22" data-element_type="widget" data-widget_type="text-editor.default">
-                                                                                            <div class="elementor-widget-container">
-                                                                                                <div class="elementor-text-editor elementor-clearfix">
-                                                                                                    <p>جميع المواد من الصف الرابع حتى الصف السابع لكل فصل بطاقة <strong>25 دينارًا </strong>&nbsp;ومن الصف الثامن حتى الصف الاول ثانوي لكلّ فصل بطاقة <strong>35 دينارًا</strong></p>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
+                                                                            
                                                                 </section>
 
                                                                 <div class="elementor-element elementor-element-49c37b7 elementor-position-top elementor-vertical-align-top elementor-widget elementor-widget-image-box" data-id="49c37b7" data-element_type="widget" data-widget_type="image-box.default">
@@ -243,7 +206,7 @@
                                                                 <div class="elementor-element elementor-element-c0b929a elementor-widget elementor-widget-text-editor" data-id="c0b929a" data-element_type="widget" data-widget_type="text-editor.default">
                                                                     <div class="elementor-widget-container">
                                                                         <div class="elementor-text-editor elementor-clearfix">
-                                                                            <p><strong>الذهاب مباشره إلى أقرب فرع للبنك الإسلامي الأردني. وعمل الإيداع في حساب شركة القرش الأبيض لتكنولوجيا المعلومات بحساب رقم 1826522 فرع الحساب جبل عمان وإيداع المبلغ المطلوب وبعد ذلك إرسال صورة عن الإيداع على <i class="fa fa-whatsapp" aria-hidden="true"></i> الواتس آب. الخاص بالشركة <a class="" href="https://api.whatsapp.com/send?phone=962788334399" target="_blank" rel="noopener">0597455888</a> &nbsp;مباشرة وسيتم إرسال كود البطاقة الخاص بتفعيل المادة مباشرةً.</strong></p>
+                                                                            <p><strong>الذهاب مباشره إلى أقرب فرع للبنك الإسلامي الأردني. وعمل الإيداع في حساب شركة القرش الأبيض لتكنولوجيا المعلومات بحساب رقم 1826522 فرع الحساب جبل عمان وإيداع المبلغ المطلوب وبعد ذلك إرسال صورة عن الإيداع على <i class="fa fa-whatsapp" aria-hidden="true"></i> الواتس آب. الخاص بالشركة <a class="" href="https://api.whatsapp.com/send?phone=972593552240" target="_blank" rel="noopener">0593552240</a> &nbsp;مباشرة وسيتم إرسال كود البطاقة الخاص بتفعيل المادة مباشرةً.</strong></p>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -259,7 +222,7 @@
                                                                 <div class="elementor-element elementor-element-7c4f366 elementor-widget elementor-widget-text-editor" data-id="7c4f366" data-element_type="widget" data-widget_type="text-editor.default">
                                                                     <div class="elementor-widget-container">
                                                                         <div class="elementor-text-editor elementor-clearfix">
-                                                                            <p><strong>طلب البطاقة عن طريق الواتس أب التالي <a class="" href="https://api.whatsapp.com/send?phone=962788334399" target="_blank" rel="noopener">0597455888</a> مع إرسال لوكيشن المنزل وسيتم تزويد الطالب بالبطاقة والتوصيل خلال 48 ساعة .</strong></p>
+                                                                            <p><strong>طلب البطاقة عن طريق الواتس أب التالي <a class="" href="https://api.whatsapp.com/send?phone=972593552240" target="_blank" rel="noopener">0593552240</a> مع إرسال لوكيشن المنزل وسيتم تزويد الطالب بالبطاقة والتوصيل خلال 48 ساعة .</strong></p>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -275,7 +238,7 @@
                                                                 <div class="elementor-element elementor-element-50492e3 elementor-widget elementor-widget-text-editor" data-id="50492e3" data-element_type="widget" data-widget_type="text-editor.default">
                                                                     <div class="elementor-widget-container">
                                                                         <div class="elementor-text-editor elementor-clearfix">
-                                                                            <p><b>التحويل إلى الرقم </b><span style="color: #65905d;"><b>0790473408⁩ </b></span><b>ثمن البطاقة وإرسال صورة سكرين شوت على الواتس آب لرقم الدعم الفني <span style="color: #65905d;">0597455888</span>&nbsp;</b></p>
+                                                                            <p><b>التحويل إلى الرقم </b><span style="color: #65905d;"><b> 0593552240 </b></span><b>ثمن البطاقة وإرسال صورة سكرين شوت على الواتس آب لرقم الدعم الفني <span style="color: #65905d;">0593552240</span>&nbsp;</b></p>
                                                                         </div>
                                                                     </div>
                                                                 </div>
