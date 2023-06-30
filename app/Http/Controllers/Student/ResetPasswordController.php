@@ -17,11 +17,10 @@ class ResetPasswordController extends Controller
     }
     public function send(Request $request)
     {
-        //validate with message
         $request->validate([
             'email' => 'required|email|exists:students,email',
         ], [
-            'email.exists' => 'البريد الالكتروني غير مسجل لدينا لتسجيل حساب جديد اضغط <a href="' . route('register') . '">هنا</a>',
+            'email.exists' => 'notemail',
         ]);
         $token = generateRandomString();
         $reset = new ResetPassword();

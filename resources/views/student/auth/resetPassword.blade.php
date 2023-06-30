@@ -22,9 +22,17 @@
                 <i class="fa fa-user" style="position: absolute; padding: 13px 16px;"></i>
                 <input type="text" name="email" id="user_login" class="input" value="" size="20" autocapitalize="off" autocomplete="username" placeholder="البريد الالكتروني ">
                 @error('email')
-                <span class="invalid-feedback" role="alert">
-                    <strong style="color: red;">{{ $message }}</strong>
-                </span>
+                    <span class="invalid-feedback" role="alert">
+                        @if($message == "notemail")
+                            <strong>
+                                البريد الالكتروني غير مسجل لدينا للتسجيل اضغط <a href="{{route('register')}}">هنا</a>
+                            </strong>
+                        @else
+                            <strong>
+                                {{$message}}
+                            </strong>
+                        @endif
+                    </span>
                 @enderror
             </p>
 
