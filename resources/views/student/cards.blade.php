@@ -198,7 +198,7 @@
                                                                     <div class="elementor-widget-container">
                                                                         <div class="elementor-image-box-wrapper">
                                                                             <div class="elementor-image-box-content">
-                                                                                <h2 class="elementor-image-box-title">لطلب وشراء بطاقة عن طريق الموقع</h2>
+                                                                                <h2 class="elementor-image-box-title">لطلب وشراء بطاقة عن طريق حوالة بنكية</h2>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -206,7 +206,9 @@
                                                                 <div class="elementor-element elementor-element-c0b929a elementor-widget elementor-widget-text-editor" data-id="c0b929a" data-element_type="widget" data-widget_type="text-editor.default">
                                                                     <div class="elementor-widget-container">
                                                                         <div class="elementor-text-editor elementor-clearfix">
-                                                                            <p><strong>الذهاب مباشرة الى اقرب فرع للبنك العربي وعمل ايداع في حساب رقم 670-075472-9420 وإيداع المبلغ المطلوب وبعد ذلك إرسال صورة عن الإيداع على <i class="fa-brands fa-whatsapp"></i> الواتس آب. الخاص بالشركة <a class="" href="https://api.whatsapp.com/send?phone=972593552240" target="_blank" rel="noopener">972593552240+</a> &nbsp;مباشرة وسيتم إرسال كود البطاقة الخاص بتفعيل الرصيد الذي تم ايداعه.</strong></p>
+                                                                            <p><strong>الذهاب مباشرة الى اقرب فرع للبنك العربي وعمل ايداع في حساب رقم 670-075472-9420 وإيداع المبلغ المطلوب
+                                                                            <br>
+                                                                             وبعد ذلك إرسال صورة عن الإيداع على <i class="fa-brands fa-whatsapp"></i> الواتس آب. الخاص بالشركة <a class="" href="https://api.whatsapp.com/send?phone=972593552240" target="_blank" rel="noopener">972593552240+</a> &nbsp;مباشرة وسيتم إرسال كود البطاقة الخاص بتفعيل الرصيد الذي تم ايداعه.</strong></p>
                                                                         </div>
                                                                     </div>
                                                                 </div>
