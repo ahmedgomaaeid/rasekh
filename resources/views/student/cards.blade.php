@@ -208,7 +208,9 @@
                                                                         <div class="elementor-text-editor elementor-clearfix">
                                                                             <p><strong>الذهاب مباشرة الى اقرب فرع للبنك العربي وعمل ايداع في حساب رقم 670-075472-9420 وإيداع المبلغ المطلوب
                                                                             <br>
-                                                                             وبعد ذلك إرسال صورة عن الإيداع على <i class="fa-brands fa-whatsapp"></i> الواتس آب. الخاص بالشركة <a class="" href="https://api.whatsapp.com/send?phone=972593552240" target="_blank" rel="noopener">972593552240+</a> &nbsp;مباشرة وسيتم إرسال كود البطاقة الخاص بتفعيل الرصيد الذي تم ايداعه.</strong></p>
+                                                                             وبعد ذلك إرسال صورة عن الإيداع على <i class="fa-brands fa-whatsapp"></i> الواتس آب. الخاص بالشركة <a class="" href="https://api.whatsapp.com/send?phone=972593552240" target="_blank" rel="noopener">972593552240+</a> &nbsp;
+                                                                             <br>
+                                                                              وسيتم إرسال كود البطاقة الخاص بتفعيل الرصيد الذي تم ايداعه.</strong></p>
                                                                         </div>
                                                                     </div>
                                                                 </div>
