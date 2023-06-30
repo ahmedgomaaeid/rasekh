@@ -24,11 +24,11 @@
                 @error('email')
                     <span class="invalid-feedback" role="alert">
                         @if($message == "notemail")
-                            <strong>
+                            <strong style="color:red;">
                                 البريد الالكتروني غير مسجل لدينا للتسجيل اضغط <a href="{{route('register')}}">هنا</a>
                             </strong>
                         @else
-                            <strong>
+                            <strong style="color:red;">
                                 {{$message}}
                             </strong>
                         @endif
