@@ -226,31 +226,16 @@
                                                                 <div class="elementor-element elementor-element-7c4f366 elementor-widget elementor-widget-text-editor" data-id="7c4f366" data-element_type="widget" data-widget_type="text-editor.default">
                                                                     <div class="elementor-widget-container">
                                                                         <div class="elementor-text-editor elementor-clearfix">
-                                                                            <p><strong>طلب البطاقة عن طريق الواتس أب التالي <a class="" href="https://api.whatsapp.com/send?phone=972593552240" target="_blank" rel="noopener">972593552240+</a> مع إرسال لوكيشن المنزل وسيتم تزويد الطالب بالبطاقة والتوصيل خلال 48 ساعة .</strong></p>
+                                                                            <p><strong>طلب البطاقة عن طريق الواتس أب التالي <a class="" href="https://api.whatsapp.com/send?phone=972593552240" target="_blank" rel="noopener">972593552240+</a> مع إرسال موقع المنزل وسيتم تزويد الطالب بالبطاقة والتوصيل خلال 48 ساعة .</strong></p>
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="elementor-element elementor-element-de21d8c elementor-position-top elementor-vertical-align-top elementor-widget elementor-widget-image-box" data-id="de21d8c" data-element_type="widget" data-widget_type="image-box.default">
-                                                                    <div class="elementor-widget-container">
-                                                                        <div class="elementor-image-box-wrapper">
-                                                                            <div class="elementor-image-box-content">
-                                                                                <h2 class="elementor-image-box-title">طلب البطاقة عن طريق <i class="fa fa-id-card" aria-hidden="true"></i> Zain cash</h2>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="elementor-element elementor-element-50492e3 elementor-widget elementor-widget-text-editor" data-id="50492e3" data-element_type="widget" data-widget_type="text-editor.default">
-                                                                    <div class="elementor-widget-container">
-                                                                        <div class="elementor-text-editor elementor-clearfix">
-                                                                            <p><b>التحويل إلى الرقم </b><span style="color: #65905d;"><b> 0593552240 </b></span><b>ثمن البطاقة وإرسال صورة سكرين شوت على الواتس آب لرقم الدعم الفني <span style="color: #65905d;">0593552240</span>&nbsp;</b></p>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
+                                                                
                                                                 <div class="elementor-element elementor-element-e2ee7ef elementor-position-top elementor-vertical-align-top elementor-widget elementor-widget-image-box" data-id="e2ee7ef" data-element_type="widget" data-widget_type="image-box.default">
                                                                     <div class="elementor-widget-container">
                                                                         <div class="elementor-image-box-wrapper">
                                                                             <div class="elementor-image-box-content">
-                                                                                <h2 class="elementor-image-box-title">طلب البطاقة عن طريق <i class="fab fa-cc-visa ; fab fa-cc-visa " aria-hidden="true"></i> Mastercard and Visa</h2>
+                                                                                <h2 class="elementor-image-box-title">طلب البطاقة عن طريق <i class="fab fa-cc-visa ; fab fa-cc-visa " aria-hidden="true"></i> Mastercard , Visa and paypal</h2>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -258,7 +243,7 @@
                                                                 <div class="elementor-element elementor-element-a81a1f8 elementor-widget elementor-widget-text-editor" data-id="a81a1f8" data-element_type="widget" data-widget_type="text-editor.default">
                                                                     <div class="elementor-widget-container">
                                                                         <div class="elementor-text-editor elementor-clearfix">
-                                                                            <p><strong>الذهاب إلى المادة المراد التسجيل بها واختيار طريقة الدفع عن طريق visa&nbsp;</strong></p>
+                                                                            <p><strong>الذهاب إلى المادة المراد التسجيل بها واختيار طريقة الدفع عن طريق visa&nbsp; او paypal</strong></p>
                                                                         </div>
                                                                     </div>
                                                                 </div>
