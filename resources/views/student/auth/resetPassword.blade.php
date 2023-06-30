@@ -21,6 +21,11 @@
             <p>
                 <i class="fa fa-user" style="position: absolute; padding: 13px 16px;"></i>
                 <input type="text" name="email" id="user_login" class="input" value="" size="20" autocapitalize="off" autocomplete="username" placeholder="البريد الالكتروني ">
+                @error('email')
+                <span class="invalid-feedback" role="alert">
+                    <strong style="color: red;">{{ $message }}</strong>
+                </span>
+                @enderror
             </p>
 
             <p class="submit">
