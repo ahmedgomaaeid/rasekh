@@ -206,7 +206,7 @@
                                                                 <div class="elementor-element elementor-element-c0b929a elementor-widget elementor-widget-text-editor" data-id="c0b929a" data-element_type="widget" data-widget_type="text-editor.default">
                                                                     <div class="elementor-widget-container">
                                                                         <div class="elementor-text-editor elementor-clearfix">
-                                                                            <p><strong>الذهاب مباشره إلى أقرب فرع للبنك الإسلامي الأردني. وعمل الإيداع في حساب شركة القرش الأبيض لتكنولوجيا المعلومات بحساب رقم 1826522 فرع الحساب جبل عمان وإيداع المبلغ المطلوب وبعد ذلك إرسال صورة عن الإيداع على <i class="fa fa-whatsapp" aria-hidden="true"></i> الواتس آب. الخاص بالشركة <a class="" href="https://api.whatsapp.com/send?phone=972593552240" target="_blank" rel="noopener">0593552240</a> &nbsp;مباشرة وسيتم إرسال كود البطاقة الخاص بتفعيل المادة مباشرةً.</strong></p>
+                                                                            <p><strong>الذهاب مباشرة الى اقرب فرع للبنك العربي وعمل ايداع في حساب رقم 670-075472-9420 وإيداع المبلغ المطلوب وبعد ذلك إرسال صورة عن الإيداع على <i class="fa-brands fa-whatsapp"></i> الواتس آب. الخاص بالشركة <a class="" href="https://api.whatsapp.com/send?phone=972593552240" target="_blank" rel="noopener">972593552240+</a> &nbsp;مباشرة وسيتم إرسال كود البطاقة الخاص بتفعيل الرصيد الذي تم ايداعه.</strong></p>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -222,7 +222,7 @@
                                                                 <div class="elementor-element elementor-element-7c4f366 elementor-widget elementor-widget-text-editor" data-id="7c4f366" data-element_type="widget" data-widget_type="text-editor.default">
                                                                     <div class="elementor-widget-container">
                                                                         <div class="elementor-text-editor elementor-clearfix">
-                                                                            <p><strong>طلب البطاقة عن طريق الواتس أب التالي <a class="" href="https://api.whatsapp.com/send?phone=972593552240" target="_blank" rel="noopener">0593552240</a> مع إرسال لوكيشن المنزل وسيتم تزويد الطالب بالبطاقة والتوصيل خلال 48 ساعة .</strong></p>
+                                                                            <p><strong>طلب البطاقة عن طريق الواتس أب التالي <a class="" href="https://api.whatsapp.com/send?phone=972593552240" target="_blank" rel="noopener">972593552240+</a> مع إرسال لوكيشن المنزل وسيتم تزويد الطالب بالبطاقة والتوصيل خلال 48 ساعة .</strong></p>
                                                                         </div>
                                                                     </div>
                                                                 </div>
