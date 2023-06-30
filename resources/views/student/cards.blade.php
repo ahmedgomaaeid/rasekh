@@ -243,7 +243,7 @@
                                                                 <div class="elementor-element elementor-element-a81a1f8 elementor-widget elementor-widget-text-editor" data-id="a81a1f8" data-element_type="widget" data-widget_type="text-editor.default">
                                                                     <div class="elementor-widget-container">
                                                                         <div class="elementor-text-editor elementor-clearfix">
-                                                                            <p><strong>الذهاب إلى المادة المراد التسجيل بها واختيار طريقة الدفع عن طريق visa&nbsp; او paypal</strong></p>
+                                                                            <p style="text-align:center;"><strong>الذهاب إلى المادة المراد التسجيل بها واختيار طريقة الدفع عن طريق visa&nbsp; او paypal</strong></p>
                                                                         </div>
                                                                     </div>
                                                                 </div>
