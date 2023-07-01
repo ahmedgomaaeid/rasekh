@@ -132,7 +132,7 @@
                                                                                     <div class="elementor-widget-wrap">
                                                                                         <div class="elementor-element elementor-element-1c6e59f elementor-widget elementor-widget-smartvideo" data-id="1c6e59f" data-element_type="widget" data-widget_type="smartvideo.default">
                                                                                             <div class="elementor-widget-container">
-                                                                                                <video id="my-video" class="video-js" controls preload="auto" style="width:100%" height="400" data-setup="{}">
+                                                                                                <video id="my-video" class="video-js" controls preload="auto" style="width:100%" height="450" data-setup="{}">
                                                                                                     <source src="{{route('index')}}/public/rasekh.mp4" />
                                                                                                     <p class="vjs-no-js">
                                                                                                         To view this video please enable JavaScript, and consider upgrading to a
