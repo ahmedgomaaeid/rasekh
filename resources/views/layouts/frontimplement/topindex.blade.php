@@ -15,7 +15,10 @@
     </style>
 
     <link rel="profile" href="http://gmpg.org/xfn/11">
-    <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
+    <link
+  href="https://unpkg.com/video.js@7/dist/video-js.min.css"
+  rel="stylesheet"
+/>
     <style id="bb_learndash_30_custom_colors">
         .learndash-wrapper .bb-single-course-sidebar .ld-status.ld-primary-background {
             background-color: #e2e7ed !important;
