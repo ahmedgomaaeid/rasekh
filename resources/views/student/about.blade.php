@@ -111,9 +111,9 @@
                                                                                                             محاضرات مبوبة سهلة الاستخدام وبأسلوب سلس من قبل نخبة من الأساتذة المميزين تمارين وحلول لمساعدة الطلاب على التمكن من المواد بشكل تام .
 
                                                                                                             <br><br>
-                                                                                                             بيئة تفاعلية مع الأساتذة والكادر التعليمي . قابلية استخدام المنصة من خلال أجهزة الحاسوب أو الألواح الذكية أو الهواتف النقالة.
+                                                                                                            بيئة تفاعلية مع الأساتذة والكادر التعليمي . قابلية استخدام المنصة من خلال أجهزة الحاسوب أو الألواح الذكية أو الهواتف النقالة.
 
-                                                                                                             </p>
+                                                                                                        </p>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
@@ -127,14 +127,24 @@
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
-                                                                            <video id="my-video" class="video-js" controls preload="auto" style="width:100%" height="400" data-setup="{}">
-                                                                                <source src="{{route('index')}}/public/rasekh.mp4" />
-                                                                                <p class="vjs-no-js">
-                                                                                    To view this video please enable JavaScript, and consider upgrading to a
-                                                                                    web browser that
-                                                                                    <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-                                                                                </p>
-                                                                            </video>
+                                                                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-e802ffd" data-id="e802ffd" data-element_type="column">
+                                                                                <div class="elementor-column-wrap elementor-element-populated">
+                                                                                    <div class="elementor-widget-wrap">
+                                                                                        <div class="elementor-element elementor-element-1c6e59f elementor-widget elementor-widget-smartvideo" data-id="1c6e59f" data-element_type="widget" data-widget_type="smartvideo.default">
+                                                                                            <div class="elementor-widget-container">
+                                                                                                <video id="my-video" class="video-js" controls preload="auto" style="width:100%" height="400" data-setup="{}">
+                                                                                                    <source src="{{route('index')}}/public/rasekh.mp4" />
+                                                                                                    <p class="vjs-no-js">
+                                                                                                        To view this video please enable JavaScript, and consider upgrading to a
+                                                                                                        web browser that
+                                                                                                        <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                                                                                                    </p>
+                                                                                                </video>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                 </section>
@@ -199,15 +209,15 @@
 
                                         <!-- make every 5 teachers in one section -->
                                         @php
-                                            $count = 0;
+                                        $count = 0;
                                         @endphp
                                         @foreach($teachers as $teacher)
-                                            @if($count % 6 == 0)
-                                                <section class="elementor-section elementor-top-section elementor-element elementor-element-daadd6e elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="daadd6e" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                        @if($count % 6 == 0)
+                                        <section class="elementor-section elementor-top-section elementor-element elementor-element-daadd6e elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="daadd6e" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
                                             <div class="elementor-container elementor-column-gap-default">
                                                 <div class="elementor-row">
-                                            @endif
-                                                            <div class="elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-0536d17" data-id="0536d17" data-element_type="column">
+                                                    @endif
+                                                    <div class="elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-0536d17" data-id="0536d17" data-element_type="column">
                                                         <div class="elementor-column-wrap elementor-element-populated">
                                                             <div class="elementor-widget-wrap">
                                                                 <div class="elementor-element elementor-element-a9edb6e elementor-widget elementor-widget-exad-team-member" data-id="a9edb6e" data-element_type="widget" data-widget_type="exad-team-member.default">
@@ -236,343 +246,278 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                            @php
-                                                $count++;
-                                            @endphp
-                                            @if($count % 6 == 0)
-                                                        </div>
-                                                    </div>
-                                                </section>
-                                            @endif
-                                        @endforeach
-                                        @if($count %6  != 0)
-                                                        </div>
-                                                    </div>
-                                                </section>
-                                        @endif
-                                        <!-- end of teachers section -->
-                                        
-
-
-
-
-                                        <section class="elementor-section elementor-top-section elementor-element elementor-element-734c085 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="734c085" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                                            <div class="elementor-container elementor-column-gap-default">
-                                                <div class="elementor-row">
-                                                    <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-a5c49bd" data-id="a5c49bd" data-element_type="column">
-                                                        <div class="elementor-column-wrap elementor-element-populated">
-                                                            <div class="elementor-widget-wrap">
-                                                                <section class="elementor-section elementor-inner-section elementor-element elementor-element-41ed530 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="41ed530" data-element_type="section">
-                                                                    <div class="elementor-container elementor-column-gap-default">
-                                                                        <div class="elementor-row">
-                                                                            <div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-ebae2c5" data-id="ebae2c5" data-element_type="column">
-                                                                                <div class="elementor-column-wrap">
-                                                                                    <div class="elementor-widget-wrap">
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="elementor-column elementor-col-66 elementor-inner-column elementor-element elementor-element-ca3750c" data-id="ca3750c" data-element_type="column">
-                                                                                <div class="elementor-column-wrap elementor-element-populated">
-                                                                                    <div class="elementor-widget-wrap">
-                                                                                        <div class="elementor-element elementor-element-f33d31a elementor-position-top elementor-vertical-align-top elementor-widget elementor-widget-image-box" data-id="f33d31a" data-element_type="widget" data-widget_type="image-box.default">
-                                                                                            <div class="elementor-widget-container">
-                                                                                                <div class="elementor-image-box-wrapper">
-                                                                                                    <div class="elementor-image-box-content">
-                                                                                                        <h2 class="elementor-image-box-title">معلومات بالارقام</h2>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-e2d04bb" data-id="e2d04bb" data-element_type="column">
-                                                                                <div class="elementor-column-wrap">
-                                                                                    <div class="elementor-widget-wrap">
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </section>
-                                                                <div class="elementor-element elementor-element-355d999 elementor-widget elementor-widget-spacer" data-id="355d999" data-element_type="widget" data-widget_type="spacer.default">
-                                                                    <div class="elementor-widget-container">
-                                                                        <div class="elementor-spacer">
-                                                                            <div class="elementor-spacer-inner"></div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <section class="elementor-section elementor-inner-section elementor-element elementor-element-33334a8 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="33334a8" data-element_type="section">
-                                                                    <div class="elementor-container elementor-column-gap-default">
-                                                                        <div class="elementor-row">
-                                                                            <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-7aa8b25" data-id="7aa8b25" data-element_type="column">
-                                                                                <div class="elementor-column-wrap elementor-element-populated">
-                                                                                    <div class="elementor-widget-wrap">
-                                                                                        <div class="elementor-element elementor-element-e398336 elementor-position-top elementor-vertical-align-top elementor-widget elementor-widget-image-box" data-id="e398336" data-element_type="widget" data-widget_type="image-box.default">
-                                                                                            <div class="elementor-widget-container">
-                                                                                                <div class="elementor-image-box-wrapper">
-                                                                                                    <div class="elementor-image-box-content">
-                                                                                                        <h3 class="elementor-image-box-title">40+</h3>
-                                                                                                        <p class="elementor-image-box-description">مادة توجيهي</p>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-9e7d137" data-id="9e7d137" data-element_type="column">
-                                                                                <div class="elementor-column-wrap elementor-element-populated">
-                                                                                    <div class="elementor-widget-wrap">
-                                                                                        <div class="elementor-element elementor-element-97224b1 elementor-position-top elementor-vertical-align-top elementor-widget elementor-widget-image-box" data-id="97224b1" data-element_type="widget" data-widget_type="image-box.default">
-                                                                                            <div class="elementor-widget-container">
-                                                                                                <div class="elementor-image-box-wrapper">
-                                                                                                    <div class="elementor-image-box-content">
-                                                                                                        <h3 class="elementor-image-box-title">20+</h3>
-                                                                                                        <p class="elementor-image-box-description">أستاذ وخبير</p>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-205bd6d" data-id="205bd6d" data-element_type="column">
-                                                                                <div class="elementor-column-wrap elementor-element-populated">
-                                                                                    <div class="elementor-widget-wrap">
-                                                                                        <div class="elementor-element elementor-element-89b33b4 elementor-position-top elementor-vertical-align-top elementor-widget elementor-widget-image-box" data-id="89b33b4" data-element_type="widget" data-widget_type="image-box.default">
-                                                                                            <div class="elementor-widget-container">
-                                                                                                <div class="elementor-image-box-wrapper">
-                                                                                                    <div class="elementor-image-box-content">
-                                                                                                        <h3 class="elementor-image-box-title">500+</h3>
-                                                                                                        <p class="elementor-image-box-description">ورقة عمل ودوسيه مجانيه</p>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </section>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                    @php
+                                                    $count++;
+                                                    @endphp
+                                                    @if($count % 6 == 0)
                                                 </div>
                                             </div>
                                         </section>
-                                        
-                                        <section class="elementor-section
+                                        @endif
+                                        @endforeach
+                                        @if($count %6 != 0)
+                                    </div>
+                                </div>
+                                </section>
+                                @endif
+                                <!-- end of teachers section -->
+
+
+
+
+
+                                <section class="elementor-section elementor-top-section elementor-element elementor-element-734c085 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="734c085" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                    <div class="elementor-container elementor-column-gap-default">
+                                        <div class="elementor-row">
+                                            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-a5c49bd" data-id="a5c49bd" data-element_type="column">
+                                                <div class="elementor-column-wrap elementor-element-populated">
+                                                    <div class="elementor-widget-wrap">
+                                                        <section class="elementor-section elementor-inner-section elementor-element elementor-element-41ed530 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="41ed530" data-element_type="section">
+                                                            <div class="elementor-container elementor-column-gap-default">
+                                                                <div class="elementor-row">
+                                                                    <div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-ebae2c5" data-id="ebae2c5" data-element_type="column">
+                                                                        <div class="elementor-column-wrap">
+                                                                            <div class="elementor-widget-wrap">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-column elementor-col-66 elementor-inner-column elementor-element elementor-element-ca3750c" data-id="ca3750c" data-element_type="column">
+                                                                        <div class="elementor-column-wrap elementor-element-populated">
+                                                                            <div class="elementor-widget-wrap">
+                                                                                <div class="elementor-element elementor-element-f33d31a elementor-position-top elementor-vertical-align-top elementor-widget elementor-widget-image-box" data-id="f33d31a" data-element_type="widget" data-widget_type="image-box.default">
+                                                                                    <div class="elementor-widget-container">
+                                                                                        <div class="elementor-image-box-wrapper">
+                                                                                            <div class="elementor-image-box-content">
+                                                                                                <h2 class="elementor-image-box-title">معلومات بالارقام</h2>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-e2d04bb" data-id="e2d04bb" data-element_type="column">
+                                                                        <div class="elementor-column-wrap">
+                                                                            <div class="elementor-widget-wrap">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                        <div class="elementor-element elementor-element-355d999 elementor-widget elementor-widget-spacer" data-id="355d999" data-element_type="widget" data-widget_type="spacer.default">
+                                                            <div class="elementor-widget-container">
+                                                                <div class="elementor-spacer">
+                                                                    <div class="elementor-spacer-inner"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <section class="elementor-section elementor-inner-section elementor-element elementor-element-33334a8 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="33334a8" data-element_type="section">
+                                                            <div class="elementor-container elementor-column-gap-default">
+                                                                <div class="elementor-row">
+                                                                    <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-7aa8b25" data-id="7aa8b25" data-element_type="column">
+                                                                        <div class="elementor-column-wrap elementor-element-populated">
+                                                                            <div class="elementor-widget-wrap">
+                                                                                <div class="elementor-element elementor-element-e398336 elementor-position-top elementor-vertical-align-top elementor-widget elementor-widget-image-box" data-id="e398336" data-element_type="widget" data-widget_type="image-box.default">
+                                                                                    <div class="elementor-widget-container">
+                                                                                        <div class="elementor-image-box-wrapper">
+                                                                                            <div class="elementor-image-box-content">
+                                                                                                <h3 class="elementor-image-box-title">40+</h3>
+                                                                                                <p class="elementor-image-box-description">مادة توجيهي</p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-9e7d137" data-id="9e7d137" data-element_type="column">
+                                                                        <div class="elementor-column-wrap elementor-element-populated">
+                                                                            <div class="elementor-widget-wrap">
+                                                                                <div class="elementor-element elementor-element-97224b1 elementor-position-top elementor-vertical-align-top elementor-widget elementor-widget-image-box" data-id="97224b1" data-element_type="widget" data-widget_type="image-box.default">
+                                                                                    <div class="elementor-widget-container">
+                                                                                        <div class="elementor-image-box-wrapper">
+                                                                                            <div class="elementor-image-box-content">
+                                                                                                <h3 class="elementor-image-box-title">20+</h3>
+                                                                                                <p class="elementor-image-box-description">أستاذ وخبير</p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-205bd6d" data-id="205bd6d" data-element_type="column">
+                                                                        <div class="elementor-column-wrap elementor-element-populated">
+                                                                            <div class="elementor-widget-wrap">
+                                                                                <div class="elementor-element elementor-element-89b33b4 elementor-position-top elementor-vertical-align-top elementor-widget elementor-widget-image-box" data-id="89b33b4" data-element_type="widget" data-widget_type="image-box.default">
+                                                                                    <div class="elementor-widget-container">
+                                                                                        <div class="elementor-image-box-wrapper">
+                                                                                            <div class="elementor-image-box-content">
+                                                                                                <h3 class="elementor-image-box-title">500+</h3>
+                                                                                                <p class="elementor-image-box-description">ورقة عمل ودوسيه مجانيه</p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <section class="elementor-section
                                             elementor-top-section
                                             elementor-element
                                             elementor-element-312efd62
                                             elementor-section-boxed
                                             elementor-section-height-default
-                                            elementor-section-height-default"
-                                            data-id="312efd62"
-                                            data-element_type="section"
-                                            data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                                            <div class="elementor-container
+                                            elementor-section-height-default" data-id="312efd62" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                    <div class="elementor-container
                                                 elementor-column-gap-default">
-                                                <div class="elementor-row">
-                                                    <div class="elementor-column
+                                        <div class="elementor-row">
+                                            <div class="elementor-column
                                                         elementor-col-100
                                                         elementor-top-column
                                                         elementor-element
-                                                        elementor-element-1099e4be"
-                                                        data-id="1099e4be"
-                                                        data-element_type="column">
-                                                        <div
-                                                            class="elementor-column-wrap
+                                                        elementor-element-1099e4be" data-id="1099e4be" data-element_type="column">
+                                                <div class="elementor-column-wrap
                                                             elementor-element-populated">
-                                                            <div
-                                                                class="elementor-widget-wrap">
-                                                                <div
-                                                                    class="elementor-element
+                                                    <div class="elementor-widget-wrap">
+                                                        <div class="elementor-element
                                                                     elementor-element-35a2c709
                                                                     elementor-widget
-                                                                    elementor-widget-spacer"
-                                                                    data-id="35a2c709"
-                                                                    data-element_type="widget"
-                                                                    data-widget_type="spacer.default">
-                                                                    <div
-                                                                        class="elementor-widget-container">
-                                                                        <div
-                                                                            class="elementor-spacer">
-                                                                            <div
-                                                                                class="elementor-spacer-inner"></div>
-                                                                        </div>
-                                                                    </div>
+                                                                    elementor-widget-spacer" data-id="35a2c709" data-element_type="widget" data-widget_type="spacer.default">
+                                                            <div class="elementor-widget-container">
+                                                                <div class="elementor-spacer">
+                                                                    <div class="elementor-spacer-inner"></div>
                                                                 </div>
-                                                                <section
-                                                                    class="elementor-section
+                                                            </div>
+                                                        </div>
+                                                        <section class="elementor-section
                                                                     elementor-inner-section
                                                                     elementor-element
                                                                     elementor-element-104d77e2
                                                                     elementor-section-boxed
                                                                     elementor-section-height-default
-                                                                    elementor-section-height-default"
-                                                                    data-id="104d77e2"
-                                                                    data-element_type="section"
-                                                                    >
-                                                                    <div
-                                                                        class="elementor-container
+                                                                    elementor-section-height-default" data-id="104d77e2" data-element_type="section">
+                                                            <div class="elementor-container
                                                                         elementor-column-gap-default">
-                                                                        <div
-                                                                            class="elementor-row">
-                                                                            <div
-                                                                                class="elementor-column
+                                                                <div class="elementor-row">
+                                                                    <div class="elementor-column
                                                                                 elementor-col-16
                                                                                 elementor-inner-column
                                                                                 elementor-element
-                                                                                elementor-element-7272bd29"
-                                                                                data-id="7272bd29"
-                                                                                data-element_type="column">
-                                                                                <div
-                                                                                    class="elementor-column-wrap">
-                                                                                    <div
-                                                                                        class="elementor-widget-wrap">
-                                                                                    </div>
-                                                                                </div>
+                                                                                elementor-element-7272bd29" data-id="7272bd29" data-element_type="column">
+                                                                        <div class="elementor-column-wrap">
+                                                                            <div class="elementor-widget-wrap">
                                                                             </div>
-                                                                            <div
-                                                                                class="elementor-column
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-column
                                                                                 elementor-col-66
                                                                                 elementor-inner-column
                                                                                 elementor-element
-                                                                                elementor-element-98f35e7"
-                                                                                data-id="98f35e7"
-                                                                                data-element_type="column">
-                                                                                <div
-                                                                                    class="elementor-column-wrap
+                                                                                elementor-element-98f35e7" data-id="98f35e7" data-element_type="column">
+                                                                        <div class="elementor-column-wrap
                                                                                     elementor-element-populated">
-                                                                                    <div
-                                                                                        class="elementor-widget-wrap">
-                                                                                        <div
-                                                                                            class="elementor-element
+                                                                            <div class="elementor-widget-wrap">
+                                                                                <div class="elementor-element
                                                                                             elementor-element-31d030c3
                                                                                             elementor-position-top
                                                                                             elementor-vertical-align-top
                                                                                             elementor-widget
-                                                                                            elementor-widget-image-box"
-                                                                                            data-id="31d030c3"
-                                                                                            data-element_type="widget"
-                                                                                            data-widget_type="image-box.default">
-                                                                                            <div
-                                                                                                class="elementor-widget-container">
-                                                                                                <div
-                                                                                                    class="elementor-image-box-wrapper">
-                                                                                                    <div
-                                                                                                        class="elementor-image-box-content">
-                                                                                                        <h2
-                                                                                                            class="elementor-image-box-title">معلومات
-                                                                                                            الاتصال
-                                                                                                        </h2>
-                                                                                                        <p
-                                                                                                            class="elementor-image-box-description">في
-                                                                                                            لأي استفسارات واسئلة اخرى ، يرجى الأتصال على الرقم التالي
+                                                                                            elementor-widget-image-box" data-id="31d030c3" data-element_type="widget" data-widget_type="image-box.default">
+                                                                                    <div class="elementor-widget-container">
+                                                                                        <div class="elementor-image-box-wrapper">
+                                                                                            <div class="elementor-image-box-content">
+                                                                                                <h2 class="elementor-image-box-title">معلومات
+                                                                                                    الاتصال
+                                                                                                </h2>
+                                                                                                <p class="elementor-image-box-description">في
+                                                                                                    لأي استفسارات واسئلة اخرى ، يرجى الأتصال على الرقم التالي
 
-                                                                                                            </p>
-                                                                                                    </div>
-                                                                                                </div>
+                                                                                                </p>
                                                                                             </div>
                                                                                         </div>
-                                                                                        <div
-                                                                                            class="elementor-element
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="elementor-element
                                                                                             elementor-element-4ab3c3d1
                                                                                             elementor-align-center
                                                                                             elementor-mobile-align-center
                                                                                             elementor-widget
-                                                                                            elementor-widget-button"
-                                                                                            data-id="4ab3c3d1"
-                                                                                            data-element_type="widget"
-                                                                                            data-widget_type="button.default">
-                                                                                            <div
-                                                                                                class="elementor-widget-container">
-                                                                                                <div
-                                                                                                    class="elementor-button-wrapper">
-                                                                                                    <a
-                                                                                                        href="tel:0593552240"
-                                                                                                        url=""
-                                                                                                        class="elementor-button-link
+                                                                                            elementor-widget-button" data-id="4ab3c3d1" data-element_type="widget" data-widget_type="button.default">
+                                                                                    <div class="elementor-widget-container">
+                                                                                        <div class="elementor-button-wrapper">
+                                                                                            <a href="tel:0593552240" url="" class="elementor-button-link
                                                                                                         elementor-button
-                                                                                                        elementor-size-lg"
-                                                                                                        role="button">
-                                                                                                        <span
-                                                                                                            class="elementor-button-content-wrapper">
-                                                                                                            <span
-                                                                                                                class="elementor-button-text"><i
-                                                                                                                    aria-hidden="true"
-                                                                                                                    class="fas
+                                                                                                        elementor-size-lg" role="button">
+                                                                                                <span class="elementor-button-content-wrapper">
+                                                                                                    <span class="elementor-button-text"><i aria-hidden="true" class="fas
                                                                                                                     fa-phone-square"></i>
-                                                                                                                972593552240+
-                                                                                                            </span>
-                                                                                                        </span>
-                                                                                                    </a>
-                                                                                                </div>
-                                                                                            </div>
+                                                                                                        972593552240+
+                                                                                                    </span>
+                                                                                                </span>
+                                                                                            </a>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
-                                                                            <div
-                                                                                class="elementor-column
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-column
                                                                                 elementor-col-16
                                                                                 elementor-inner-column
                                                                                 elementor-element
-                                                                                elementor-element-36d156a7"
-                                                                                data-id="36d156a7"
-                                                                                data-element_type="column">
-                                                                                <div
-                                                                                    class="elementor-column-wrap">
-                                                                                    <div
-                                                                                        class="elementor-widget-wrap">
-                                                                                    </div>
-                                                                                </div>
+                                                                                elementor-element-36d156a7" data-id="36d156a7" data-element_type="column">
+                                                                        <div class="elementor-column-wrap">
+                                                                            <div class="elementor-widget-wrap">
                                                                             </div>
                                                                         </div>
                                                                     </div>
-                                                                </section>
-                                                                <div
-                                                                    class="elementor-element
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                        <div class="elementor-element
                                                                     elementor-element-5944e7e3
                                                                     elementor-widget
-                                                                    elementor-widget-spacer"
-                                                                    data-id="5944e7e3"
-                                                                    data-element_type="widget"
-                                                                    data-widget_type="spacer.default">
-                                                                    <div
-                                                                        class="elementor-widget-container">
-                                                                        <div
-                                                                            class="elementor-spacer">
-                                                                            <div
-                                                                                class="elementor-spacer-inner"></div>
-                                                                        </div>
-                                                                    </div>
+                                                                    elementor-widget-spacer" data-id="5944e7e3" data-element_type="widget" data-widget_type="spacer.default">
+                                                            <div class="elementor-widget-container">
+                                                                <div class="elementor-spacer">
+                                                                    <div class="elementor-spacer-inner"></div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </section>
+                                        </div>
                                     </div>
-                                </div>
+                                </section>
                             </div>
-                            <span class="cp-load-after-post"></span>
-                        </div><!-- .entry-content -->
+                        </div>
+            </div>
+            <span class="cp-load-after-post"></span>
+        </div><!-- .entry-content -->
 
 
-                    </article>
+        </article>
 
-                </main><!-- #main -->
-            </div><!-- #primary -->
+        </main><!-- #main -->
+    </div><!-- #primary -->
 
 
 
-        </div><!-- .bb-grid -->
-    </div><!-- .container -->
+</div><!-- .bb-grid -->
+</div><!-- .container -->
 </div><!-- #content -->
 <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
 @endsection
