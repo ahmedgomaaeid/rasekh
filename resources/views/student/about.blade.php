@@ -127,7 +127,14 @@
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
-                                                                            <!--video-->
+                                                                            <video id="my-video" class="video-js" controls preload="auto" style="width:100%" height="400" data-setup="{}">
+                                                                                <source src="{{route('index')}}/public/rasekh.mp4" />
+                                                                                <p class="vjs-no-js">
+                                                                                    To view this video please enable JavaScript, and consider upgrading to a
+                                                                                    web browser that
+                                                                                    <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                                                                                </p>
+                                                                            </video>
                                                                         </div>
                                                                     </div>
                                                                 </section>
@@ -567,5 +574,5 @@
         </div><!-- .bb-grid -->
     </div><!-- .container -->
 </div><!-- #content -->
-
+<script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
 @endsection
