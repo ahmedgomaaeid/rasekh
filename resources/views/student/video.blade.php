@@ -436,7 +436,7 @@
 
                                                                         <div role="tabpanel" tabindex="0" aria-labelledby="content" class="ld-tab-content ld-visible" id="ld-tab-content-1067706" style="width:100%">
                                                                             @if($lesson->type == 'درس')
-                                                                            <video id="my-video" class="video-js" controls preload="auto" style="width:100%" height="400" poster="{{route('index')}}/assets/images/courses/{{$lesson->course->image}}" data-setup="{}">
+                                                                            <video id="my-video" class="video-js vjs-big-play-centered" controls preload="auto" style="width:100%" height="400" poster="{{route('index')}}/assets/images/courses/{{$lesson->course->image}}" data-setup="{}">
                                                                                 <source src="{{route('index')}}/assets/videos/{{$lesson->video}}" />
                                                                                 <p class="vjs-no-js">
                                                                                     To view this video please enable JavaScript, and consider upgrading to a
