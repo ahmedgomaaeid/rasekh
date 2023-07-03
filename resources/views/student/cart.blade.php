@@ -144,12 +144,12 @@
                                                     @else
                                                     <input type="radio" name="emotion" id="sad" class="input-hidden" />
                                                     <label for="sad">
-                                                        <img src="//placekitten.com/150/150" alt="I'm sad" />
+                                                        <img src="{{route('index')}}/public/paypal.png" />
                                                     </label>
 
                                                     <input type="radio" name="emotion" id="happy" class="input-hidden" />
                                                     <label for="happy">
-                                                        <img src="//placekitten.com/151/151" alt="I'm happy" />
+                                                        <img src="{{route('index')}}/public/badge.png" alt="I'm happy" />
                                                     </label>
                                                     @endif
 
