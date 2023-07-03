@@ -116,7 +116,7 @@
 
 
 
-                                                
+
 
                                                 <div class="wc-proceed-to-checkout">
                                                     @if($points>=$total_price)
@@ -124,13 +124,35 @@
                                                         التقدم لإتمام الطلب</a>
                                                     @else
                                                     <p>اختر طريقة الدفع</p>
-                                                    <a href="{{route('pay')}}" >
+                                                    <a href="{{route('pay')}}">
                                                         <img src="{{route('index')}}/public/paypal.png" style="width: 200px;">
                                                     </a>
 
-                                                    <a href="{{route('pay')}}">
+                                                    <a onclick="pay()">
                                                         <img src="{{route('index')}}/public/badge.png" style="width: 200px;">
                                                     </a>
+
+                                                    <script>
+
+                                                        function pay(e) {
+                                                            e.preventDefault();
+                                                            const lahza = new LahzaPopup();
+                                                            lahza.newTransaction({
+                                                                key: 'pk_test_KWeQxq0u8dB3F1EA2tUNkq68vR79JGfPe'
+                                                                , email: '{{Auth::guard('student')->user()->email}}'
+                                                                , currency: "ILS"
+                                                                , amount: {{$total_price-$points}} * 100
+                                                                , onSuccess: (transaction) => {
+                                                                    let message = 'Payment complete! Reference: ' + response.reference;
+                                                                    alert(message);
+                                                                }
+                                                                , onCancel: () => {
+                                                                    alert('Window closed.');
+                                                                }
+                                                            });
+                                                        }
+
+                                                    </script>
                                                     @endif
 
                                                 </div>
@@ -184,7 +206,7 @@
 
     </div><!-- #page -->
 
-
+    <script src="https://js.lahza.io/inline.min.js"></script>
     @include('layouts.frontimplement.bottomcart')
 
 
