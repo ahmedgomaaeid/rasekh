@@ -127,11 +127,11 @@
                                                         التقدم لإتمام الطلب</a>
                                                     @else
                                                     <a href="{{route('pay')}}" >
-                                                        <img src="{{route('index')}}/public/paypal.png" />
+                                                        <img src="{{route('index')}}/public/paypal.png" style="width: 200px;">
                                                     </a>
 
                                                     <a href="{{route('pay')}}">
-                                                        <img src="{{route('index')}}/public/badge.png" alt="I'm happy" />
+                                                        <img src="{{route('index')}}/public/badge.png" style="width: 200px;">
                                                     </a>
                                                     @endif
 
