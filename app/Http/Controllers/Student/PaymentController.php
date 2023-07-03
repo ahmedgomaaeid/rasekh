@@ -68,6 +68,7 @@ class PaymentController extends Controller
     }
     public function lahzaPay()
     {
+        dd(route('verify-lahza-payment'));
         $cart_data = json_decode(stripslashes(Cookie::get('shopping_cart')));
         $total_price = 0;
         $points = Student::find(auth()->user()->id)->points;
@@ -171,7 +172,35 @@ class PaymentController extends Controller
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         $result = curl_exec($ch);
         $res = json_decode($result);
-        dd($res);
+        if($res->status == true){
+            $payment = Payment::where('payment_id', $res->data->reference)->first();
+            $cart_data = json_decode(stripslashes($payment->data));
+            foreach ($cart_data as $item_id) {
+                $item = getCourseData($item_id->item_id);
+                $student = auth()->guard('student')->user();
+                $purchase = new Purchase();
+                $purchase->student_id = $student->id;
+                $purchase->course_id = $item->id;
+                $purchase->course_price = $item->price;
+                $purchase->finnished_at = date('Y-m-d', strtotime('+' . $item->finnish_after . ' days', strtotime(date('Y-m-d')))) . PHP_EOL;
+                $purchase->save();
+                $message = 'اشترى الطالب ' . $student->name . ' كورس ' . $item->name;
+                $teacher = Teacher::find($item->teacher_id);
+                $teacher->dues += $item->price * $item->teacher_percentage / 100;
+                $teacher->save();
+                $notify = new Notify();
+                $notify->teacher_id = $item->teacher_id;
+                $notify->text = $message;
+                $notify->seen = 0;
+                $notify->type = 0;
+                $notify->save();
+            }
+            Cookie::queue('shopping_cart', json_encode(array()), 60);
+            Student::find(auth()->user()->id)->update(['points' => 0]);
+            return redirect()->route('myCourses')->with('success', 'تم الدفع بنجاح');
+        }else{
+            return redirect()->route('cart')->with('status', 'حدث خطأ أثناء الدفع');
+        }
     }
 
 
