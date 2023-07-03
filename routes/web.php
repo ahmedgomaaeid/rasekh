@@ -39,7 +39,7 @@ Route::group(['namespace' => 'Student'], function () {
         Route::post('send-quiz', 'VideoController@sendQuiz')->name('sendQuiz');
         Route::post('send-question', 'VideoController@sendQuestion')->name('sendQuestion'); 
         Route::get('/payments/verify/{payment?}',[PaymentController::class,'payment_callback'])->name('verify-payment');
-        Route::get('/payments/verify/lahza/{ref}',[PaymentController::class,'lahzaPaymentCallback'])->name('verify-lahza-payment');
+        Route::get('/payments/verify/lahza/{ref?}',[PaymentController::class,'lahzaPaymentCallback'])->name('verify-lahza-payment');
         Route::get('/charging', 'PaymentController@charging')->name('charging');
         Route::post('/charge', 'PaymentController@charge')->name('charge');
         Route::get('/profile', 'ProfileController@profile')->name('profile');
