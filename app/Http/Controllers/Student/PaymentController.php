@@ -173,7 +173,7 @@ class PaymentController extends Controller
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         $result = curl_exec($ch);
         $res = json_decode($result);
-        if($res->status == true && $res->data->customer->email == Auth::guard('student')->user()->email){
+        if($res->status == true){
             $payment = Payment::where('payment_id', $res->data->reference)->first();
             if(!$payment){
                 return redirect()->route('myCourses')->with('status', 'حدث خطأ أثناء الدفع');
@@ -181,7 +181,7 @@ class PaymentController extends Controller
             $cart_data = json_decode(stripslashes($payment->data));
             foreach ($cart_data as $item_id) {
                 $item = getCourseData($item_id->item_id);
-                $student = auth()->guard('student')->user();
+                $student = Student::where('email', $res->data->customer->email)->first();
                 $purchase = new Purchase();
                 $purchase->student_id = $student->id;
                 $purchase->course_id = $item->id;
