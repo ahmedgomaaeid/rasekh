@@ -115,23 +115,7 @@
                                                 </table>
 
                                                 <style>
-                                                    .input-hidden {
-                                                        position: absolute;
-                                                        left: -9999px;
-                                                    }
-
-                                                    input[type=radio]:checked+label>img {
-                                                        border: 1px solid #fff;
-                                                        box-shadow: 0 0 3px 3px #090;
-                                                    }
-
-                                                    /* Stuff after this is only to make things more pretty */
-                                                    input[type=radio]+label>img {
-                                                        border: 1px dashed #444;
-                                                        width: 150px;
-                                                        height: 150px;
-                                                        transition: 500ms all;
-                                                    }
+                                                    
 
                                                 </style>
 
@@ -142,15 +126,13 @@
                                                     <a href="{{route('pay')}}" class="checkout-button button alt wc-forward">
                                                         التقدم لإتمام الطلب</a>
                                                     @else
-                                                    <input type="radio" name="emotion" id="sad" class="input-hidden" />
-                                                    <label for="sad">
+                                                    <a href="{{route('pay')}}" class="checkout-button button alt wc-forward">
                                                         <img src="{{route('index')}}/public/paypal.png" />
-                                                    </label>
+                                                    </a>
 
-                                                    <input type="radio" name="emotion" id="happy" class="input-hidden" />
-                                                    <label for="happy">
+                                                    <a href="{{route('pay')}}" class="checkout-button button alt wc-forward">
                                                         <img src="{{route('index')}}/public/badge.png" alt="I'm happy" />
-                                                    </label>
+                                                    </a>
                                                     @endif
 
                                                 </div>
