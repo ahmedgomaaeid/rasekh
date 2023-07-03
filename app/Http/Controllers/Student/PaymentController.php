@@ -109,38 +109,9 @@ class PaymentController extends Controller
         return redirect()->route('cart')->with('status','حدث خطأ أثناء الدفع');
     }
 
-    public function lahzaPay()
+    public function lahzaPay($payment)
     {
-        $url = "https://api.lahza.io/transaction/initialize";
-
-        $fields = [
-            'email' => "customer@example.com",
-            'mobile'=>"059912313",
-            'currency' => "ILS",
-            'amount' => "20000"
-        ];
-
-        $fields_string = http_build_query($fields);
-
-        //open connection
-        $ch = curl_init();
-        
-        //set the url, number of POST vars, POST data
-        curl_setopt($ch,CURLOPT_URL, $url);
-        curl_setopt($ch,CURLOPT_POST, true);
-        curl_setopt($ch,CURLOPT_POSTFIELDS, $fields_string);
-        curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-            "Authorization: Bearer sk_test_2lo4ccnqjkQ70vuilbGUWTee5pzOW4CZ1",
-            "Cache-Control: no-cache",
-        ));
-        
-        //So that curl_exec returns the contents of the cURL; rather than echoing it
-        curl_setopt($ch,CURLOPT_RETURNTRANSFER, true); 
-        
-        //execute post
-        $result = curl_exec($ch);
-        return $result;
-
+        return $payment;
     }
 
 
