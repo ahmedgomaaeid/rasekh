@@ -134,8 +134,7 @@
 
                                                     <script>
 
-                                                        function pay(e) {
-                                                            e.preventDefault();
+                                                        function pay() {
                                                             const lahza = new LahzaPopup();
                                                             lahza.newTransaction({
                                                                 key: 'pk_test_KWeQxq0u8dB3F1EA2tUNkq68vR79JGfPe'
