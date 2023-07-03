@@ -82,7 +82,7 @@ class PaymentController extends Controller
             'email' => Auth::guard('student')->user()->email,
             'amount' => ($total_price - $points)*100,
             'currency' => 'ILS',
-            'callback_url' => route('verify-lahza-payment')+'/',
+            'callback_url' => route('verify-lahza-payment').'/',
         ];
 
         $fields_string = http_build_query($fields);
