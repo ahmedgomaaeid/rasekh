@@ -142,8 +142,7 @@
                                                                 , currency: "ILS"
                                                                 , amount: {{$total_price-$points}} * 100
                                                                 , onSuccess: (transaction) => {
-                                                                    console.log(response.reference);
-                                                                    window.location.href = "{{route('lahza.pay')}}/" + response.reference;
+                                                                    window.location.href = "{{route('lahza.pay')}}"
                                                                 }
                                                             });
                                                         }
