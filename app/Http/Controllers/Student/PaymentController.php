@@ -173,9 +173,11 @@ class PaymentController extends Controller
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         $result = curl_exec($ch);
         $res = json_decode($result);
-        dd($res);
         if($res->status == true){
             $payment = Payment::where('payment_id', $res->data->reference)->first();
+            if(!$payment){
+                return redirect()->route('myCourses')->with('status', 'حدث خطأ أثناء الدفع');
+            }
             $cart_data = json_decode(stripslashes($payment->data));
             foreach ($cart_data as $item_id) {
                 $item = getCourseData($item_id->item_id);
@@ -197,6 +199,7 @@ class PaymentController extends Controller
                 $notify->type = 0;
                 $notify->save();
             }
+            $payment->delete();
             Cookie::queue('shopping_cart', json_encode(array()), 60);
             Student::find(auth()->user()->id)->update(['points' => 0]);
             return redirect()->route('myCourses')->with('success', 'تم الدفع بنجاح');
