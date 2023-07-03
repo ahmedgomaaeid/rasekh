@@ -129,19 +129,19 @@
 	<meta name="robots" content="noindex, follow">
 
 	<!-- This site is optimized with the Yoast SEO plugin v19.6.1 - https://yoast.com/wordpress/plugins/seo/ -->
-	<title>سلة الشراء - موقع راسخ</title>
+	<title>سلة الشراء - منصة راسخ التعليمية</title>
 	<script type="text/javascript" async="" src="{{route('index')}}/index_files/analytics.js.download"></script>
 	<script src="{{route('index')}}/index_files/swarmcdn.js.download"></script>
 	<script type="application/ld+json"
-		class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://watad.me/cart/","url":"https://watad.me/cart/","name":"سلة الشراء - موقع راسخ التعليمي","isPartOf":{"@id":"https://watad.me/#website"},"datePublished":"2019-12-23T14:15:46+00:00","dateModified":"2020-06-15T19:02:12+00:00","breadcrumb":{"@id":"https://watad.me/cart/#breadcrumb"},"inLanguage":"ar","potentialAction":[{"@type":"ReadAction","target":["https://watad.me/cart/"]}]},{"@type":"BreadcrumbList","@id":"https://watad.me/cart/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"الرئيسية","item":"https://watad.me/"},{"@type":"ListItem","position":2,"name":"سلة الشراء"}]},{"@type":"WebSite","@id":"https://watad.me/#website","url":"https://watad.me/","name":"موقع راسخ التعليمي","description":"دورات دروس توجيهي اون لاين اونلاين  حصص أون لاين تعليم اون لاين الاردن","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://watad.me/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"ar"}]}</script>
+		class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://watad.me/cart/","url":"https://watad.me/cart/","name":"سلة الشراء - منصة راسخ التعليمية","isPartOf":{"@id":"https://watad.me/#website"},"datePublished":"2019-12-23T14:15:46+00:00","dateModified":"2020-06-15T19:02:12+00:00","breadcrumb":{"@id":"https://watad.me/cart/#breadcrumb"},"inLanguage":"ar","potentialAction":[{"@type":"ReadAction","target":["https://watad.me/cart/"]}]},{"@type":"BreadcrumbList","@id":"https://watad.me/cart/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"الرئيسية","item":"https://watad.me/"},{"@type":"ListItem","position":2,"name":"سلة الشراء"}]},{"@type":"WebSite","@id":"https://watad.me/#website","url":"https://watad.me/","name":"منصة راسخ التعليمية","description":"دورات دروس توجيهي اون لاين اونلاين  حصص أون لاين تعليم اون لاين الاردن","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://watad.me/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"ar"}]}</script>
 	<!-- / Yoast SEO plugin. -->
 
 
 	<link rel="dns-prefetch" href="https://fonts.googleapis.com/">
 	<link rel="dns-prefetch" href="https://s.w.org/">
 	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-	<link rel="alternate" type="application/rss+xml" title="موقع راسخ التعليمي « الخلاصة" href="https://watad.me/feed/">
-	<link rel="alternate" type="application/rss+xml" title="موقع راسخ التعليمي « خلاصة التعليقات"
+	<link rel="alternate" type="application/rss+xml" title="منصة راسخ التعليمية « الخلاصة" href="https://watad.me/feed/">
+	<link rel="alternate" type="application/rss+xml" title="منصة راسخ التعليمية « خلاصة التعليقات"
 		href="https://watad.me/comments/feed/">
 	<script type="text/javascript">
 		window._wpemojiSettings = { "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/", "ext": ".png", "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/", "svgExt": ".svg", "source": { "concatemoji": "https:\/\/watad.me\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.0.2" } };

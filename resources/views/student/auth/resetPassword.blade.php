@@ -38,7 +38,7 @@
 
             <p class="submit">
                 <input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large" value="استرجاع">
-                <input type="hidden" name="redirect_to" value="https://watad.me/wp-admin/">
+                <input type="hidden" name="redirect_to" value="https://rasekhpal.com/wp-admin/">
                 <input type="hidden" name="testcookie" value="1">
             </p>
         </form>

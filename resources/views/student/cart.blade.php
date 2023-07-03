@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0022)https://watad.me/cart/ -->
+<!-- saved from url=(0022)https://rasekhpal.com/cart/ -->
 <html dir="rtl" lang="ar">
 @include('layouts.frontimplement.topcart')
 
@@ -15,7 +15,7 @@
 
         <div id="content" class="site-content">
 
-            <div id="breadcrumbs" class="bb-yoast-breadcrumbs"><span><span><a href="https://watad.me/">الرئيسية</a> » <span class="breadcrumb_last" aria-current="page">سلة الشراء</span></span></span></div>
+            <div id="breadcrumbs" class="bb-yoast-breadcrumbs"><span><span><a href="https://rasekhpal.com/">الرئيسية</a> » <span class="breadcrumb_last" aria-current="page">سلة الشراء</span></span></span></div>
             <div class="container">
                 <div class="bb-grid site-content-grid">
                     <div id="primary" class="content-area">

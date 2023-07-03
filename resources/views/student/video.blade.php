@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0376)https://watad.me/courses/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D9%84%D9%85%D9%8A-%D8%A7%D9%84%D9%81%D8%B5%D9%84-%D8%A7%D9%84%D8%A7%D9%88%D9%84-2005/lessons/%D8%A7%D9%88%D9%84%D9%88%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D9%85%D9%84%D9%8A%D8%A7%D8%AA-%D9%88%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D8%B9%D8%AF%D8%A7%D8%AF/ -->
+
 <html dir="rtl" lang="ar">
 
 @include('layouts.frontimplement.topcart')
@@ -243,8 +243,8 @@
 
         <div id="content" class="site-content">
 
-            <div id="breadcrumbs" class="bb-yoast-breadcrumbs"><span><span><a href="https://watad.me/">الرئيسية</a> »
-                        <span><a href="https://watad.me/lessons/">Lessons</a> » <span class="breadcrumb_last" aria-current="page">اولويات العمليات ومجموعات الاعداد</span></span></span></span></div>
+            <div id="breadcrumbs" class="bb-yoast-breadcrumbs"><span><span><a href="https://rasekhpal.com/">الرئيسية</a> »
+                        <span><a href="https://rasekhpal.com/lessons/">Lessons</a> » <span class="breadcrumb_last" aria-current="page">اولويات العمليات ومجموعات الاعداد</span></span></span></span></div>
             <div class="container">
                 <div class="bb-grid site-content-grid">
                     <div id="primary" class="content-area bb-grid-cell">
@@ -263,12 +263,12 @@
                                                     <div class="lms-topic-sidebar-data" style="max-height: calc(100vh - 76px); top: 76px;">
 
                                                         <div class="bb-elementor-header-items">
-                                                            <a href="https://watad.me/courses/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D9%84%D9%85%D9%8A-%D8%A7%D9%84%D9%81%D8%B5%D9%84-%D8%A7%D9%84%D8%A7%D9%88%D9%84-2005/lessons/%D8%A7%D9%88%D9%84%D9%88%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D9%85%D9%84%D9%8A%D8%A7%D8%AA-%D9%88%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D8%B9%D8%AF%D8%A7%D8%AF/#" id="bb-toggle-theme">
+                                                            <a href="https://rasekhpal.com/courses/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D9%84%D9%85%D9%8A-%D8%A7%D9%84%D9%81%D8%B5%D9%84-%D8%A7%D9%84%D8%A7%D9%88%D9%84-2005/lessons/%D8%A7%D9%88%D9%84%D9%88%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D9%85%D9%84%D9%8A%D8%A7%D8%AA-%D9%88%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D8%B9%D8%AF%D8%A7%D8%AF/#" id="bb-toggle-theme">
                                                                 <span class="sfwd-dark-mode" data-balloon-pos="down" data-balloon="الوضع الليلي"><i class="bb-icon-rl bb-icon-moon"></i></span>
                                                                 <span class="sfwd-light-mode" data-balloon-pos="down" data-balloon="الوضع النهاري"><i class="bb-icon-l bb-icon-sun"></i></span>
                                                             </a>
-                                                            <a href="https://watad.me/courses/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D9%84%D9%85%D9%8A-%D8%A7%D9%84%D9%81%D8%B5%D9%84-%D8%A7%D9%84%D8%A7%D9%88%D9%84-2005/lessons/%D8%A7%D9%88%D9%84%D9%88%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D9%85%D9%84%D9%8A%D8%A7%D8%AA-%D9%88%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D8%B9%D8%AF%D8%A7%D8%AF/#" class="header-maximize-link course-toggle-view" data-balloon-pos="down" data-balloon="إخفاء الفهرس"><i class="bb-icon-l bb-icon-expand"></i></a>
-                                                            <a href="https://watad.me/courses/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D9%84%D9%85%D9%8A-%D8%A7%D9%84%D9%81%D8%B5%D9%84-%D8%A7%D9%84%D8%A7%D9%88%D9%84-2005/lessons/%D8%A7%D9%88%D9%84%D9%88%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D9%85%D9%84%D9%8A%D8%A7%D8%AA-%D9%88%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D8%B9%D8%AF%D8%A7%D8%AF/#" class="header-minimize-link course-toggle-view" data-balloon-pos="down" data-balloon="إظهار الفهرس"><i class="bb-icon-l bb-icon-merge"></i></a>
+                                                            <a href="https://rasekhpal.com/courses/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D9%84%D9%85%D9%8A-%D8%A7%D9%84%D9%81%D8%B5%D9%84-%D8%A7%D9%84%D8%A7%D9%88%D9%84-2005/lessons/%D8%A7%D9%88%D9%84%D9%88%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D9%85%D9%84%D9%8A%D8%A7%D8%AA-%D9%88%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D8%B9%D8%AF%D8%A7%D8%AF/#" class="header-maximize-link course-toggle-view" data-balloon-pos="down" data-balloon="إخفاء الفهرس"><i class="bb-icon-l bb-icon-expand"></i></a>
+                                                            <a href="https://rasekhpal.com/courses/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D9%84%D9%85%D9%8A-%D8%A7%D9%84%D9%81%D8%B5%D9%84-%D8%A7%D9%84%D8%A7%D9%88%D9%84-2005/lessons/%D8%A7%D9%88%D9%84%D9%88%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D9%85%D9%84%D9%8A%D8%A7%D8%AA-%D9%88%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D8%B9%D8%AF%D8%A7%D8%AF/#" class="header-minimize-link course-toggle-view" data-balloon-pos="down" data-balloon="إظهار الفهرس"><i class="bb-icon-l bb-icon-merge"></i></a>
                                                         </div>
 
                                                         <div class="lms-topic-sidebar-course-navigation">

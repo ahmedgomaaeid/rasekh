@@ -49,7 +49,7 @@
                                                                                                     <figure class="elementor-image-box-img"><img decoding="async" width="4374" height="2482" src="https://rasekhpal.com/webassets/cards.png" class="attachment-full size-full" alt="" loading="lazy"></figure>
                                                                                                     <div class="elementor-image-box-content">
                                                                                                         <h1 class="elementor-image-box-title">بطاقات راسخ المدفوعة مسبقاً</h1>
-                                                                                                        <p class="elementor-image-box-description">نقوم من خلال موقع راسخ التعليمي بتقديم 5 فئات من البطاقات المدفوعة مسبقاً، يمكن للطالب استخدام الفئة المناسبة للمادة/المواد التي يرغب بشرائها .</p>
+                                                                                                        <p class="elementor-image-box-description">نقوم من خلال منصة راسخ التعليمية التعليمي بتقديم 5 فئات من البطاقات المدفوعة مسبقاً، يمكن للطالب استخدام الفئة المناسبة للمادة/المواد التي يرغب بشرائها .</p>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>

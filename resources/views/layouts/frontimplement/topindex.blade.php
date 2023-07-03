@@ -136,7 +136,7 @@
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
     <!-- This site is optimized with the Yoast SEO plugin v19.6.1 - https://yoast.com/wordpress/plugins/seo/ -->
-    <title>موقع راسخ</title>
+    <title>منصة راسخ التعليمية</title>
     <meta name="description" content="راسخ هي منصة تعليمية إلكترونية توفر لطلاب المراحل الأساسية والثانوية، وخاصة مرحلة التوجيهي، بيئة تعليمية متطورة تسعى وبأسلوب حديث ومبسط لمساعدة الطلاب في كافة المناطق على النجاح والتفوق في اجتياز امتحان الثانوية العامة .">
     <meta property="og:locale" content="ar_AR">
     <meta property="og:type" content="website">
@@ -146,8 +146,8 @@
     <link rel="dns-prefetch" href="https://fonts.googleapis.com/">
     <link rel="dns-prefetch" href="https://s.w.org/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-    <link rel="alternate" type="application/rss+xml" title="موقع راسخ التعليمي « الخلاصة" href="https://rasekhpal.com/feed/">
-    <link rel="alternate" type="application/rss+xml" title="موقع راسخ التعليمي « خلاصة التعليقات" href="https://rasekhpal.com/comments/feed/">
+    <link rel="alternate" type="application/rss+xml" title="منصة راسخ التعليمية « الخلاصة" href="https://rasekhpal.com/feed/">
+    <link rel="alternate" type="application/rss+xml" title="منصة راسخ التعليمية « خلاصة التعليقات" href="https://rasekhpal.com/comments/feed/">
     <script type="text/javascript">
         window._wpemojiSettings = {
             "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/"
@@ -155,7 +155,7 @@
             , "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/"
             , "svgExt": ".svg"
             , "source": {
-                "concatemoji": "https:\/\/watad.me\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.0.2"
+                "concatemoji": "https:\/\/rasekhpal.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.0.2"
             }
         };
         /*! This file is auto-generated */
@@ -3949,32 +3949,32 @@
         window.gutenberg_quick_link_blocks['user_links'] = [{
             "ID": "profile"
             , "title": "Profile"
-            , "icon": "https:\/\/watad.me\/wp-content\/plugins\/buddyboss-app\/assets\/app-icons\/bbapp\/profile-outlined.png"
+            , "icon": "https:\/\/rasekhpal.com\/wp-content\/plugins\/buddyboss-app\/assets\/app-icons\/bbapp\/profile-outlined.png"
             , "icon_val": "bbapp\/profile"
         }, {
             "ID": "settings"
             , "title": "Account"
-            , "icon": "https:\/\/watad.me\/wp-content\/plugins\/buddyboss-app\/assets\/app-icons\/bbapp\/settings-outlined.png"
+            , "icon": "https:\/\/rasekhpal.com\/wp-content\/plugins\/buddyboss-app\/assets\/app-icons\/bbapp\/settings-outlined.png"
             , "icon_val": "bbapp\/settings"
         }, {
             "ID": "activities"
             , "title": "Timeline"
-            , "icon": "https:\/\/watad.me\/wp-content\/plugins\/buddyboss-app\/assets\/app-icons\/bbapp\/activity-outlined.png"
+            , "icon": "https:\/\/rasekhpal.com\/wp-content\/plugins\/buddyboss-app\/assets\/app-icons\/bbapp\/activity-outlined.png"
             , "icon_val": "bbapp\/activity"
         }, {
             "ID": "notifications"
             , "title": "Notifications"
-            , "icon": "https:\/\/watad.me\/wp-content\/plugins\/buddyboss-app\/assets\/app-icons\/bbapp\/notification-outlined.png"
+            , "icon": "https:\/\/rasekhpal.com\/wp-content\/plugins\/buddyboss-app\/assets\/app-icons\/bbapp\/notification-outlined.png"
             , "icon_val": "bbapp\/notification"
         }, {
             "ID": "messages"
             , "title": "\u0631\u0633\u0627\u0626\u0644"
-            , "icon": "https:\/\/watad.me\/wp-content\/plugins\/buddyboss-app\/assets\/app-icons\/bbapp\/messages-outlined.png"
+            , "icon": "https:\/\/rasekhpal.com\/wp-content\/plugins\/buddyboss-app\/assets\/app-icons\/bbapp\/messages-outlined.png"
             , "icon_val": "bbapp\/messages"
         }, {
             "ID": "certificates"
             , "title": "Certificates"
-            , "icon": "https:\/\/watad.me\/wp-content\/plugins\/buddyboss-app\/assets\/app-icons\/bbapp\/certificates-outlined.png"
+            , "icon": "https:\/\/rasekhpal.com\/wp-content\/plugins\/buddyboss-app\/assets\/app-icons\/bbapp\/certificates-outlined.png"
             , "icon_val": "bbapp\/certificates"
         }];
         window.gutenberg_quick_link_blocks['core_menus'] = {

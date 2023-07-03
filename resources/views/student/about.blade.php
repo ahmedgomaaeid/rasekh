@@ -105,7 +105,7 @@
                                                                                                         <h2 class="elementor-image-box-title">هدف راسخ </h2>
                                                                                                         <p class="elementor-image-box-description">تسعى راسخ بأسلوب حديث ومبسط مساعدة الطلاب في كافة المناطق على النجاح والتفوق في اجتياز امتحان الثانوية العامة.
                                                                                                             <br><br>
-                                                                                                            يقوم موقع راسخ بتوفير خطة دراسية متكاملة لكل مادة من مواد التوجيهي وتشمل:
+                                                                                                            يقوم منصة راسخ التعليمية بتوفير خطة دراسية متكاملة لكل مادة من مواد التوجيهي وتشمل:
 
                                                                                                             <br><br>
                                                                                                             محاضرات مبوبة سهلة الاستخدام وبأسلوب سلس من قبل نخبة من الأساتذة المميزين تمارين وحلول لمساعدة الطلاب على التمكن من المواد بشكل تام .
@@ -191,7 +191,7 @@
                                                             <div class="elementor-widget-wrap">
                                                                 <div class="elementor-element elementor-element-0037749 elementor-widget elementor-widget-heading" data-id="0037749" data-element_type="widget" data-widget_type="heading.default">
                                                                     <div class="elementor-widget-container">
-                                                                        <h2 class="elementor-heading-title elementor-size-default">تعرف على أساتذة موقع راسخ التعليمي </h2>
+                                                                        <h2 class="elementor-heading-title elementor-size-default">تعرف على أساتذة منصة راسخ التعليمية  </h2>
                                                                     </div>
                                                                 </div>
                                                             </div>

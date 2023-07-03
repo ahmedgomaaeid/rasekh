@@ -33,7 +33,7 @@
                                                                                             <div class="elementor-widget-container">
                                                                                                 <div class="elementor-image-box-wrapper">
                                                                                                     <div class="elementor-image-box-content">
-                                                                                                        <h1 class="elementor-image-box-title">للحصول على عروض موقع راسخ التعليمي </h1>
+                                                                                                        <h1 class="elementor-image-box-title">للحصول على عروض منصة راسخ التعليمية التعليمي </h1>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>

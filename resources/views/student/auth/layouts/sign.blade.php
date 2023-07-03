@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<!-- saved from url=(0023)https://watad.me/login/ -->
+<!-- saved from url=(0023)https://rasekhpal.com/login/ -->
 <html dir="rtl" lang="ar">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title> موقع راسخ التعليمي</title>
+    <title> منصة راسخ التعليمية</title>
     <meta name="robots" content="noindex, follow">
     <link rel="dns-prefetch" href="https://fonts.googleapis.com/">
     <link rel="dns-prefetch" href="https://s.w.org/">
@@ -18,32 +18,32 @@
         window.gutenberg_quick_link_blocks['user_links'] = [{
             "ID": "profile"
             , "title": "Profile"
-            , "icon": "https:\/\/watad.me\/wp-content\/plugins\/buddyboss-app\/assets\/app-icons\/bbapp\/profile-outlined.png"
+            , "icon": "https:\/\/rasekhpal.com\/wp-content\/plugins\/buddyboss-app\/assets\/app-icons\/bbapp\/profile-outlined.png"
             , "icon_val": "bbapp\/profile"
         }, {
             "ID": "settings"
             , "title": "Account"
-            , "icon": "https:\/\/watad.me\/wp-content\/plugins\/buddyboss-app\/assets\/app-icons\/bbapp\/settings-outlined.png"
+            , "icon": "https:\/\/rasekhpal.com\/wp-content\/plugins\/buddyboss-app\/assets\/app-icons\/bbapp\/settings-outlined.png"
             , "icon_val": "bbapp\/settings"
         }, {
             "ID": "activities"
             , "title": "Timeline"
-            , "icon": "https:\/\/watad.me\/wp-content\/plugins\/buddyboss-app\/assets\/app-icons\/bbapp\/activity-outlined.png"
+            , "icon": "https:\/\/rasekhpal.com\/wp-content\/plugins\/buddyboss-app\/assets\/app-icons\/bbapp\/activity-outlined.png"
             , "icon_val": "bbapp\/activity"
         }, {
             "ID": "notifications"
             , "title": "Notifications"
-            , "icon": "https:\/\/watad.me\/wp-content\/plugins\/buddyboss-app\/assets\/app-icons\/bbapp\/notification-outlined.png"
+            , "icon": "https:\/\/rasekhpal.com\/wp-content\/plugins\/buddyboss-app\/assets\/app-icons\/bbapp\/notification-outlined.png"
             , "icon_val": "bbapp\/notification"
         }, {
             "ID": "messages"
             , "title": "\u0631\u0633\u0627\u0626\u0644"
-            , "icon": "https:\/\/watad.me\/wp-content\/plugins\/buddyboss-app\/assets\/app-icons\/bbapp\/messages-outlined.png"
+            , "icon": "https:\/\/rasekhpal.com\/wp-content\/plugins\/buddyboss-app\/assets\/app-icons\/bbapp\/messages-outlined.png"
             , "icon_val": "bbapp\/messages"
         }, {
             "ID": "certificates"
             , "title": "Certificates"
-            , "icon": "https:\/\/watad.me\/wp-content\/plugins\/buddyboss-app\/assets\/app-icons\/bbapp\/certificates-outlined.png"
+            , "icon": "https:\/\/rasekhpal.com\/wp-content\/plugins\/buddyboss-app\/assets\/app-icons\/bbapp\/certificates-outlined.png"
             , "icon_val": "bbapp\/certificates"
         }];
         window.gutenberg_quick_link_blocks['core_menus'] = {
@@ -485,7 +485,7 @@
             var loginLogoTitle = function() {
                 jQuery('.login.bb-login #login > h1 > a').each(function() {
                     var $this = jQuery(this);
-                    $this.addClass('bb-login-title').append('<span class="bs-cs-login-title">موقع راسخ التعليمي</span>');
+                    $this.addClass('bb-login-title').append('<span class="bs-cs-login-title">منصة راسخ التعليمية التعليمي</span>');
 
                 });
             };
@@ -623,7 +623,7 @@
         }
 
         .login h1 a {
-            background-image: url(https://watad.me/wp-content/uploads/2019/12/loggg.png);
+            background-image: url(https://rasekhpal.com/wp-content/uploads/2019/12/loggg.png);
             background-size: contain;
             width: 145px;
         }
@@ -732,7 +732,7 @@
     <script type="text/javascript" id="zxcvbn-async-js-extra">
         /* <![CDATA[ */
         var _zxcvbnSettings = {
-            "src": "https:\/\/watad.me\/wp-includes\/js\/zxcvbn.min.js"
+            "src": "https:\/\/rasekhpal.com\/wp-includes\/js\/zxcvbn.min.js"
         };
         /* ]]> */
 

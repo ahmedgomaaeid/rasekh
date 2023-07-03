@@ -126,7 +126,7 @@
                                                                                                     <div class="course-lesson-count">{{$cate->name}}</div>
                                                                                                     <h2 class="bb-course-title"><a href="{{route('teachers',$cate->id)}}">{{$cate->name}}</a></h2>
                                                                                                     <div class="bb-course-meta">
-                                                                                                        <a class="item-avatar" href="https://watad.me/members/hosam-alabsi/" class="item-avatar">
+                                                                                                        <a class="item-avatar" href="https://rasekhpal.com/members/hosam-alabsi/" class="item-avatar">
                                                                                                     </div>
                                                                                                     
 

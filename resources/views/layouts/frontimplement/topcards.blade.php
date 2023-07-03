@@ -119,7 +119,7 @@
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
     <!-- This site is optimized with the Yoast SEO plugin v19.10 - https://yoast.com/wordpress/plugins/seo/ -->
-    <title>موقع راسخ</title>
+    <title>منصة راسخ التعليمية</title>
     
     <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
     <script src="https://assets.swarmcdn.com/cross/swarmcdn.js?v=4f42193d"></script>
@@ -130,7 +130,7 @@
                 "@type": "WebPage"
                 , "@id": "https://watad.me/%d9%86%d9%82%d8%a7%d8%b7-%d8%a8%d9%8a%d8%b9-%d8%a8%d8%b7%d8%a7%d9%82%d8%a7%d8%aa-%d9%88%d8%aa%d8%af/"
                 , "url": "https://watad.me/%d9%86%d9%82%d8%a7%d8%b7-%d8%a8%d9%8a%d8%b9-%d8%a8%d8%b7%d8%a7%d9%82%d8%a7%d8%aa-%d9%88%d8%aa%d8%af/"
-                , "name": "نقاط بيع بطاقات راسخ - موقع راسخ التعليمي"
+                , "name": "نقاط بيع بطاقات راسخ - منصة راسخ التعليمية"
                 , "isPartOf": {
                     "@id": "https://watad.me/#website"
                 }
@@ -161,7 +161,7 @@
                 "@type": "WebSite"
                 , "@id": "https://watad.me/#website"
                 , "url": "https://watad.me/"
-                , "name": "موقع راسخ التعليمي"
+                , "name": "منصة راسخ التعليمية"
                 , "description": "دورات دروس توجيهي اون لاين اونلاين  حصص أون لاين تعليم اون لاين الاردن"
                 , "potentialAction": [{
                     "@type": "SearchAction"
@@ -182,8 +182,8 @@
     <link rel="dns-prefetch" href="//client.crisp.chat">
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link rel="alternate" type="application/rss+xml" title="موقع راسخ التعليمي « الخلاصة" href="https://rasekhpal.com/feed/">
-    <link rel="alternate" type="application/rss+xml" title="موقع راسخ التعليمي « خلاصة التعليقات" href="https://rasekhpal.com/comments/feed/">
+    <link rel="alternate" type="application/rss+xml" title="منصة راسخ التعليمية « الخلاصة" href="https://rasekhpal.com/feed/">
+    <link rel="alternate" type="application/rss+xml" title="منصة راسخ التعليمية « خلاصة التعليقات" href="https://rasekhpal.com/comments/feed/">
     <script type="text/javascript">
         window._wpemojiSettings = {
             "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/"
