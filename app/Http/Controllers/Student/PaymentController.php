@@ -70,6 +70,44 @@ class PaymentController extends Controller
             return redirect()->route('myCourses')->with('success', 'تمت عملية الشراء بنجاح');
         }
     }
+    public function lahzaPay()
+    {
+        $cart_data = json_decode(stripslashes(Cookie::get('shopping_cart')));
+        $total_price = 0;
+        $points = Student::find(auth()->user()->id)->points;
+        foreach($cart_data as $item_id)
+        {
+            $item = getCourseData($item_id->item_id);
+            $total_price += $item->price;
+        }
+
+        $url = "https://api.lahza.io/transaction/initialize";
+
+        $fields = [
+            'email' => Auth::guard('student')->user()->email,
+            'amount' => $total_price-$points,
+            'currency' => 'ILS',
+        ];
+
+        $fields_string = http_build_query($fields);
+
+        //open connection
+        $ch = curl_init();
+        
+        //set the url, number of POST vars, POST data
+        curl_setopt($ch,CURLOPT_URL, $url);
+        curl_setopt($ch,CURLOPT_POST, true);
+        curl_setopt($ch,CURLOPT_POSTFIELDS, $fields_string);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+            "Authorization: Bearer sk_test_2lo4ccnqjkQ70vuilbGUWTee5pzOW4CZ1",
+            "Cache-Control: no-cache",
+        ));
+        
+        //So that curl_exec returns the contents of the cURL; rather than echoing it
+        curl_setopt($ch,CURLOPT_RETURNTRANSFER, true);
+        $result = curl_exec($ch);
+        return $result;
+    }
     public function payment_callback(Request $request)
     {
         //dd($request->all());
@@ -109,10 +147,7 @@ class PaymentController extends Controller
         return redirect()->route('cart')->with('status','حدث خطأ أثناء الدفع');
     }
 
-    public function lahzaPay($payment)
-    {
-        return $payment;
-    }
+    
 
 
     public function charging()

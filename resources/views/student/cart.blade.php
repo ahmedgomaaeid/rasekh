@@ -128,26 +128,9 @@
                                                         <img src="{{route('index')}}/public/paypal.png" style="width: 200px;">
                                                     </a>
 
-                                                    <a onclick="pay()">
+                                                    <a href="{{route('lahza.pay')}}">
                                                         <img src="{{route('index')}}/public/badge.png" style="width: 200px;">
                                                     </a>
-
-                                                    <script>
-
-                                                        function pay() {
-                                                            const lahza = new LahzaPopup();
-                                                            lahza.newTransaction({
-                                                                key: 'pk_test_KWeQxq0u8dB3F1EA2tUNkq68vR79JGfPe'
-                                                                , email: '{{Auth::guard('student')->user()->email}}'
-                                                                , currency: "ILS"
-                                                                , amount: {{$total_price-$points}} * 100
-                                                                , onSuccess: (transaction) => {
-                                                                    console.log(transaction);
-                                                                }
-                                                            });
-                                                        }
-
-                                                    </script>
                                                     @endif
 
                                                 </div>
