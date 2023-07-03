@@ -107,7 +107,7 @@ class PaymentController extends Controller
         curl_setopt($ch,CURLOPT_RETURNTRANSFER, true);
         $result = curl_exec($ch);
         $res = json_decode($result);
-        dd($res);
+        dd($res->data->reference);
     }
     public function payment_callback(Request $request)
     {
