@@ -107,7 +107,12 @@ class PaymentController extends Controller
         curl_setopt($ch,CURLOPT_RETURNTRANSFER, true);
         $result = curl_exec($ch);
         $res = json_decode($result);
-        dd($res->data->reference);
+        dd($res);
+        $payment = new Payment();
+        $payment->payment_id = $res->data->reference;
+        $payment->data = Cookie::get('shopping_cart');
+        $payment->save();
+        $url = $res->data->url;
     }
     public function payment_callback(Request $request)
     {
