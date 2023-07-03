@@ -106,7 +106,7 @@ class PaymentController extends Controller
         //So that curl_exec returns the contents of the cURL; rather than echoing it
         curl_setopt($ch,CURLOPT_RETURNTRANSFER, true);
         $result = curl_exec($ch);
-        return $result;
+        dd( $result);
     }
     public function payment_callback(Request $request)
     {
