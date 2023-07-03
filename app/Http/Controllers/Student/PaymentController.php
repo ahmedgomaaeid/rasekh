@@ -68,7 +68,6 @@ class PaymentController extends Controller
     }
     public function lahzaPay()
     {
-        dd(route('verify-lahza-payment'));
         $cart_data = json_decode(stripslashes(Cookie::get('shopping_cart')));
         $total_price = 0;
         $points = Student::find(auth()->user()->id)->points;
@@ -83,7 +82,7 @@ class PaymentController extends Controller
             'email' => Auth::guard('student')->user()->email,
             'amount' => ($total_price - $points)*100,
             'currency' => 'ILS',
-            'callback_url' => route('verify-lahza-payment'),
+            'callback_url' => route('verify-lahza-payment')+'/',
         ];
 
         $fields_string = http_build_query($fields);
