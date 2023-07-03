@@ -173,7 +173,7 @@ class PaymentController extends Controller
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         $result = curl_exec($ch);
         $res = json_decode($result);
-        if($res->status == true){
+        if($res->status == true && $res->data->customer->email == Auth::guard('student')->user()->email){
             $payment = Payment::where('payment_id', $res->data->reference)->first();
             if(!$payment){
                 return redirect()->route('myCourses')->with('status', 'حدث خطأ أثناء الدفع');
