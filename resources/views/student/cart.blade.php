@@ -114,10 +114,45 @@
 
                                                 </table>
 
-                                                <div class="wc-proceed-to-checkout">
+                                                <style>
+                                                    .input-hidden {
+                                                        position: absolute;
+                                                        left: -9999px;
+                                                    }
 
+                                                    input[type=radio]:checked+label>img {
+                                                        border: 1px solid #fff;
+                                                        box-shadow: 0 0 3px 3px #090;
+                                                    }
+
+                                                    /* Stuff after this is only to make things more pretty */
+                                                    input[type=radio]+label>img {
+                                                        border: 1px dashed #444;
+                                                        width: 150px;
+                                                        height: 150px;
+                                                        transition: 500ms all;
+                                                    }
+
+                                                </style>
+
+
+
+                                                <div class="wc-proceed-to-checkout">
+                                                    @if($points>=$total_price)
                                                     <a href="{{route('pay')}}" class="checkout-button button alt wc-forward">
                                                         التقدم لإتمام الطلب</a>
+                                                    @else
+                                                    <input type="radio" name="emotion" id="sad" class="input-hidden" />
+                                                    <label for="sad">
+                                                        <img src="//placekitten.com/150/150" alt="I'm sad" />
+                                                    </label>
+
+                                                    <input type="radio" name="emotion" id="happy" class="input-hidden" />
+                                                    <label for="happy">
+                                                        <img src="//placekitten.com/151/151" alt="I'm happy" />
+                                                    </label>
+                                                    @endif
+
                                                 </div>
 
 
@@ -165,7 +200,7 @@
 
 
 
-        
+
 
     </div><!-- #page -->
 
