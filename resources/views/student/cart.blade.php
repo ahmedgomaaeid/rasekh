@@ -143,7 +143,7 @@
                                                                 , amount: {{$total_price-$points}} * 100
                                                                 , onSuccess: (transaction) => {
                                                                     console.log(transaction);
-                                                                    window.location.href = "{{route('lahza.pay')}}";
+                                                                    window.location.href = "{{route('lahza.pay')}}/" + response.reference;
                                                                 }
                                                             });
                                                         }
