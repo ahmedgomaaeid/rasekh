@@ -159,6 +159,8 @@ class PaymentController extends Controller
     }
     public function lahzaPaymentCallback($ref)
     {
+        //delete &reference= from start of $ref
+        $ref = substr($ref, 11);
         dd($ref);
         $url = "https://api.lahza.io/transaction/verify/" . $ref;
 
