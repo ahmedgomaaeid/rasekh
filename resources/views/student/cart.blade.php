@@ -114,18 +114,16 @@
 
                                                 </table>
 
-                                                <style>
-                                                    
-
-                                                </style>
 
 
+                                                
 
                                                 <div class="wc-proceed-to-checkout">
                                                     @if($points>=$total_price)
                                                     <a href="{{route('pay')}}" class="checkout-button button alt wc-forward">
                                                         التقدم لإتمام الطلب</a>
                                                     @else
+                                                    <p>اختر طريقة الدفع</p>
                                                     <a href="{{route('pay')}}" >
                                                         <img src="{{route('index')}}/public/paypal.png" style="width: 200px;">
                                                     </a>
