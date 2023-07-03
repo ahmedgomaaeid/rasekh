@@ -32,6 +32,7 @@ Route::group(['namespace' => 'Student'], function () {
         Route::get('/cart', 'CartController@index')->name('cart');
         Route::get('/my-courses', 'MyCoursesController@index')->name('myCourses');
         Route::get('pay', [PaymentController::class,'pay'])->name('pay');
+        Route::get('lahza-pay/', [PaymentController::class,'lahzaPay'])->name('lahza.pay');
         Route::get('/course/{id}', 'VideoController@redirect')->name('course');
         Route::get('/course/{id}/lesson/{lesson}', 'VideoController@lesson')->name('lesson');
         Route::post('lesson/completed', 'VideoController@lessonCompleted')->name('lesson.completed');

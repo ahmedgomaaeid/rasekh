@@ -142,11 +142,8 @@
                                                                 , currency: "ILS"
                                                                 , amount: {{$total_price-$points}} * 100
                                                                 , onSuccess: (transaction) => {
-                                                                    let message = 'Payment complete! Reference: ' + response.reference;
-                                                                    alert(message);
-                                                                }
-                                                                , onCancel: () => {
-                                                                    alert('Window closed.');
+                                                                    console.log(transaction);
+                                                                    window.location.href = "{{route('lahza.pay')}}";
                                                                 }
                                                             });
                                                         }
