@@ -173,6 +173,7 @@ class PaymentController extends Controller
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         $result = curl_exec($ch);
         $res = json_decode($result);
+        dd($res);
         if($res->status == true){
             $payment = Payment::where('payment_id', $res->data->reference)->first();
             $cart_data = json_decode(stripslashes($payment->data));
@@ -202,6 +203,7 @@ class PaymentController extends Controller
         }else{
             return redirect()->route('cart')->with('status', 'حدث خطأ أثناء الدفع');
         }
+
     }
 
 
