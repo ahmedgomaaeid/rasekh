@@ -114,7 +114,6 @@ class PaymentController extends Controller
         }
         }
         */
-        dd($res);
         $payment = new Payment();
         $payment->payment_id = $res->data->reference;
         $payment->data = Cookie::get('shopping_cart');
