@@ -116,6 +116,7 @@ class PaymentController extends Controller
         $fields = [
             'email' => "customer@example.com",
             'mobile'=>"059912313",
+            'currency' => "ILS",
             'amount' => "20000"
         ];
 
