@@ -126,11 +126,11 @@
                                                     <a href="{{route('pay')}}" class="checkout-button button alt wc-forward">
                                                         التقدم لإتمام الطلب</a>
                                                     @else
-                                                    <a href="{{route('pay')}}" class="checkout-button button alt wc-forward">
+                                                    <a href="{{route('pay')}}" >
                                                         <img src="{{route('index')}}/public/paypal.png" />
                                                     </a>
 
-                                                    <a href="{{route('pay')}}" class="checkout-button button alt wc-forward">
+                                                    <a href="{{route('pay')}}">
                                                         <img src="{{route('index')}}/public/badge.png" alt="I'm happy" />
                                                     </a>
                                                     @endif
