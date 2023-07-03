@@ -161,7 +161,6 @@ class PaymentController extends Controller
     {
         //delete &reference= from start of $ref
         $ref = substr($ref, 11);
-        dd($ref);
         $url = "https://api.lahza.io/transaction/verify/" . $ref;
 
         //get the response from the server
