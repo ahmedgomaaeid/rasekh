@@ -159,7 +159,7 @@ class PaymentController extends Controller
     }
     public function lahzaPaymentCallback($ref)
     {
-        $url = "https://api.lahza.io/transaction/verify/:" . $ref;
+        $url = "https://api.lahza.io/transaction/verify/" . $ref;
 
         //open connection
         $ch = curl_init();
