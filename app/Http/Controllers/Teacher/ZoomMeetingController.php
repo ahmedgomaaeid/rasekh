@@ -37,7 +37,7 @@ class ZoomMeetingController extends Controller
             //convert date time from mm/dd/yyyy --:-- -- to Y-m-dTh:i:00
             $time = date('Y-m-d\TH:i:00', strtotime($request->start_time));
             //decress 2 hours from time
-            $start_time = date('Y-m-d\TH:i:00', strtotime($time . "-2 hours")).'Z';
+            $start_time = date('Y-m-d\TH:i:00', strtotime($time . "-3 hours")).'Z';
             $integration = ZoomIntegration::where('teacher_id', Auth::guard('teacher')->user()->id)->first();
             $topic = 'محاضرة المعلم ' . Auth::guard('teacher')->user()->name;
             
