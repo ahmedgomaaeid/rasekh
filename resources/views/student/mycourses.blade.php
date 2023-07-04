@@ -142,7 +142,7 @@
                                                                                             <div class="bb-cover-list-item bb-course-paid ">
 
                                                                                                 <div class="bb-course-cover">
-                                                                                                    @if($course->course->lastZoomMeeting != null && $course->course->lastZoomMeeting->start_time < now() && $course->course->lastZoomMeeting->start_time > now()->subMinutes(60))
+                                                                                                    @if($course->course->lastZoomMeeting != null && $course->course->lastZoomMeeting->start_time > now() && $course->course->lastZoomMeeting->start_time < now()->addMinutes(60))
                                                                                                         <div class="bb-live" onclick="window.location='{{route('meet', $course->course->lastZoomMeeting->id)}}'">
                                                                                                             دخول البث
                                                                                                             <div class="i-progress" style="color: #fff; font-size:22px;"><i class="fa-brands fa-youtube"></i></div>
