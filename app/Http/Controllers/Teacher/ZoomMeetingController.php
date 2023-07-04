@@ -50,15 +50,24 @@ class ZoomMeetingController extends Controller
                         "Authorization" => "Bearer $accessToken"
                     ],
                     'json' => [
-                        "topic" => "Let's learn Laravel",
+                        "topic" => $topic,
                         "type" => 2,
-                        "start_time" => "2020-12-05T20:30:00",
+                        "start_time" => $start_time,
                         "duration" => "60",
                         "password" => "123456"
                     ],
                 ]);
-                $data = json_decode($response->getBody());
-                dd($data);
+                $data = json_decode($response->getBody());      
+                $meeting_id = $data->id;
+                $zoomMeeting = new ZoomMeeting();
+                $zoomMeeting->meeting_id = $meeting_id;
+                $zoomMeeting->teacher_id = Auth::guard('teacher')->user()->id;
+                $zoomMeeting->course_id = $request->course_id;
+                $zoomMeeting->start_time = $request->start_time;
+                $zoomMeeting->sdk_key = $integration->sdk_client_id;
+                $zoomMeeting->save();
+                return redirect()->route('get.teacher.zoom-meeting')->with('success', 'تم إنشاء البث بنجاح');
+
             }catch(Exception $e) {
                 if( 401 == $e->getCode() ) {
                     $refresh_token = $arr_token->refresh_token;
