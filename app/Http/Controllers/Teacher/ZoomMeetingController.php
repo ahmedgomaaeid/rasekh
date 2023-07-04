@@ -66,7 +66,7 @@ class ZoomMeetingController extends Controller
                     $client = new Client(['base_uri' => 'https://zoom.us']);
                     $response = $client->request('POST', '/oauth/token', [
                         "headers" => [
-                            "Authorization" => "Basic ". base64_encode(Auth::guard('teacher')->user()->zoom_integration->sdk_client_id . ":" . Auth::guard('teacher')->user()->zoom_integration->sdk_client_secret),
+                            "Authorization" => "Basic ". base64_encode(Auth::guard('teacher')->user()->zoom_integration->oauth_client_id . ":" . Auth::guard('teacher')->user()->zoom_integration->oauth_client_secret),
                         ],
                         'form_params' => [
                             "grant_type" => "refresh_token",
@@ -110,14 +110,14 @@ class ZoomMeetingController extends Controller
             // $zoomMeeting->teacher_id = Auth::guard('teacher')->user()->id;
             // $zoomMeeting->course_id = $request->course_id;
             // $zoomMeeting->start_time = $request->start_time;
-            // $zoomMeeting->sdk_key = $integration->client_id;
+            // $zoomMeeting->oauth_key = $integration->client_id;
             // $zoomMeeting->save();
             // return redirect()->route('get.teacher.zoom-meeting')->with('success', 'تم إنشاء البث بنجاح');
         }
     }
     public function connect()
     {
-        $url = "https://zoom.us/oauth/authorize?response_type=code&client_id=".Auth::guard('teacher')->user()->zoom_integration->sdk_client_id."&redirect_uri=".route('post.teacher.zoom-meeting.callback');
+        $url = "https://zoom.us/oauth/authorize?response_type=code&client_id=".Auth::guard('teacher')->user()->zoom_integration->oauth_client_id."&redirect_uri=".route('post.teacher.zoom-meeting.callback');
         return redirect($url);
     }
     public function callback()
@@ -126,7 +126,7 @@ class ZoomMeetingController extends Controller
             $client = new Client(['base_uri' => 'https://zoom.us']);
             $response = $client->request('POST', '/oauth/token',[
                 "headers" => [
-                    "Authorization" => "Basic ". base64_encode(Auth::guard('teacher')->user()->zoom_integration->sdk_client_id . ":" . Auth::guard('teacher')->user()->zoom_integration->sdk_client_secret),
+                    "Authorization" => "Basic ". base64_encode(Auth::guard('teacher')->user()->zoom_integration->oauth_client_id . ":" . Auth::guard('teacher')->user()->zoom_integration->oauth_client_secret),
                 ],
                 'form_params' => [
                     "grant_type" => "authorization_code",
