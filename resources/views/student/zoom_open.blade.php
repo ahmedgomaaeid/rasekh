@@ -22,13 +22,13 @@
     <script src="{{route('index')}}/zoom/js/vconsole.min.js"></script>
     <script>
     ZoomMtg.preLoadWasm();
-    var SDK_KEY = "uHYBuO29Qbe9Es8MBlH9Fw";
-    var SDK_SECRET = "Bb4K06NKFnRb1wrrlG1XQh4mhAMt9JdM";
+    var SDK_KEY = "{{$meeting->teacher->zoom_integration->client_id}}";
+    var SDK_SECRET = "{{$meeting->teacher->zoom_integration->client_secret}}";
     var integration = {
-        mn: 71495694976,
-        name: "ahmed",
-        email: "pahmedgomaaeid@gmail.com",
-        role: 1,
+        mn: {{$meeting->meeting_id}},
+        name: "{{Auth::guard('student')->user()->name}}",
+        email: "{{Auth::guard('student')->user()->email}}",
+        role: 0,
     };
         
     var meetingConfig = testTool.getConfig(integration);
