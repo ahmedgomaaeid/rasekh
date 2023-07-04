@@ -54,6 +54,7 @@ class ZoomMeetingController extends Controller
                         "type" => 2,
                         "start_time" => $start_time,
                         "duration" => "60",
+                        "auto_recording" => "cloud",
                         "password" => "123456"
                     ],
                 ]);
