@@ -7,6 +7,9 @@ use App\Http\Controllers\Controller;
 use App\Models\Course;
 use App\Models\ZoomIntegration;
 use App\Models\ZoomMeeting;
+use App\Models\ZoomToken;
+use Exception;
+use GuzzleHttp\Client;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 require_once __DIR__.'/zoom/zoom-backend/index.php';
@@ -38,8 +41,48 @@ class ZoomMeetingController extends Controller
             $integration = ZoomIntegration::where('teacher_id', Auth::guard('teacher')->user()->id)->first();
             $topic = 'محاضرة المعلم ' . Auth::guard('teacher')->user()->name;
             
-            $client = new \GuzzleHttp\Client(['base_uri' => 'https://api.zoom.us']);
-
+            $client = new Client(['base_uri' => 'https://api.zoom.us']);
+            $arr_token = json_decode(ZoomToken::where('teacher_id', Auth::guard('teacher')->user()->id)->first());
+            $accessToken = $arr_token->access_token;
+            try{
+                $response = $client->request('POST', '/v2/users/me/meetings', [
+                    "headers" => [
+                        "Authorization" => "Bearer $accessToken"
+                    ],
+                    'json' => [
+                        "topic" => "Let's learn Laravel",
+                        "type" => 2,
+                        "start_time" => "2020-12-05T20:30:00",
+                        "duration" => "60",
+                        "password" => "123456"
+                    ],
+                ]);
+                $data = json_decode($response->getBody());
+                dd($data);
+            }catch(Exception $e) {
+                if( 401 == $e->getCode() ) {
+                    $refresh_token = $arr_token->refresh_token;
+         
+                    $client = new Client(['base_uri' => 'https://zoom.us']);
+                    $response = $client->request('POST', '/oauth/token', [
+                        "headers" => [
+                            "Authorization" => "Basic ". base64_encode(Auth::guard('teacher')->user()->zoom_integration->sdk_client_id . ":" . Auth::guard('teacher')->user()->zoom_integration->sdk_client_secret),
+                        ],
+                        'form_params' => [
+                            "grant_type" => "refresh_token",
+                            "refresh_token" => $refresh_token
+                        ],
+                    ]);
+                    ZoomToken::UpdateOrCreate(
+                        ['teacher_id' => Auth::guard('teacher')->user()->id],
+                        ['access_token' => $response->getBody()]
+                    );
+                    //retry the request
+                    $this->store($request);
+                } else {
+                    return $e->getMessage();
+                }
+            }
             // $curl = curl_init();
             // curl_setopt_array($curl, array(
             //     CURLOPT_URL => "https://api.zoom.us/v2/users/" . $integration->email,
