@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class ZoomToken extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'teacher_id',
+        'access_token',
+    ];
 }
