@@ -26,7 +26,7 @@
                                 <div class="row mb-4">
                                     <label class="col-md-3 form-label">oauth client id :</label>
                                     <div class="col-md-9">
-                                        <input type="text" class="form-control" name="oauth_client_id" placeholder="client id" value="{{$oauth_c_id}}">
+                                        <input type="text" class="form-control" name="oauth_client_id" placeholder="oauth client id" value="{{$oauth_c_id}}">
                                         @error('oauth_client_id')
                                         <div class="invalid-feedback" style="display:block;">{{$message}}</div>
                                         @enderror
@@ -35,7 +35,7 @@
                                 <div class="row mb-4">
                                     <label class="col-md-3 form-label">oauth client secret :</label>
                                     <div class="col-md-9">
-                                        <input type="text" class="form-control" name="oauth_client_secret" placeholder="client secret" value="{{$oauth_c_secret}}">
+                                        <input type="text" class="form-control" name="oauth_client_secret" placeholder="oauth client secret" value="{{$oauth_c_secret}}">
                                         @error('oauth_client_secret')
                                         <div class="invalid-feedback" style="display:block;">{{$message}}</div>
                                         @enderror
@@ -44,7 +44,7 @@
                                 <div class="row mb-4">
                                     <label class="col-md-3 form-label">sdk client id :</label>
                                     <div class="col-md-9">
-                                        <input type="text" class="form-control" name="sdk_client_id" placeholder="client id" value="{{$sdk_c_id}}">
+                                        <input type="text" class="form-control" name="sdk_client_id" placeholder="sdk client id" value="{{$sdk_c_id}}">
                                         @error('sdk_client_id')
                                         <div class="invalid-feedback" style="display:block;">{{$message}}</div>
                                         @enderror
@@ -53,7 +53,7 @@
                                 <div class="row mb-4">
                                     <label class="col-md-3 form-label">sdk client secret :</label>
                                     <div class="col-md-9">
-                                        <input type="text" class="form-control" name="sdk_client_secret" placeholder="client secret" value="{{$sdk_c_secret}}">
+                                        <input type="text" class="form-control" name="sdk_client_secret" placeholder="sdk client secret" value="{{$sdk_c_secret}}">
                                         @error('sdk_client_secret')
                                         <div class="invalid-feedback" style="display:block;">{{$message}}</div>
                                         @enderror
