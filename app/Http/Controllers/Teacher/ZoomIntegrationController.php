@@ -18,7 +18,7 @@ class ZoomIntegrationController extends Controller
         $sdk_c_secret = '';
         if ($zoom_integration) {
             $oauth_c_id = $zoom_integration->oauth_client_id;
-            $oauth_c_secret = $zoom_integration->outh_client_secret;
+            $oauth_c_secret = $zoom_integration->oauth_client_secret;
             $sdk_c_id = $zoom_integration->sdk_client_id;
             $sdk_c_secret = $zoom_integration->sdk_client_secret;
         }
