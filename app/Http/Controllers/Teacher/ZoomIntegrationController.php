@@ -12,8 +12,8 @@ class ZoomIntegrationController extends Controller
     public function index()
     {
         $zoom_integration = ZoomIntegration::where('teacher_id', Auth::guard('teacher')->user()->id)->first();
-        $auth_c_id = '';
-        $auth_c_secret = '';
+        $oauth_c_id = '';
+        $oauth_c_secret = '';
         $sdk_c_id = '';
         $sdk_c_secret = '';
         if ($zoom_integration) {
