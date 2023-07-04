@@ -37,37 +37,39 @@ class ZoomMeetingController extends Controller
             $start_time = date('Y-m-d\TH:i:00', strtotime($time . "-2 hours")).'Z';
             $integration = ZoomIntegration::where('teacher_id', Auth::guard('teacher')->user()->id)->first();
             $topic = 'محاضرة المعلم ' . Auth::guard('teacher')->user()->name;
-            //get user id from zoom from https://api.zoom.us/v2/users/{email}
-            $curl = curl_init();
-            curl_setopt_array($curl, array(
-                CURLOPT_URL => "https://api.zoom.us/v2/users/" . $integration->email,
-                CURLOPT_RETURNTRANSFER => true,
-                CURLOPT_ENCODING => "",
-                CURLOPT_MAXREDIRS => 10,
-                CURLOPT_SSL_VERIFYHOST => 0,
-                CURLOPT_SSL_VERIFYPEER => 0,
-                CURLOPT_TIMEOUT => 30,
-                CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-                CURLOPT_CUSTOMREQUEST => "GET",
-                CURLOPT_HTTPHEADER => array(
-                "Authorization: Bearer ".$integration->jwt,
-                "Content-Type: application/json",
-                "cache-control: no-cache"
-                ),
-            ));
-            $response = curl_exec($curl);
-            $zoomUserId = json_decode($response)->users[0]->id;
             
-            $zoom = new ZoomApiHelper();        
-            $meeting_id = json_decode($zoom->createZoomMeeting(['integration' => $integration, 'topic' => $topic, 'start_time' => $start_time, 'zoomUserId' => $zoomUserId]))->id;
-            $zoomMeeting = new ZoomMeeting();
-            $zoomMeeting->meeting_id = $meeting_id;
-            $zoomMeeting->teacher_id = Auth::guard('teacher')->user()->id;
-            $zoomMeeting->course_id = $request->course_id;
-            $zoomMeeting->start_time = $request->start_time;
-            $zoomMeeting->sdk_key = $integration->client_id;
-            $zoomMeeting->save();
-            return redirect()->route('get.teacher.zoom-meeting')->with('success', 'تم إنشاء البث بنجاح');
+            $client = new \GuzzleHttp\Client(['base_uri' => 'https://api.zoom.us']);
+
+            // $curl = curl_init();
+            // curl_setopt_array($curl, array(
+            //     CURLOPT_URL => "https://api.zoom.us/v2/users/" . $integration->email,
+            //     CURLOPT_RETURNTRANSFER => true,
+            //     CURLOPT_ENCODING => "",
+            //     CURLOPT_MAXREDIRS => 10,
+            //     CURLOPT_SSL_VERIFYHOST => 0,
+            //     CURLOPT_SSL_VERIFYPEER => 0,
+            //     CURLOPT_TIMEOUT => 30,
+            //     CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            //     CURLOPT_CUSTOMREQUEST => "GET",
+            //     CURLOPT_HTTPHEADER => array(
+            //     "Authorization: Bearer ".$integration->jwt,
+            //     "Content-Type: application/json",
+            //     "cache-control: no-cache"
+            //     ),
+            // ));
+            // $response = curl_exec($curl);
+            // $zoomUserId = json_decode($response)->users[0]->id;
+            
+            // $zoom = new ZoomApiHelper();        
+            // $meeting_id = json_decode($zoom->createZoomMeeting(['integration' => $integration, 'topic' => $topic, 'start_time' => $start_time, 'zoomUserId' => $zoomUserId]))->id;
+            // $zoomMeeting = new ZoomMeeting();
+            // $zoomMeeting->meeting_id = $meeting_id;
+            // $zoomMeeting->teacher_id = Auth::guard('teacher')->user()->id;
+            // $zoomMeeting->course_id = $request->course_id;
+            // $zoomMeeting->start_time = $request->start_time;
+            // $zoomMeeting->sdk_key = $integration->client_id;
+            // $zoomMeeting->save();
+            // return redirect()->route('get.teacher.zoom-meeting')->with('success', 'تم إنشاء البث بنجاح');
         }
     }
     public function destroy($id)
