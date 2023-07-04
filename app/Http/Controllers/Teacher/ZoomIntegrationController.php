@@ -12,27 +12,27 @@ class ZoomIntegrationController extends Controller
     public function index()
     {
         $zoom_integration = ZoomIntegration::where('teacher_id', Auth::guard('teacher')->user()->id)->first();
-        $c_id = '';
-        $c_secret = '';
-        $jwt = '';
-        $zoom_email = '';
+        $auth_c_id = '';
+        $auth_c_secret = '';
+        $sdk_c_id = '';
+        $sdk_c_secret = '';
         if ($zoom_integration) {
-            $c_id = $zoom_integration->client_id;
-            $c_secret = $zoom_integration->client_secret;
-            $jwt = $zoom_integration->jwt;
-            $zoom_email = $zoom_integration->zoom_email;
+            $oauth_c_id = $zoom_integration->oauth_client_id;
+            $oauth_c_secret = $zoom_integration->outh_client_secret;
+            $sdk_c_id = $zoom_integration->sdk_client_id;
+            $sdk_c_secret = $zoom_integration->sdk_client_secret;
         }
-        return view('teacher.zoom.integration', compact('c_id', 'c_secret', 'jwt', 'zoom_email'));
+        return view('teacher.zoom.integration', compact('oauth_c_id', 'oauth_c_secret', 'sdk_c_id', 'sdk_c_secret'));
     }
     public function store()
     {
         ZoomIntegration::updateOrCreate(
             ['teacher_id' => Auth::guard('teacher')->user()->id],
             [
-                'client_id' => request('client_id'),
-                'client_secret' => request('client_secret'),
-                'jwt' => request('jwt'),
-                'zoom_email' => request('zoom_email'),
+                'oauth_client_id' => request('oauth_client_id'),
+                'outh_client_secret' => request('oauth_client_secret'),
+                'sdk_client_id' => request('sdk_client_id'),
+                'sdk_client_secret' => request('sdk_client_secret'),
             ]
         );
         return redirect()->route('get.teacher.dashboard')->with('success', 'تم تحديث البيانات بنجاح');

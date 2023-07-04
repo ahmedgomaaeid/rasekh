@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class ZoomIntegration extends Model
 {
     use HasFactory;
-    protected $fillable = ['teacher_id', 'client_id', 'client_secret', 'jwt', 'zoom_email'];
+    protected $fillable = ['teacher_id', 'oauth_client_id', 'outh_client_secret', 'sdk_client_id', 'sdk_client_secret'];
     public function teacher()
     {
         return $this->belongsTo(Teacher::class);

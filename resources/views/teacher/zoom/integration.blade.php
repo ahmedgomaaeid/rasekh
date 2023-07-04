@@ -24,37 +24,37 @@
                             </div>
                             <div class="card-body">
                                 <div class="row mb-4">
-                                    <label class="col-md-3 form-label"> client id :</label>
+                                    <label class="col-md-3 form-label">oauth client id :</label>
                                     <div class="col-md-9">
-                                        <input type="text" class="form-control" name="client_id" placeholder="client id" value="{{$c_id}}">
-                                        @error('client_id')
+                                        <input type="text" class="form-control" name="oauth_client_id" placeholder="client id" value="{{$oauth_c_id}}">
+                                        @error('oauth_client_id')
                                         <div class="invalid-feedback" style="display:block;">{{$message}}</div>
                                         @enderror
                                     </div>
                                 </div>
                                 <div class="row mb-4">
-                                    <label class="col-md-3 form-label"> client secret :</label>
+                                    <label class="col-md-3 form-label">oauth client secret :</label>
                                     <div class="col-md-9">
-                                        <input type="text" class="form-control" name="client_secret" placeholder="client secret" value="{{$c_secret}}">
-                                        @error('client_secret')
+                                        <input type="text" class="form-control" name="oauth_client_secret" placeholder="client secret" value="{{$oauth_c_secret}}">
+                                        @error('oauth_client_secret')
                                         <div class="invalid-feedback" style="display:block;">{{$message}}</div>
                                         @enderror
                                     </div>
                                 </div>
                                 <div class="row mb-4">
-                                    <label class="col-md-3 form-label"> jwtToken :</label>
+                                    <label class="col-md-3 form-label">sdk client id :</label>
                                     <div class="col-md-9">
-                                        <input type="text" class="form-control" name="jwt" placeholder="jwtToken" value="{{$jwt}}">
-                                        @error('jwt')
+                                        <input type="text" class="form-control" name="sdk_client_id" placeholder="client id" value="{{$sdk_c_id}}">
+                                        @error('sdk_client_id')
                                         <div class="invalid-feedback" style="display:block;">{{$message}}</div>
                                         @enderror
                                     </div>
                                 </div>
                                 <div class="row mb-4">
-                                    <label class="col-md-3 form-label"> zoom email :</label>
+                                    <label class="col-md-3 form-label">sdk client secret :</label>
                                     <div class="col-md-9">
-                                        <input type="text" class="form-control" name="zoom_email" placeholder="zoom email" value="{{$zoom_email}}">
-                                        @error('zoom_email')
+                                        <input type="text" class="form-control" name="sdk_client_secret" placeholder="client secret" value="{{$sdk_c_secret}}">
+                                        @error('sdk_client_secret')
                                         <div class="invalid-feedback" style="display:block;">{{$message}}</div>
                                         @enderror
                                     </div>
