@@ -115,6 +115,35 @@ class ZoomMeetingController extends Controller
             // return redirect()->route('get.teacher.zoom-meeting')->with('success', 'تم إنشاء البث بنجاح');
         }
     }
+    public function connect()
+    {
+        $url = "https://zoom.us/oauth/authorize?response_type=code&client_id=".Auth::guard('teacher')->user()->zoom_integration->sdk_client_id."&redirect_uri=".route('post.teacher.zoom-meeting.callback');
+        return redirect($url);
+    }
+    public function callback()
+    {
+        try{
+            $client = new Client(['base_uri' => 'https://zoom.us']);
+            $response = $client->request('POST', '/oauth/token',[
+                "headers" => [
+                    "Authorization" => "Basic ". base64_encode(Auth::guard('teacher')->user()->zoom_integration->sdk_client_id . ":" . Auth::guard('teacher')->user()->zoom_integration->sdk_client_secret),
+                ],
+                'form_params' => [
+                    "grant_type" => "authorization_code",
+                    "code" => $_GET['code'],
+                    "redirect_uri" => route('post.teacher.zoom-meeting.callback')
+                ],
+            ]);
+            $token = json_decode($response->getBody()->getContents(), true);
+            ZoomToken::UpdateOrCreate(
+                ['teacher_id' => Auth::guard('teacher')->user()->id],
+                ['access_token' => $token['access_token'], 'refresh_token' => $token['refresh_token']]
+            );
+            return redirect()->route('get.teacher.zoom-meeting')->with('success', 'تم ربط حسابك بنجاح');
+        }catch(Exception $e) {
+            return $e->getMessage();
+        }
+    }
     public function destroy($id)
     {
         $zoomMeeting = ZoomMeeting::find($id);

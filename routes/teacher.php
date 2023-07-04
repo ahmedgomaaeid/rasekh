@@ -80,6 +80,8 @@ Route::namespace('Teacher')->group(function () {
                     Route::get('/create', 'ZoomMeetingController@create')->name('get.teacher.zoom-meeting.create');
                     Route::post('/create', 'ZoomMeetingController@store')->name('post.teacher.zoom-meeting.create');
                     Route::get('/delete/{id}', 'ZoomMeetingController@destroy')->name('get.teacher.zoom-meeting.delete');
+                    Route::get('/connect', 'ZoomMeetingController@connect')->name('get.teacher.zoom-meeting.connect');
+                    Route::get('/callback', 'ZoomMeetingController@callback')->name('post.teacher.zoom-meeting.callback');
                 });
                 Route::get('meeting', 'ZoomMeetingController@meeting')->name('teacher.meeting');
                 Route::get('meet/{id}', 'ZoomMeetingController@meetingRedirect')->name('teacher.meet');
