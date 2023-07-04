@@ -30,7 +30,7 @@ class ZoomIntegrationController extends Controller
             ['teacher_id' => Auth::guard('teacher')->user()->id],
             [
                 'oauth_client_id' => request('oauth_client_id'),
-                'outh_client_secret' => request('oauth_client_secret'),
+                'oauth_client_secret' => request('oauth_client_secret'),
                 'sdk_client_id' => request('sdk_client_id'),
                 'sdk_client_secret' => request('sdk_client_secret'),
             ]
