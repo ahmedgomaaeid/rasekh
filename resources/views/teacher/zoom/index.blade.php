@@ -74,7 +74,7 @@
                                                                                                     class="mt-0 mt-sm-3 d-block">
                                                                                                     <h6
                                                                                                         class="mb-0 fs-14 fw-semibold">
-                                                                                                            @if ($meeting->start_time < now() && $meeting->start_time > now()->subMinutes(60))
+                                                                                                            @if ($meeting->start_time > now() && $meeting->start_time < now()->addMinutes(60))
                                                                                                                 <a href="{{route('teacher.meet', $meeting->id)}}" >دخول البث</a>
                                                                                                             @endif 
                                                                                                             </h6>
