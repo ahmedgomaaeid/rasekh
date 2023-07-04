@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <head>
-    <title>Zoom WebSDK</title>
+    <title>rasekh</title>
     <meta charset="utf-8" />
     <link type="text/css" rel="stylesheet" href="https://source.zoom.us/2.9.7/css/bootstrap.css" />
     <link type="text/css" rel="stylesheet" href="https://source.zoom.us/2.9.7/css/react-select.css" />
@@ -22,8 +22,8 @@
     <script src="{{route('index')}}/zoom/js/vconsole.min.js"></script>
     <script>
     ZoomMtg.preLoadWasm();
-    var SDK_KEY = "{{$meeting->teacher->zoom_integration->client_id}}";
-    var SDK_SECRET = "{{$meeting->teacher->zoom_integration->client_secret}}";
+    var SDK_KEY = "{{$meeting->teacher->zoom_integration->sdk_client_id}}";
+    var SDK_SECRET = "{{$meeting->teacher->zoom_integration->sdk_client_secret}}";
     var integration = {
         mn: {{$meeting->meeting_id}},
         name: "{{Auth::guard('teacher')->user()->name}}",

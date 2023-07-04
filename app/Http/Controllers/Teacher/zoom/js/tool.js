@@ -55,7 +55,7 @@ var testTool = {
     name: testTool.b64EncodeUnicode(
         integration.name
     ),
-    pwd: "ahmedeid",
+    pwd: "123456",
     role: parseInt(integration.role, 10),
     email: testTool.b64EncodeUnicode(
         integration.email
