@@ -19,7 +19,7 @@ class ZoomMeetingController extends Controller
     public function index()
     {   
         //minus 1 hour from current time
-        $zoomMeetings = ZoomMeeting::where('teacher_id', Auth::guard('teacher')->user()->id)->where('start_time', '>=', now()->subMinutes(60))->orderBy('start_time', 'asc')->get();
+        $zoomMeetings = ZoomMeeting::where('teacher_id', Auth::guard('teacher')->user()->id)->where('start_time', '>=', now())->orderBy('start_time', 'asc')->get();
         return view('teacher.zoom.index', compact('zoomMeetings'));
     }
     public function create()
