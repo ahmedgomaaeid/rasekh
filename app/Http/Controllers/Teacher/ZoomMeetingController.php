@@ -93,36 +93,6 @@ class ZoomMeetingController extends Controller
                     return $e->getMessage();
                 }
             }
-            // $curl = curl_init();
-            // curl_setopt_array($curl, array(
-            //     CURLOPT_URL => "https://api.zoom.us/v2/users/" . $integration->email,
-            //     CURLOPT_RETURNTRANSFER => true,
-            //     CURLOPT_ENCODING => "",
-            //     CURLOPT_MAXREDIRS => 10,
-            //     CURLOPT_SSL_VERIFYHOST => 0,
-            //     CURLOPT_SSL_VERIFYPEER => 0,
-            //     CURLOPT_TIMEOUT => 30,
-            //     CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-            //     CURLOPT_CUSTOMREQUEST => "GET",
-            //     CURLOPT_HTTPHEADER => array(
-            //     "Authorization: Bearer ".$integration->jwt,
-            //     "Content-Type: application/json",
-            //     "cache-control: no-cache"
-            //     ),
-            // ));
-            // $response = curl_exec($curl);
-            // $zoomUserId = json_decode($response)->users[0]->id;
-            
-            // $zoom = new ZoomApiHelper();        
-            // $meeting_id = json_decode($zoom->createZoomMeeting(['integration' => $integration, 'topic' => $topic, 'start_time' => $start_time, 'zoomUserId' => $zoomUserId]))->id;
-            // $zoomMeeting = new ZoomMeeting();
-            // $zoomMeeting->meeting_id = $meeting_id;
-            // $zoomMeeting->teacher_id = Auth::guard('teacher')->user()->id;
-            // $zoomMeeting->course_id = $request->course_id;
-            // $zoomMeeting->start_time = $request->start_time;
-            // $zoomMeeting->oauth_key = $integration->client_id;
-            // $zoomMeeting->save();
-            // return redirect()->route('get.teacher.zoom-meeting')->with('success', 'تم إنشاء البث بنجاح');
         }
     }
     public function connect()
@@ -157,6 +127,14 @@ class ZoomMeetingController extends Controller
     public function destroy($id)
     {
         $zoomMeeting = ZoomMeeting::find($id);
+        $client = new Client(['base_uri' => 'https://api.zoom.us']);
+        $arr_token = json_decode(ZoomToken::where('teacher_id', Auth::guard('teacher')->user()->id)->first()->access_token);
+        $accessToken = $arr_token->access_token;
+        $response = $client->request('DELETE', '/v2/meetings/{meeting_id}', [
+            "headers" => [
+                "Authorization" => "Bearer $accessToken"
+            ]
+        ]);
         $zoomMeeting->delete();
         return redirect()->route('get.teacher.zoom-meeting')->with('success', 'تم حذف البث بنجاح');
     }
