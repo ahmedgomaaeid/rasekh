@@ -135,6 +135,7 @@ class ZoomMeetingController extends Controller
                 "Authorization" => "Bearer $accessToken"
             ]
         ]);
+        dd($response);
         $zoomMeeting->delete();
         return redirect()->route('get.teacher.zoom-meeting')->with('success', 'تم حذف البث بنجاح');
     }
