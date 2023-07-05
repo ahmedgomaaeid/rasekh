@@ -148,7 +148,7 @@ class ZoomMeetingController extends Controller
             $token = json_decode($response->getBody()->getContents(), true);
             ZoomToken::UpdateOrCreate(
                 ['teacher_id' => Auth::guard('teacher')->user()->id],
-                ['access_token' => $token['access_token'], 'refresh_token' => $token['refresh_token']]
+                ['access_token' => $token]
             );
             return redirect()->route('get.teacher.zoom-meeting')->with('success', 'تم ربط حسابك بنجاح');
         }catch(Exception $e) {
