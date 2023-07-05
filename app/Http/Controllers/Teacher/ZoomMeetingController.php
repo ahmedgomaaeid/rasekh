@@ -130,7 +130,7 @@ class ZoomMeetingController extends Controller
         $client = new Client(['base_uri' => 'https://api.zoom.us']);
         $arr_token = json_decode(ZoomToken::where('teacher_id', Auth::guard('teacher')->user()->id)->first()->access_token);
         $accessToken = $arr_token->access_token;
-        $response = $client->request('DELETE', '/v2/meetings/{meeting_id}', [
+        $response = $client->request('DELETE', '/v2/meetings/'.$zoomMeeting->meeting_id, [
             "headers" => [
                 "Authorization" => "Bearer $accessToken"
             ]
