@@ -55,7 +55,7 @@ class ZoomMeetingController extends Controller
                         "start_time" => $start_time,
                         "duration" => "60",
                         "auto_recording" => "local",
-                        "password" => "123456"
+                        "password" => "ahmedeid"
                     ],
                 ]);
                 $data = json_decode($response->getBody());      
