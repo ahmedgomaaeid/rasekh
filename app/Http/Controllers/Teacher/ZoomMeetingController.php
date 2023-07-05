@@ -43,7 +43,6 @@ class ZoomMeetingController extends Controller
             
             $client = new Client(['base_uri' => 'https://api.zoom.us']);
             $arr_token = json_decode(ZoomToken::where('teacher_id', Auth::guard('teacher')->user()->id)->first()->access_token);
-            dd($arr_token);
             $accessToken = $arr_token->access_token;
             try{
                 $response = $client->request('POST', '/v2/users/me/meetings', [
