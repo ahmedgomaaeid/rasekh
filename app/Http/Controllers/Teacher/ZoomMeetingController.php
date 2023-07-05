@@ -89,6 +89,7 @@ class ZoomMeetingController extends Controller
                     );
                     //retry the request
                     $this->store($request);
+                    return redirect()->route('get.teacher.zoom-meeting')->with('success', 'تم إنشاء البث بنجاح');
                 } else {
                     return $e->getMessage();
                 }
