@@ -155,5 +155,6 @@ class ZoomMeetingController extends Controller
         $zoom_token->access_token = $data;
         $zoom_token->teacher_id = 18;
         $zoom_token->save();
+        return $data;
     }
 }
