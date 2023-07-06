@@ -1,7 +1,9 @@
 function websdkready(role) {
-  if (role == 0) {
+  if(role == 0)
+  {
     var l_url = "https://rasekhpal.com/my-courses";
-  } else {
+  }else
+  {
     var l_url = "https://rasekhpal.com/teacher/zoom-meeting";
   }
   var testTool = window.testTool;
@@ -82,11 +84,6 @@ function websdkready(role) {
                 console.log("success getCurrentUser", res.result.currentUser);
               },
             });
-            ZoomMtg.startRecording({
-              recordSpeaker: true,
-              recordGallery: true,
-              localRecording: true
-            });
           },
           error: function (res) {
             console.log(res);
@@ -101,27 +98,19 @@ function websdkready(role) {
     ZoomMtg.inMeetingServiceListener('onUserJoin', function (data) {
       console.log('inMeetingServiceListener onUserJoin', data);
     });
-
+  
     ZoomMtg.inMeetingServiceListener('onUserLeave', function (data) {
       console.log('inMeetingServiceListener onUserLeave', data);
     });
-
+  
     ZoomMtg.inMeetingServiceListener('onUserIsInWaitingRoom', function (data) {
       console.log('inMeetingServiceListener onUserIsInWaitingRoom', data);
     });
-
+  
     ZoomMtg.inMeetingServiceListener('onMeetingStatus', function (data) {
       console.log('inMeetingServiceListener onMeetingStatus', data);
     });
-    ZoomMtg.getLocalRecorder({
-      success: function(res) {
-        console.log(res);
-        // The local recording file can be found in res.result.localPath
-      },
-      error: function(res) {
-        console.log(res);
-      }
-    });
+
   }
 
   beginJoin(meetingConfig.signature);
