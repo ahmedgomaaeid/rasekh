@@ -116,7 +116,6 @@
                             </div>
                         </div>
                         <!-- ROW-4 END -->
-                        <iframe src="file:///C:/laragon/www/study/zoom/zoom-sdk-web-2.9.7/CDN/meeting.html?name=YWhtZWQgZWlk&mn=74556439021&email=&pwd=ahmedeid&role=1&lang=en-US&signature=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZGtLZXkiOiI0TkNrdzNSNVRpR21lZUtrazFPNEEiLCJpYXQiOjE2NzcxMDg3NTgsImV4cCI6MTY3NzExNTk1OCwibW4iOjc0NTU2NDM5MDIxLCJyb2xlIjoxfQ.eg4j1voyX7A6gIeHPKElpy034zymtDqkLXKhgj7ziZ8&china=0&sdkKey=4NCkw3R5TiGmeeKkk1O4A" height="200" width="300" title="Iframe Example"></iframe>
                     </div>
                     <!-- CONTAINER END -->
                 </div>

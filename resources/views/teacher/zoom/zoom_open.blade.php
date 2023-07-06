@@ -21,34 +21,34 @@
     <script src="{{route('index')}}/zoom/js/tool.js"></script>
     <script src="{{route('index')}}/zoom/js/vconsole.min.js"></script>
     <script>
-    ZoomMtg.preLoadWasm();
-    var SDK_KEY = "{{$meeting->teacher->zoom_integration->sdk_client_id}}";
-    var SDK_SECRET = "{{$meeting->teacher->zoom_integration->sdk_client_secret}}";
-    var integration = {
-        mn: {{$meeting->meeting_id}},
-        name: "{{Auth::guard('teacher')->user()->name}}",
-        email: "{{Auth::guard('teacher')->user()->email}}",
-        role: 1,
-    };
-        
-    var meetingConfig = testTool.getConfig(integration);
-    
-    var signature = ZoomMtg.generateSDKSignature({
-      meetingNumber: meetingConfig.mn,
-      sdkKey: SDK_KEY,
-      sdkSecret: SDK_SECRET,
-      role: meetingConfig.role,
-      success: function (res) {
-        console.log(res.result);
-        meetingConfig.signature = res.result;
-        meetingConfig.sdkKey = SDK_KEY;
-        var joinUrl =
-          "{{route('teacher.meeting')}}?" +
-          testTool.serialize(meetingConfig);
-        window.location.href = joinUrl;
-        
-      },
-    });
+      ZoomMtg.preLoadWasm();
+      var SDK_KEY = "{{$meeting->teacher->zoom_integration->sdk_client_id}}";
+      var SDK_SECRET = "{{$meeting->teacher->zoom_integration->sdk_client_secret}}";
+      var integration = {
+          mn: {{$meeting->meeting_id}},
+          name: "{{Auth::guard('teacher')->user()->name}}",
+          email: "{{Auth::guard('teacher')->user()->email}}",
+          role: 1,
+      };
+          
+      var meetingConfig = testTool.getConfig(integration);
+      
+      var signature = ZoomMtg.generateSDKSignature({
+        meetingNumber: meetingConfig.mn,
+        sdkKey: SDK_KEY,
+        sdkSecret: SDK_SECRET,
+        role: meetingConfig.role,
+        success: function (res) {
+          console.log(res.result);
+          meetingConfig.signature = res.result;
+          meetingConfig.sdkKey = SDK_KEY;
+          var joinUrl =
+            "{{route('teacher.meeting')}}?" +
+            testTool.serialize(meetingConfig);
+          window.location.href = joinUrl;
+          
+        },
+      });
     </script>
 </body>
 
