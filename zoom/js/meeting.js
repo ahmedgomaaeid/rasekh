@@ -110,7 +110,6 @@ function websdkready(role) {
     ZoomMtg.inMeetingServiceListener('onMeetingStatus', function (data) {
       console.log('inMeetingServiceListener onMeetingStatus', data);
     });
-
   }
 
   beginJoin(meetingConfig.signature);
