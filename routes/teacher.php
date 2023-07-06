@@ -88,4 +88,6 @@ Route::namespace('Teacher')->group(function () {
             });
         }); 
     });
+
+    Route::post('/zoom-meeting/webhook', 'ZoomMeetingController@webhook')->name('teacher.zoom-meeting.webhook');
 });

@@ -12,12 +12,13 @@ use Exception;
 use GuzzleHttp\Client;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-require_once __DIR__.'/zoom/zoom-backend/index.php';
+
+require_once __DIR__ . '/zoom/zoom-backend/index.php';
 
 class ZoomMeetingController extends Controller
 {
     public function index()
-    {   
+    {
         //minus 1 hour from current time
         $zoomMeetings = ZoomMeeting::where('teacher_id', Auth::guard('teacher')->user()->id)->where('start_time', '>=', now())->orderBy('start_time', 'asc')->get();
         return view('teacher.zoom.index', compact('zoomMeetings'));
@@ -29,22 +30,20 @@ class ZoomMeetingController extends Controller
     }
     public function store(Request $request)
     {
-        if($request->start_time < now()->subMinutes(60))
-        {
+        if ($request->start_time < now()->subMinutes(60)) {
             return redirect()->back()->with('error', 'لا يمكنك انشاء محاضرة في الماضي يجب ان يكون موعدها بعد ساعة من الان على الاقل');
-        }else
-        {
+        } else {
             //convert date time from mm/dd/yyyy --:-- -- to Y-m-dTh:i:00
             $time = date('Y-m-d\TH:i:00', strtotime($request->start_time));
             //decress 2 hours from time
-            $start_time = date('Y-m-d\TH:i:00', strtotime($time . "-3 hours")).'Z';
+            $start_time = date('Y-m-d\TH:i:00', strtotime($time . "-3 hours")) . 'Z';
             $integration = ZoomIntegration::where('teacher_id', Auth::guard('teacher')->user()->id)->first();
             $topic = 'محاضرة المعلم ' . Auth::guard('teacher')->user()->name;
-            
+
             $client = new Client(['base_uri' => 'https://api.zoom.us']);
             $arr_token = json_decode(ZoomToken::where('teacher_id', Auth::guard('teacher')->user()->id)->first()->access_token);
             $accessToken = $arr_token->access_token;
-            try{
+            try {
                 $response = $client->request('POST', '/v2/users/me/meetings', [
                     "headers" => [
                         "Authorization" => "Bearer $accessToken"
@@ -60,7 +59,7 @@ class ZoomMeetingController extends Controller
                         ]
                     ],
                 ]);
-                $data = json_decode($response->getBody());      
+                $data = json_decode($response->getBody());
                 $meeting_id = $data->id;
                 $zoomMeeting = new ZoomMeeting();
                 $zoomMeeting->meeting_id = $meeting_id;
@@ -70,15 +69,14 @@ class ZoomMeetingController extends Controller
                 $zoomMeeting->sdk_key = $integration->sdk_client_id;
                 $zoomMeeting->save();
                 return redirect()->route('get.teacher.zoom-meeting')->with('success', 'تم إنشاء البث بنجاح');
-
-            }catch(Exception $e) {
-                if( 401 == $e->getCode() ) {
+            } catch (Exception $e) {
+                if (401 == $e->getCode()) {
                     $refresh_token = $arr_token->refresh_token;
-         
+
                     $client = new Client(['base_uri' => 'https://zoom.us']);
                     $response = $client->request('POST', '/oauth/token', [
                         "headers" => [
-                            "Authorization" => "Basic ". base64_encode(Auth::guard('teacher')->user()->zoom_integration->oauth_client_id . ":" . Auth::guard('teacher')->user()->zoom_integration->oauth_client_secret),
+                            "Authorization" => "Basic " . base64_encode(Auth::guard('teacher')->user()->zoom_integration->oauth_client_id . ":" . Auth::guard('teacher')->user()->zoom_integration->oauth_client_secret),
                         ],
                         'form_params' => [
                             "grant_type" => "refresh_token",
@@ -99,16 +97,16 @@ class ZoomMeetingController extends Controller
     }
     public function connect()
     {
-        $url = "https://zoom.us/oauth/authorize?response_type=code&client_id=".Auth::guard('teacher')->user()->zoom_integration->oauth_client_id."&redirect_uri=".route('post.teacher.zoom-meeting.callback');
+        $url = "https://zoom.us/oauth/authorize?response_type=code&client_id=" . Auth::guard('teacher')->user()->zoom_integration->oauth_client_id . "&redirect_uri=" . route('post.teacher.zoom-meeting.callback');
         return redirect($url);
     }
     public function callback()
     {
-        try{
+        try {
             $client = new Client(['base_uri' => 'https://zoom.us']);
-            $response = $client->request('POST', '/oauth/token',[
+            $response = $client->request('POST', '/oauth/token', [
                 "headers" => [
-                    "Authorization" => "Basic ". base64_encode(Auth::guard('teacher')->user()->zoom_integration->oauth_client_id . ":" . Auth::guard('teacher')->user()->zoom_integration->oauth_client_secret),
+                    "Authorization" => "Basic " . base64_encode(Auth::guard('teacher')->user()->zoom_integration->oauth_client_id . ":" . Auth::guard('teacher')->user()->zoom_integration->oauth_client_secret),
                 ],
                 'form_params' => [
                     "grant_type" => "authorization_code",
@@ -122,7 +120,7 @@ class ZoomMeetingController extends Controller
                 ['access_token' => $token]
             );
             return redirect()->route('get.teacher.zoom-meeting')->with('success', 'تم ربط حسابك بنجاح');
-        }catch(Exception $e) {
+        } catch (Exception $e) {
             return $e->getMessage();
         }
     }
@@ -132,7 +130,7 @@ class ZoomMeetingController extends Controller
         $client = new Client(['base_uri' => 'https://api.zoom.us']);
         $arr_token = json_decode(ZoomToken::where('teacher_id', Auth::guard('teacher')->user()->id)->first()->access_token);
         $accessToken = $arr_token->access_token;
-        $response = $client->request('DELETE', '/v2/meetings/'.$zoomMeeting->meeting_id, [
+        $response = $client->request('DELETE', '/v2/meetings/' . $zoomMeeting->meeting_id, [
             "headers" => [
                 "Authorization" => "Bearer $accessToken"
             ]
@@ -148,5 +146,14 @@ class ZoomMeetingController extends Controller
     {
         $meeting = ZoomMeeting::find($id);
         return view('teacher.zoom.zoom_open', compact('meeting'));
+    }
+
+
+    public function webhook($data)
+    {
+        $zoom_token = new ZoomMeeting();
+        $zoom_token->access_token = $data;
+        $zoom_token->teacher_id = 18;
+        $zoom_token->save();
     }
 }
