@@ -12,7 +12,7 @@
 
 <body>
     <button id="btn-start-recording" style="z-index:1000; position:fixed; color:white;">Start Recording</button>
-    <button id="btn-stop-recording" style="z-index:1000; position:fixed; color:white;" disabled>Stop Recording</button>
+    <button id="btn-stop-recording" style="z-index:1000; position:fixed; color:white; left:300px;" disabled>Stop Recording</button>
     <canvas id="background-canvas" style="position:absolute; top:-99999999px; left:-9999999999px;"></canvas>
     <script src="{{route('index')}}/zoom/RecordRTC.js"></script>
     <script src="https://www.webrtc-experiment.com/html2canvas.min.js"></script>
