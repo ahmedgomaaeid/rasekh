@@ -35,7 +35,7 @@
     <script src="{{route('index')}}/zoom/js/meeting.js"></script>
     <script>
         var elementToRecord = document.getElementById('zmmtg-root');
-        var canvas2d = document.getElementById('background-canvas');
+        var canvas2d = document.getElementsByClassName("sharee-container__canvas")[0];
         var context = canvas2d.getContext('2d');
 
         canvas2d.width = elementToRecord.clientWidth;
