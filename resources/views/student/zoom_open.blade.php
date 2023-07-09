@@ -22,8 +22,8 @@
     <script src="{{route('index')}}/zoom/js/vconsole.min.js"></script>
     <script>
     ZoomMtg.preLoadWasm();
-    var SDK_KEY = "{{$meeting->teacher->zoom_integration->client_id}}";
-    var SDK_SECRET = "{{$meeting->teacher->zoom_integration->client_secret}}";
+    var SDK_KEY = "{{$meeting->teacher->zoom_integration->sdk_client_id}}"; 
+    var SDK_SECRET = "{{$meeting->teacher->zoom_integration->sdk_client_secret}}";
     var integration = {
         mn: {{$meeting->meeting_id}},
         name: "{{Auth::guard('student')->user()->name}}",
