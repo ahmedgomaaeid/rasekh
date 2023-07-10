@@ -55,6 +55,6 @@ class Course extends Model
     }
     public function lastZoomMeeting()
     {
-        return $this->hasOne('App\Models\ZoomMeeting', 'course_id', 'id')->where('start_time', '>', now()->subMinutes(60))->orderBy('start_time', 'asc');
+        return $this->hasOne('App\Models\ZoomMeeting', 'course_id', 'id')->where('start_time', '>', now())->orderBy('start_time', 'asc');
     }
 }
