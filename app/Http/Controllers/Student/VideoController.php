@@ -31,7 +31,7 @@ class VideoController extends Controller
         $course = Course::find($id);
         $next_lesson_id = Lesson::where('course_id', $id)->where('status',1)->where('id', '>', $lesson->id)->min('id');
         $prev_lesson_id = Lesson::where('course_id', $id)->where('status',1)->where('id', '<', $lesson->id)->max('id');
-        $firstZoomMeeting = $course->lastZoomMeeting()->first();
+        $firstZoomMeeting = $course->lastZoomMeeting()->order_by('id', 'desc')->first();
         $r_url = route('lesson', ['id' => $id, 'lesson' => $lesson->id]);
         if($lesson->type=="درس")
         {
