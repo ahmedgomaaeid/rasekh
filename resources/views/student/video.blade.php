@@ -292,7 +292,7 @@
                                                                         <div class="ld-progress-steps">
                                                                             {{$course->seen_video_number->count()}}/{{$course->lesson_number->count()}} Steps </div>
                                                                         @if($firstZoomMeeting != null)
-                                                                        @if ($firstZoomMeeting->start_time < now() && $firstZoomMeeting->start_time > now()->subMinutes(60))
+                                                                        @if ($firstZoomMeeting->start_time > now() && $firstZoomMeeting->start_time < now()->addMinutes(60))
                                                                             <a href="{{route('meet',$firstZoomMeeting->id)}}" title="بث مباشر" class="bb-lesson-head flex">
                                                                                 <div class="flex-1 push-left bb-not-completed-item">
                                                                                     <div class="bb-lesson-title" style="font-weight: bold;">دخول البث</div>
