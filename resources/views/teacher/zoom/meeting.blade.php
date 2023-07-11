@@ -34,7 +34,7 @@
     <script src="{{route('index')}}/zoom/js/vconsole.min.js"></script>
     <script src="{{route('index')}}/zoom/js/meeting.js"></script>
     <script>
-        var elementToRecord = document.getElementsByTagName("body");
+        var elementToRecord = document.getElementsByTagName("body")[0];
         var canvas2d = document.getElementById('background-canvas');
         var context = canvas2d.getContext('2d');
 
