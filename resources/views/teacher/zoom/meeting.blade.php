@@ -10,7 +10,7 @@
     <meta http-equiv="origin-trial" content="">
 </head>
 
-<body>
+<body id="body">
     <button id="btn-start-recording" style="z-index:1000; position:fixed; color:white;">Start Recording</button>
     <button id="btn-stop-recording" style="z-index:1000; position:fixed; color:white; left:300px;" disabled>Stop Recording</button>
     <canvas id="background-canvas" style="position:absolute; top:-99999999px; left:-9999999999px;"></canvas>
@@ -34,7 +34,7 @@
     <script src="{{route('index')}}/zoom/js/vconsole.min.js"></script>
     <script src="{{route('index')}}/zoom/js/meeting.js"></script>
     <script>
-        var elementToRecord = document.getElementById('zmmtg-root');
+        var elementToRecord = document.getElementById('body');
         var canvas2d = document.getElementById('background-canvas');
         var context = canvas2d.getContext('2d');
 
