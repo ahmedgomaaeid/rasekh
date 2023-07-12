@@ -56,7 +56,8 @@ class ZoomMeetingController extends Controller
                         "password" => "ahmedeid",
                         "settings" => [
                             "auto_recording" => "local" // or "local"
-                        ]
+                        ],
+                        "redirect_url" => "https://www.google.com",
                     ],
                 ]);
                 $data = json_decode($response->getBody());
