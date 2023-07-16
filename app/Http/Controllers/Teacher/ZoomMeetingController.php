@@ -115,8 +115,8 @@ class ZoomMeetingController extends Controller
                     "redirect_uri" => route('post.teacher.zoom-meeting.callback')
                 ],
             ]);
-            dd($response->getBody()->getContents());
             $token = json_decode($response->getBody()->getContents(), true);
+            dd($token);
             ZoomToken::UpdateOrCreate(
                 ['teacher_id' => Auth::guard('teacher')->user()->id],
                 ['access_token' => $token]
