@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Teacher;
 
 use App\Http\Controllers\Controller;
 use App\Models\ZoomIntegration;
+use App\Models\ZoomToken;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -22,7 +23,8 @@ class ZoomIntegrationController extends Controller
             $sdk_c_id = $zoom_integration->sdk_client_id;
             $sdk_c_secret = $zoom_integration->sdk_client_secret;
         }
-        return view('teacher.zoom.integration', compact('oauth_c_id', 'oauth_c_secret', 'sdk_c_id', 'sdk_c_secret'));
+        $zoom_token = ZoomToken::where('teacher_id', Auth::guard('teacher')->user()->id)->first();
+        return view('teacher.zoom.integration', compact('oauth_c_id', 'oauth_c_secret', 'sdk_c_id', 'sdk_c_secret', 'zoom_token'));
     }
     public function store()
     {

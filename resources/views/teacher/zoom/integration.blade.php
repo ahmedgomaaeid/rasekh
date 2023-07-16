@@ -68,6 +68,11 @@
                                         <div class="col-md-9">
                                             <button type="submit" class="btn btn-primary">اضافة</button>
                                         </div>
+                                        @if($zoom_token == null && $oauth_c_id != null && $oauth_c_secret != null && $sdk_c_id != null && $sdk_c_secret != null)
+                                            <div class="col-md-9">
+                                                <a href="{{route('get.teacher.zoom-meeting.connect')}}" class="btn btn-success">اتصال</a>
+                                            </div>
+                                        @endif
                                     </div>
                                     <!--End Row-->
                                 </div>

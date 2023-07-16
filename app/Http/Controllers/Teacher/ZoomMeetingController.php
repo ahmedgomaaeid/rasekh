@@ -91,7 +91,7 @@ class ZoomMeetingController extends Controller
                     //retry the request
                     return $this->store($request);
                 } else {
-                    return $e->getMessage();
+                    return redirect()->route('get.teacher.zoom-integration')->with('status', 'حدث خطأ ما برجاء التاكد من البيانات الموجودة');
                 }
             }
         }
@@ -120,9 +120,9 @@ class ZoomMeetingController extends Controller
                 ['teacher_id' => Auth::guard('teacher')->user()->id],
                 ['access_token' => $token]
             );
-            return redirect()->route('get.teacher.zoom-meeting')->with('success', 'تم ربط حسابك بنجاح');
+            return redirect()->route('get.teacher.zoom-integration')->with('success', 'تم ربط حسابك بنجاح');
         } catch (Exception $e) {
-            return $e->getMessage();
+            return redirect()->route('get.teacher.zoom-integration')->with('status', 'حدث خطأ ما');
         }
     }
     public function destroy($id)
