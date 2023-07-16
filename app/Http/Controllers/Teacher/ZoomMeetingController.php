@@ -69,7 +69,6 @@ class ZoomMeetingController extends Controller
                 $zoomMeeting->start_time = $request->start_time;
                 $zoomMeeting->sdk_key = $integration->sdk_client_id;
                 $zoomMeeting->save();
-                dd($data);
                 return redirect()->route('get.teacher.zoom-meeting')->with('success', 'تم إنشاء البث بنجاح');
             } catch (Exception $e) {
                 if (401 == $e->getCode()) {
