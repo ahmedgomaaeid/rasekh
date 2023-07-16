@@ -115,10 +115,10 @@ class ZoomMeetingController extends Controller
                     "redirect_uri" => route('post.teacher.zoom-meeting.callback')
                 ],
             ]);
-            $token = json_decode($response->getBody()->getContents(), true);
+            //$token = json_decode($response->getBody()->getContents(), true);
             ZoomToken::UpdateOrCreate(
                 ['teacher_id' => Auth::guard('teacher')->user()->id],
-                ['access_token' => $token]
+                ['access_token' => $response->getBody()->getContents()]
             );
             return redirect()->route('get.teacher.zoom-integration')->with('success', 'تم ربط حسابك بنجاح');
         } catch (Exception $e) {
