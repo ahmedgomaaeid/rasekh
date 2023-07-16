@@ -116,7 +116,6 @@ class ZoomMeetingController extends Controller
                 ],
             ]);
             $token = json_decode($response->getBody()->getContents(), true);
-            dd($token);
             ZoomToken::UpdateOrCreate(
                 ['teacher_id' => Auth::guard('teacher')->user()->id],
                 ['access_token' => $token]
