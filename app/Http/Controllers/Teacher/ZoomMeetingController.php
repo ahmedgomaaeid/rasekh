@@ -122,7 +122,7 @@ class ZoomMeetingController extends Controller
             );
             return redirect()->route('get.teacher.zoom-integration')->with('success', 'تم ربط حسابك بنجاح');
         } catch (Exception $e) {
-            dd($e->getMessage());
+            dd($e);
         }
     }
     public function destroy($id)
