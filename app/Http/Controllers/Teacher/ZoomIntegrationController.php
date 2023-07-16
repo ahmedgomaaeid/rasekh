@@ -37,6 +37,6 @@ class ZoomIntegrationController extends Controller
                 'sdk_client_secret' => request('sdk_client_secret'),
             ]
         );
-        return redirect()->route('get.teacher.dashboard')->with('success', 'تم تحديث البيانات بنجاح');
+        return redirect()->route('get.teacher.zoom-integration')->with('success', 'تم تحديث البيانات بنجاح');
     }
 }
