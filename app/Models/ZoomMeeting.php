@@ -13,7 +13,7 @@ class ZoomMeeting extends Model
         'teacher_id',
         'course_id',
         'start_time',
-        
+        'start_url',
     ];
     public function teacher()
     {

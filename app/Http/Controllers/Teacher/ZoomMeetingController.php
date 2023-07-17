@@ -65,10 +65,10 @@ class ZoomMeetingController extends Controller
                     ],
                 ]);
                 $data = json_decode($response->getBody());
-                dd($data);
                 $meeting_id = $data->id;
                 $zoomMeeting = new ZoomMeeting();
                 $zoomMeeting->meeting_id = $meeting_id;
+                $zoomMeeting->start_url = $data->start_url;
                 $zoomMeeting->teacher_id = Auth::guard('teacher')->user()->id;
                 $zoomMeeting->course_id = $request->course_id;
                 $zoomMeeting->start_time = $request->start_time;
