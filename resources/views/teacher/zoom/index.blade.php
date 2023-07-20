@@ -45,7 +45,7 @@
                                                                                     اسم الدرس</th>
                                                                                 <th
                                                                                     class="bg-transparent border-bottom-0">
-                                                                                    الدرس</th>
+                                                                                    الكورس</th>
                                                                                 <th
                                                                                     class="bg-transparent border-bottom-0">
                                                                                     دخول البث</th>
@@ -89,7 +89,7 @@
                                                                                                     <h6
                                                                                                         class="mb-0 fs-14 fw-semibold">
                                                                                                             @if ($meeting->start_time > now() && $meeting->start_time < now()->addMinutes(60))
-                                                                                                                <a href="{{$meeting->start_url}}" >دخول البث</a>
+                                                                                                                <a href="{{route('get.teacher.zoom-meeting.upload',json_encode($meeting->start_url))}}" >دخول البث</a>
                                                                                                             @endif 
                                                                                                             </h6>
                                                                                                 </div>
