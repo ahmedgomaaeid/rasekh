@@ -59,7 +59,10 @@ class ZoomMeetingController extends Controller
                         "duration" => "60",
                         "password" => "ahmedeid",
                         "settings" => [
-                            "auto_recording" => "local", // or "local"
+                            "auto_recording" => "local",
+                            "waiting_room" => false,
+                            "join_before_host" => true,
+                            
                         ],
                     ],
                 ]);
