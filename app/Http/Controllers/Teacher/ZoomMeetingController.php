@@ -63,8 +63,8 @@ class ZoomMeetingController extends Controller
                         ],
                     ],
                 ]);
-                dd($response);
                 $data = json_decode($response->getBody());
+                dd($data);
                 $meeting_id = $data->id;
                 $zoomMeeting = new ZoomMeeting();
                 $zoomMeeting->meeting_id = $meeting_id;
