@@ -62,12 +62,11 @@ class ZoomMeetingController extends Controller
                             "auto_recording" => "local",
                             "waiting_room" => false,
                             "join_before_host" => true,
-                            
+
                         ],
                     ],
                 ]);
                 $data = json_decode($response->getBody());
-                dd($data);
                 $meeting_id = $data->id;
                 $zoomMeeting = new ZoomMeeting();
                 $zoomMeeting->meeting_id = $meeting_id;
