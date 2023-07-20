@@ -82,7 +82,7 @@ Route::namespace('Teacher')->group(function () {
                     Route::get('/delete/{id}', 'ZoomMeetingController@destroy')->name('get.teacher.zoom-meeting.delete');
                     Route::get('/connect', 'ZoomMeetingController@connect')->name('get.teacher.zoom-meeting.connect');
                     Route::get('/callback', 'ZoomMeetingController@callback')->name('post.teacher.zoom-meeting.callback');
-                    Route::get('/upload/{url}', 'ZoomMeetingController@upload')->name('get.teacher.zoom-meeting.upload');
+                    Route::get('/upload/{url}', 'ZoomMeetingController@upload')->name('get.teacher.zoom-meeting.upload')->where('url', '.*');
                 });
                 Route::get('meeting', 'ZoomMeetingController@meeting')->name('teacher.meeting');
                 Route::get('meet/{id}', 'ZoomMeetingController@meetingRedirect')->name('teacher.meet');
