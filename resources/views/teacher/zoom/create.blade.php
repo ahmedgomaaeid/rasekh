@@ -29,7 +29,7 @@
                             </div>
                             <div class="card-body">
                                 <div class="row mb-4">
-                                    <label class="col-md-3 form-label"> السؤال :</label>
+                                    <label class="col-md-3 form-label"> الموعد :</label>
                                     <div class="col-md-9">
                                         <input type="datetime-local" class="form-control" name="start_time" id = "start_time" onclick="showpick()">
                                         @error('start_time')
@@ -37,6 +37,15 @@
                                         @enderror
                                     </div>
                                 </div>
+                                <div class="row mb-4">
+                                            <label class="col-md-3 form-label">اسم الدرس :</label>
+                                            <div class="col-md-9">
+                                                <input type="text" class="form-control" name="lesson_name" placeholder="اسم الدرس">
+                                                @error('lesson_name')
+                                                    <div class="invalid-feedback" style="display:block;">{{$message}}</div>
+                                                @enderror
+                                            </div>
+                                        </div>
                                 <div class="row mb-4">
                                             <label class="col-md-3 form-label"> الكورس:</label>
                                             <div class="col-md-9">

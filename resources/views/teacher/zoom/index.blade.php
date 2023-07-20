@@ -42,6 +42,9 @@
                                                                             <tr>
                                                                                 <th
                                                                                     class="bg-transparent border-bottom-0">
+                                                                                    اسم الدرس</th>
+                                                                                <th
+                                                                                    class="bg-transparent border-bottom-0">
                                                                                     الدرس</th>
                                                                                 <th
                                                                                     class="bg-transparent border-bottom-0">
@@ -57,6 +60,17 @@
                                                                         <tbody>
                                                                             @foreach ($zoomMeetings as $meeting)
                                                                                     <tr class="border-bottom">
+                                                                                        <td>
+                                                                                            <div class="d-flex">
+                                                                                                <div
+                                                                                                    class="mt-0 mt-sm-3 d-block">
+                                                                                                    <h6
+                                                                                                        class="mb-0 fs-14 fw-semibold">
+                                                                                                            {{$meeting->lesson_name}} 
+                                                                                                            </h6>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
                                                                                         <td>
                                                                                             <div class="d-flex">
                                                                                                 <div

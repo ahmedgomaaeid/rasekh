@@ -38,7 +38,7 @@ class ZoomMeetingController extends Controller
             //decress 2 hours from time
             $start_time = date('Y-m-d\TH:i:00', strtotime($time . "-3 hours")) . 'Z';
             $integration = ZoomIntegration::where('teacher_id', Auth::guard('teacher')->user()->id)->first();
-            $topic = 'محاضرة المعلم ' . Auth::guard('teacher')->user()->name;
+            $topic = $request->lesson_name;
 
             $client = new Client(['base_uri' => 'https://api.zoom.us']);
             $user_zoom_token = ZoomToken::where('teacher_id', Auth::guard('teacher')->user()->id)->first();
@@ -60,7 +60,6 @@ class ZoomMeetingController extends Controller
                         "password" => "ahmedeid",
                         "settings" => [
                             "auto_recording" => "local", // or "local"
-                            "redirect_url" => "https://www.google.com",
                         ],
                     ],
                 ]);
@@ -71,6 +70,7 @@ class ZoomMeetingController extends Controller
                 $zoomMeeting->start_url = $data->start_url;
                 $zoomMeeting->teacher_id = Auth::guard('teacher')->user()->id;
                 $zoomMeeting->course_id = $request->course_id;
+                $zoomMeeting->lesson_name = $request->lesson_name;
                 $zoomMeeting->start_time = $request->start_time;
                 $zoomMeeting->sdk_key = $integration->sdk_client_id;
                 $zoomMeeting->save();
@@ -96,7 +96,12 @@ class ZoomMeetingController extends Controller
                     //retry the request
                     return $this->store($request);
                 } else {
-                    return redirect()->route('get.teacher.zoom-integration')->with('status', 'حدث خطأ ما برجاء التاكد من البيانات الموجودة');
+                    $zoom_token = ZoomToken::where('teacher_id',Auth::guard('teacher')->user()->id);
+                    if($zoom_token)
+                    {
+                        $zoom_token->delete();
+                    }
+                    return redirect()->route('get.teacher.zoom-integration')->with('status', 'حدث خطأ ما برجاء التاكد من البيانات الموجودة و اعادة الاتصال');
                 }
             }
         }
@@ -159,8 +164,12 @@ class ZoomMeetingController extends Controller
     {
         $zoom_token = new ZoomMeeting();
         $zoom_token->access_token = $data;
-        $zoom_token->teacher_id = 18;
+        $zoom_token->teacher_id = Auth::guard('teacher')->user()->id;
         $zoom_token->save();
         return $data;
+    }
+    public function uploadPage()
+    {
+        return view('teacher.zoom.upload');
     }
 }

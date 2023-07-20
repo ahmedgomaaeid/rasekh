@@ -12,6 +12,7 @@ class ZoomMeeting extends Model
         'meeting_id',
         'teacher_id',
         'course_id',
+        'lesson_name',
         'start_time',
         'start_url',
     ];
