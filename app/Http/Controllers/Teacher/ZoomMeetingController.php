@@ -168,9 +168,8 @@ class ZoomMeetingController extends Controller
         $zoom_token->save();
         return $data;
     }
-    public function upload($url)
+    public function upload()
     {
-        $url = json_decode($url);
-        return view('teacher.zoom.upload', compact('url'));
+        return view('teacher.zoom.upload');
     }
 }
