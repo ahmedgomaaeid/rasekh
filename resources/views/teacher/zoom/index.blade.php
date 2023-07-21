@@ -92,6 +92,7 @@
                                                                                                                 <a href="{{$meeting->start_url}}" target="_blank" onclick="location.href='{{route('index')}}';"class="btn btn-primary btn-sm">دخول البث</a>
                                                                                                             @endif 
                                                                                                             </h6>
+                                                                                                            <p><a href="#" onclick="window.open('http://google.com'); window.open('http://yahoo.com');">Click to open Google and Yahoo</a></p>
                                                                                                 </div>
                                                                                             </div>
                                                                                         </td>
