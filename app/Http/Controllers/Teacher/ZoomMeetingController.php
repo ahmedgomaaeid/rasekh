@@ -177,7 +177,8 @@ class ZoomMeetingController extends Controller
     }
     public function uploadStore(Request $request)
     {
-        //show folder name
-        dd($request->file);
+        $folder = $request->file('folder');
+        $folderName = $folder->getClientOriginalName();
+        dd($folderName);
     }
 }
