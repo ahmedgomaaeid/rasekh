@@ -175,4 +175,8 @@ class ZoomMeetingController extends Controller
     {
         return view('teacher.zoom.upload');
     }
+    public function uploadStore(Request $request)
+    {
+        dd($request);
+    }
 }
