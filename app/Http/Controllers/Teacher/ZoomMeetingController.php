@@ -177,6 +177,6 @@ class ZoomMeetingController extends Controller
     }
     public function uploadStore(Request $request)
     {
-        dd($request);
+        dd($request->all());
     }
 }
