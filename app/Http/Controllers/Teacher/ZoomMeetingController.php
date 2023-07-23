@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Teacher;
 use App\Helpers\ZoomApiHelper;
 use App\Http\Controllers\Controller;
 use App\Models\Course;
+use App\Models\Lesson;
 use App\Models\ZoomIntegration;
 use App\Models\ZoomMeeting;
 use App\Models\ZoomToken;
@@ -180,11 +181,27 @@ class ZoomMeetingController extends Controller
     public function uploadStore(Request $request)
     {
         $meetings = ZoomMeeting::where('teacher_id', Auth::guard('teacher')->user()->id)->get();
+        $lesson_name = '';
+        $course_id = '';
         foreach ($meetings as $meeting) {
             //check if meeting name exist between text
             if (str_contains($meeting->ref_num, $request->folder_name)) {
-                dd($meeting->lesson_name);
-            }  
+                $lesson_name = $meeting->lesson_name;
+                $course_id = $meeting->course_id;
+                break;
+            }
         }
+        $file_extension = $request->file('folder')->getClientOriginalExtension();
+        $file_name = time() . '.' . $file_extension;
+        $request->file('folder')[0]->move('assets/videos', $file_name);
+        $lesson = new Lesson();
+        $lesson->name = $lesson_name;
+        $lesson->course_id = $course_id;
+        $lesson->publisher_type = 1;
+        $lesson->video = $file_name;
+        $lesson->type = 0;
+        $lesson->status = 1;
+        $lesson->save();
+        return redirect()->route('get.teacher.lesson')->with('success', 'تم اضافة الدرس بنجاح');
     }
 }
