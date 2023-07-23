@@ -181,14 +181,11 @@ class ZoomMeetingController extends Controller
     public function uploadStore(Request $request)
     {
         $meetings = ZoomMeeting::where('teacher_id', Auth::guard('teacher')->user()->id)->get();
-        $lesson_name = '';
-        $course_id = '';
         foreach ($meetings as $meeting) {
             //check if meeting name exist between text
             if (str_contains($meeting->ref_num, $request->folder_name)) {
                 $lesson_name = $meeting->lesson_name;
                 $course_id = $meeting->course_id;
-                break;
             }
         }
         $file_extension = $request->file('folder')->getClientOriginalExtension();
