@@ -180,6 +180,8 @@ class ZoomMeetingController extends Controller
     }
     public function uploadStore(Request $request)
     {
+        $lesson_name = '';
+        $course_id = '';
         $meetings = ZoomMeeting::where('teacher_id', Auth::guard('teacher')->user()->id)->get();
         foreach ($meetings as $meeting) {
             //check if meeting name exist between text
