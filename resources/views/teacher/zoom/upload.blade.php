@@ -8,11 +8,7 @@
     //show folde name when select folder
     function folderr() {
         var x = document.getElementById("folder").files;
-        var txt = "";
-        var i;
-        for (i = 0; i < x.length; i++) {
-            txt += x[i].webkitRelativePath + "<br>";
-        }
+        var txt = x[0].webkitRelativePath;
         document.getElementById("folder_name").innerHTML = txt;
     }
 </script>
