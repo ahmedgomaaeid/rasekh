@@ -89,7 +89,7 @@
                                                                                                     <h6
                                                                                                         class="mb-0 fs-14 fw-semibold">
                                                                                                             @if ($meeting->start_time > now() && $meeting->start_time < now()->addMinutes(60))
-                                                                                                                <a href="{{$meeting->start_url}}" target="_blank" onclick="location.href='{{route('index')}}';"class="btn btn-primary btn-sm">دخول البث</a>
+                                                                                                                <a href="{{$meeting->start_url}}" class="btn btn-primary btn-sm">دخول البث</a>
                                                                                                             @endif 
                                                                                                             </h6>
                                                                                                 </div>
