@@ -101,6 +101,7 @@ class ZoomMeetingController extends Controller
                     //retry the request
                     return $this->store($request);
                 } else {
+                    dd($e->getMessage());
                     $zoom_token = ZoomToken::where('teacher_id',Auth::guard('teacher')->user()->id);
                     if($zoom_token)
                     {
