@@ -193,7 +193,7 @@ class ZoomMeetingController extends Controller
         }
         $file_extension = $request->file('folder')->getClientOriginalExtension();
         $file_name = time() . '.' . $file_extension;
-        $request->file('folder')[0]->move('assets/videos', $file_name);
+        $request->file('folder')->move('assets/videos', $file_name);
         $lesson = new Lesson();
         $lesson->name = $lesson_name;
         $lesson->course_id = $course_id;
