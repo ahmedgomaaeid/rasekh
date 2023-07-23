@@ -44,7 +44,7 @@ class ZoomMeetingController extends Controller
 
             $client = new Client(['base_uri' => 'https://api.zoom.us']);
             $user_zoom_token = ZoomToken::where('teacher_id', Auth::guard('teacher')->user()->id)->first();
-            if(!$user_zoom_token){
+            if (!$user_zoom_token) {
                 return redirect()->route('get.teacher.zoom-integration')->with('status', 'برجاء ربط حسابك بمنصة زووم اولا');
             }
             $arr_token = json_decode($user_zoom_token->access_token);
@@ -102,9 +102,8 @@ class ZoomMeetingController extends Controller
                     //retry the request
                     return $this->store($request);
                 } else {
-                    $zoom_token = ZoomToken::where('teacher_id',Auth::guard('teacher')->user()->id);
-                    if($zoom_token)
-                    {
+                    $zoom_token = ZoomToken::where('teacher_id', Auth::guard('teacher')->user()->id);
+                    if ($zoom_token) {
                         $zoom_token->delete();
                     }
                     return redirect()->route('get.teacher.zoom-integration')->with('status', 'حدث خطأ ما برجاء التاكد من البيانات الموجودة و اعادة الاتصال');
@@ -180,27 +179,25 @@ class ZoomMeetingController extends Controller
     }
     public function uploadStore(Request $request)
     {
-        $lesson_name = '';
-        $course_id = '';
         $meetings = ZoomMeeting::where('teacher_id', Auth::guard('teacher')->user()->id)->get();
         foreach ($meetings as $meeting) {
             //check if meeting name exist between text
             if (str_contains($meeting->ref_num, $request->folder_name)) {
                 $lesson_name = $meeting->lesson_name;
                 $course_id = $meeting->course_id;
+                $file_extension = $request->file('folder')->getClientOriginalExtension();
+                $file_name = time() . '.' . $file_extension;
+                $request->file('folder')->move('assets/videos', $file_name);
+                $lesson = new Lesson();
+                $lesson->name = $lesson_name;
+                $lesson->course_id = $course_id;
+                $lesson->publisher_type = 1;
+                $lesson->video = $file_name;
+                $lesson->type = 0;
+                $lesson->status = 1;
+                $lesson->save();
+                return redirect()->route('get.teacher.lesson')->with('success', 'تم اضافة الدرس بنجاح');
             }
         }
-        $file_extension = $request->file('folder')->getClientOriginalExtension();
-        $file_name = time() . '.' . $file_extension;
-        $request->file('folder')->move('assets/videos', $file_name);
-        $lesson = new Lesson();
-        $lesson->name = $lesson_name;
-        $lesson->course_id = $course_id;
-        $lesson->publisher_type = 1;
-        $lesson->video = $file_name;
-        $lesson->type = 0;
-        $lesson->status = 1;
-        $lesson->save();
-        return redirect()->route('get.teacher.lesson')->with('success', 'تم اضافة الدرس بنجاح');
     }
 }
