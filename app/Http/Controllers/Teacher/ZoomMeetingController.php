@@ -38,7 +38,8 @@ class ZoomMeetingController extends Controller
             //decress 2 hours from time
             $start_time = date('Y-m-d\TH:i:00', strtotime($time . "-3 hours")) . 'Z';
             $integration = ZoomIntegration::where('teacher_id', Auth::guard('teacher')->user()->id)->first();
-            $topic = $request->lesson_name;
+            $ref_number = generateRandomNumber();
+            $topic = $request->lesson_name . ' - ' . $ref_number;
 
             $client = new Client(['base_uri' => 'https://api.zoom.us']);
             $user_zoom_token = ZoomToken::where('teacher_id', Auth::guard('teacher')->user()->id)->first();
@@ -74,6 +75,7 @@ class ZoomMeetingController extends Controller
                 $zoomMeeting->teacher_id = Auth::guard('teacher')->user()->id;
                 $zoomMeeting->course_id = $request->course_id;
                 $zoomMeeting->lesson_name = $request->lesson_name;
+                $zoomMeeting->ref_num = $ref_number;
                 $zoomMeeting->start_time = $request->start_time;
                 $zoomMeeting->sdk_key = $integration->sdk_client_id;
                 $zoomMeeting->save();
@@ -180,7 +182,7 @@ class ZoomMeetingController extends Controller
         $meetings = ZoomMeeting::where('teacher_id', Auth::guard('teacher')->user()->id)->get();
         foreach ($meetings as $meeting) {
             //check if meeting name exist between text
-            if (strpos($request->folder_name, $meeting->lesson_name) !== false) {
+            if (strpos($request->folder_name, $meeting->ref_num) !== false) {
                 dd($meeting->lesson_name);
             }   
         }
