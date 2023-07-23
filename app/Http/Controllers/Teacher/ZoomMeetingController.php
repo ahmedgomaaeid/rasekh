@@ -180,7 +180,6 @@ class ZoomMeetingController extends Controller
     }
     public function uploadStore(Request $request)
     {
-        dd($request->file('folder'));
         $meetings = ZoomMeeting::where('teacher_id', Auth::guard('teacher')->user()->id)->get();
         $lesson_name = '';
         $course_id = '';
