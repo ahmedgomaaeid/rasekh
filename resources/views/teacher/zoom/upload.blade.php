@@ -9,6 +9,9 @@
     function folderr() {
         var x = document.getElementById("folder").files;
         var txt = x[0].webkitRelativePath;
+        //get before /
+        txt = txt.split("/");
+        txt = txt[0];
         document.getElementById("folder_name").innerHTML = txt;
     }
 </script>
