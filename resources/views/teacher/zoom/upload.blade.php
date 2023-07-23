@@ -1,7 +1,7 @@
 <form action="{{route('post.teacher.zoom-meeting.upload')}}" method="POST" enctype="multipart/form-data">
     @csrf
     <input type="hidden" name="folder_name" id="folder_name">
-    <input type="file" id="folder" name="folder[]" webkitdirectory directory multiple onchange="folderr()">
+    <input type="file" id="folder" name="folder" webkitdirectory directory multiple onchange="folderr()">
     <input type="submit" value="Upload">
 </form>
 <script>
