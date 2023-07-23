@@ -101,7 +101,6 @@ class ZoomMeetingController extends Controller
                     //retry the request
                     return $this->store($request);
                 } else {
-                    dd($e->getMessage());
                     $zoom_token = ZoomToken::where('teacher_id',Auth::guard('teacher')->user()->id);
                     if($zoom_token)
                     {
@@ -183,9 +182,9 @@ class ZoomMeetingController extends Controller
         $meetings = ZoomMeeting::where('teacher_id', Auth::guard('teacher')->user()->id)->get();
         foreach ($meetings as $meeting) {
             //check if meeting name exist between text
-            if (strpos($request->folder_name, $meeting->ref_num) !== false) {
+            if (str_contains($meeting->ref_num, $request->folder_name)) {
                 dd($meeting->lesson_name);
-            }   
+            }  
         }
     }
 }
