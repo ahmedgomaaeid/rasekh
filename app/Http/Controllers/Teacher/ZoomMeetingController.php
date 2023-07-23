@@ -180,7 +180,7 @@ class ZoomMeetingController extends Controller
         $meetings = ZoomMeeting::where('teacher_id', Auth::guard('teacher')->user()->id)->get();
         foreach ($meetings as $meeting) {
             //check if meeting name exist between text
-            if (strpos($meeting->lesson_name, $request->folder_name) !== false) {
+            if (strpos($request->folder_name, $meeting->lesson_name) !== false) {
                 dd($meeting->lesson_name);
             }   
         }
