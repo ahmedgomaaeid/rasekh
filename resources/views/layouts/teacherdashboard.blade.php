@@ -157,6 +157,11 @@
                                             class="side-menu__icon icon-control-play"></i><span
                                             class="side-menu__label">البث المباشر</span></a>
                                 </li>
+                                <li class="slide">
+                                    <a class="side-menu__item has-link" data-bs-toggle="slide" href="{{route('get.teacher.zoom-meeting.upload')}}"><i
+                                            class="side-menu__icon fa fa-upload"></i><span
+                                            class="side-menu__label">رفع تسجيل البث</span></a>
+                                </li>
                             @endif
                             @if(Auth::guard('teacher')->user()->course_access=='مفعل')
                                 <li class="sub-category">
