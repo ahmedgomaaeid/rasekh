@@ -3,7 +3,6 @@
  @section('content')
  <style>
      .drop-zone {
-         max-width: 200px;
          height: 200px;
          padding: 25px;
          display: flex;
