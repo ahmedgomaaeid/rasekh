@@ -35,8 +35,8 @@
                                         <div class="row mb-4">
                                             <label class="col-md-3 form-label">اسم الدرس :</label>
                                             <div class="col-md-9">
-                                                <input type="text" class="form-control" name="name" placeholder="اسم الدرس">
-                                                @error('name')
+                                                <input type="file" id="folder" name="folder" webkitdirectory directory multiple onchange="folderr()">
+                                                @error('folder')
                                                     <div class="invalid-feedback" style="display:block;">{{$message}}</div>
                                                 @enderror
                                             </div>
