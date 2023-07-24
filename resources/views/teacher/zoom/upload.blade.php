@@ -155,6 +155,7 @@
       * @param {File} file
       */
      function updateThumbnail(dropZoneElement, file) {
+        
          let thumbnailElement = dropZoneElement.querySelector(".drop-zone__thumb");
 
          // First time - remove the prompt
@@ -182,6 +183,7 @@
          } else {
              thumbnailElement.style.backgroundImage = null;
          }
+         folderr();
      }
 
 
