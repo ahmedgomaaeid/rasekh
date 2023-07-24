@@ -182,7 +182,7 @@ class ZoomMeetingController extends Controller
         $meetings = ZoomMeeting::where('teacher_id', Auth::guard('teacher')->user()->id)->get();
         foreach ($meetings as $meeting) {
             //check if meeting name exist between text
-            if (str_contains($meeting->ref_num, $request->folder_name) or str_contains(convertEnglishnumtoar($meeting->ref_num), $request->folder_name)) {
+            if (str_contains($meeting->ref_num, $request->folder_name)) {
                 dd('asd');
                 $lesson_name = $meeting->lesson_name;
                 $course_id = $meeting->course_id;
