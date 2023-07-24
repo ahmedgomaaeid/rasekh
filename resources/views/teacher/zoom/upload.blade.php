@@ -80,7 +80,7 @@
                                  <input type="hidden" name="folder_name" id="folder_name">
 
                                  <div class="drop-zone">
-                                    <i class="fa-solid fa-folder"></i>
+                                    <i class="fa fa-folder-open" aria-hidden="true" style="display:block;"></i>
                                      <span class="drop-zone__prompt">اسحب مجلد التسجيل هنا</span>
                                      <input type="file" name="myFile" class="drop-zone__input">
                                  </div>
