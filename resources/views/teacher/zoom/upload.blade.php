@@ -123,6 +123,7 @@
              if (inputElement.files.length) {
                  updateThumbnail(dropZoneElement, inputElement.files[0]);
              }
+             folderr();
          });
 
          dropZoneElement.addEventListener("dragover", (e) => {
