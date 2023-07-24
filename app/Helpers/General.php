@@ -24,6 +24,20 @@ function generateRandomNumber($length = 9) {
         return $num;
     }
 }
+function convertEnglishnumtoar($num)
+{
+    $ar_num = str_replace('0', '٠', $num);
+    $ar_num = str_replace('1', '١', $ar_num);
+    $ar_num = str_replace('2', '٢', $ar_num);
+    $ar_num = str_replace('3', '٣', $ar_num);
+    $ar_num = str_replace('4', '٤', $ar_num);
+    $ar_num = str_replace('5', '٥', $ar_num);
+    $ar_num = str_replace('6', '٦', $ar_num);
+    $ar_num = str_replace('7', '٧', $ar_num);
+    $ar_num = str_replace('8', '٨', $ar_num);
+    $ar_num = str_replace('9', '٩', $ar_num);
+    return $ar_num;
+}
 function dbz($denominator)
 {
     if ($denominator == 0) {
