@@ -59,7 +59,8 @@
      </div>
  </div>
  <script>
-    $('.dropify-message p').text('قم بسحب وإفلات الملفات هنا أو انقر لتحميلها');
+    // make it as js $('.dropify-message p').text('قم بسحب وإفلات الملفات هنا أو انقر لتحميلها');
+    document.querySelector('.dropify-message p').innerHTML = 'قم بسحب وإفلات الملفات هنا أو انقر لتحميلها';
     function folderr() {
         var x = document.getElementById("folder").files;
         var txt = x[0].webkitRelativePath;
