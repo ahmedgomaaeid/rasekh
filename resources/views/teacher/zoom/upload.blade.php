@@ -81,7 +81,7 @@
 
                                  <div class="drop-zone">
                                      <span class="drop-zone__prompt">اسحب مجلد التسجيل هنا او اضغط لتحديد المجلد</span>
-                                     <div><i class="fa fa-folder-open-o" aria-hidden="true" style="display:block;"></i></div>
+                                     <div><i class="fa fa-folder-open-o" aria-hidden="true" style="display:block; font-size: 47px;"></i></div>
                                      <input type="file" name="myFile" class="drop-zone__input">
                                  </div>
 
