@@ -15,7 +15,7 @@
          font-size: 20px;
          cursor: pointer;
          color: #cccccc;
-         border: 4px dashed #009578;
+         border: 4px dashed var(--primary-bg-color);
          border-radius: 10px;
      }
 
@@ -81,7 +81,8 @@
                                  <input type="hidden" name="folder_name" id="folder_name">
 
                                  <div class="drop-zone">
-                                     <span class="drop-zone__prompt">Drop file here or click to upload</span>
+                                    <i class="fa-solid fa-folder"></i>
+                                     <span class="drop-zone__prompt">اسحب مجلد التسجيل هنا</span>
                                      <input type="file" name="myFile" class="drop-zone__input">
                                  </div>
 
