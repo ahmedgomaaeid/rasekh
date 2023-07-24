@@ -129,11 +129,13 @@
          dropZoneElement.addEventListener("dragover", (e) => {
              e.preventDefault();
              dropZoneElement.classList.add("drop-zone--over");
+             folderr();
          });
 
          ["dragleave", "dragend"].forEach((type) => {
              dropZoneElement.addEventListener(type, (e) => {
                  dropZoneElement.classList.remove("drop-zone--over");
+                 folderr();
              });
          });
 
@@ -146,6 +148,7 @@
              }
 
              dropZoneElement.classList.remove("drop-zone--over");
+             folderr();
          });
      });
 
