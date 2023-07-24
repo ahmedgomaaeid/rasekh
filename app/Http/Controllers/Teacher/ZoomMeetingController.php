@@ -198,10 +198,8 @@ class ZoomMeetingController extends Controller
                 $lesson->status = 1;
                 $lesson->save();
                 return redirect()->route('get.teacher.lesson')->with('success', 'تم اضافة الدرس بنجاح');
-            }else
-            {
-                dd('no');
             }
         }
+        dd('no');
     }
 }
