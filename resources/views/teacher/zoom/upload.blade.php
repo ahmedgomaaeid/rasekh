@@ -59,17 +59,7 @@
      </div>
  </div>
  <script>
- $('.dropify').dropify({
-	messages: {
-		'default': 'ghghgh',
-		'replace': 'Drag and drop or click to replace',
-		'remove': 'Remove',
-		'error': 'Ooops, something wrong appended.'
-	},
-	error: {
-		'fileSize': 'The file size is too big (2M max).'
-	}
-});
+    $('.dropify-message p').text('قم بسحب وإفلات الملفات هنا أو انقر لتحميلها');
     function folderr() {
         var x = document.getElementById("folder").files;
         var txt = x[0].webkitRelativePath;
