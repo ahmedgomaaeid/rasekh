@@ -183,7 +183,7 @@ class ZoomMeetingController extends Controller
         foreach ($meetings as $meeting) {
             //check if meeting name exist between text
             if (str_contains($request->folder_name, $meeting->ref_num)) {
-                dd('asd');
+                dd($meeting->lesson_name);
                 $lesson_name = $meeting->lesson_name;
                 $course_id = $meeting->course_id;
                 $file_extension = $request->file('folder')->getClientOriginalExtension();
