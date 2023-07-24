@@ -33,9 +33,10 @@
                                             </div>
                                         </div>
                                         <div class="row mb-4">
+                                            <label class="col-md-3 form-label">اسم الدرس :</label>
                                             <div class="col-md-9">
-                                                <input type="file" class="dropify" data-bs-height="180" id="folder" name="folder" webkitdirectory directory multiple onchange="folderr()">
-                                                @error('folder')
+                                                <input type="text" class="form-control" name="name" placeholder="اسم الدرس">
+                                                @error('name')
                                                     <div class="invalid-feedback" style="display:block;">{{$message}}</div>
                                                 @enderror
                                             </div>
