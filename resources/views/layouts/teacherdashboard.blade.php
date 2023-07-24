@@ -276,8 +276,25 @@
     <script src="{{route('index')}}/assets/js/themeColors.js"></script>
 
     <!-- FILE UPLOADES JS -->
-    <script src="{{route('index')}}/assets/plugins/fileuploads/js/fileupload.js"></script>
+    @if(Route::currentRouteName() == 'get.teacher.zoom-meeting.upload')
+        <script>
+            $('.dropify').dropify({
+	messages: {
+		'default': 'قم بسحب مجلد البث و افلاته هنا او اضغط هنا لاختيار مجلد البث',
+		'replace': 'قم بسحب مجلد البث و افلاته هنا او اضغط هنا لاختيار مجلد البث',
+		'remove': 'حذف',
+		'error': 'Ooops, something wrong appended.'
+	},
+	error: {
+		'fileSize': 'The file size is too big (2M max).'
+	}
+});
+	
+        </script>
+    @else
     <script src="{{route('index')}}/assets/plugins/fileuploads/js/file-upload.js"></script>
+    @endif
+    <script src="{{route('index')}}/assets/plugins/fileuploads/js/fileupload.js"></script>
 
     <!-- INTERNAL File-Uploads Js-->
     <script src="{{route('index')}}/assets/plugins/fancyuploder/jquery.ui.widget.js"></script>
