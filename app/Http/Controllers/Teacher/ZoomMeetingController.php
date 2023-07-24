@@ -182,9 +182,26 @@ class ZoomMeetingController extends Controller
         $meetings = ZoomMeeting::where('teacher_id', Auth::guard('teacher')->user()->id)->get();
         foreach ($meetings as $meeting) {
             //check if meeting name exist between text
-            if (str_contains($meeting->ref_num, $request->folder_name)) {
-                dd($meeting->lesson_name);
-            } 
+            if (str_contains($meeting->ref_num, $request->folder_name) or str_contains(convertEnglishnumtoar($meeting->ref_num), $request->folder_name)) {
+                dd('asd');
+                $lesson_name = $meeting->lesson_name;
+                $course_id = $meeting->course_id;
+                $file_extension = $request->file('folder')->getClientOriginalExtension();
+                $file_name = time() . '.' . $file_extension;
+                $request->file('folder')->move('assets/videos', $file_name);
+                $lesson = new Lesson();
+                $lesson->name = $lesson_name;
+                $lesson->course_id = $course_id;
+                $lesson->publisher_type = 1;
+                $lesson->video = $file_name;
+                $lesson->type = 0;
+                $lesson->status = 1;
+                $lesson->save();
+                return redirect()->route('get.teacher.lesson')->with('success', 'تم اضافة الدرس بنجاح');
+            }else
+            {
+                dd('no');
+            }
         }
     }
 }
