@@ -23,7 +23,7 @@
     <link href="{{route('index')}}/assets/css/skin-modes.css" rel="stylesheet" />
 
     <!--- FONT-ICONS CSS -->
-    <link href="{{route('index')}}/assets/css/icons.css" rel="stylesheet" />
+    <link href="{{route('index')}}/webassets/fav-icon.png" rel="stylesheet" />
 
     <!-- COLOR SKIN CSS -->
     <link id="theme" rel="stylesheet" type="text/css" media="all" href="{{route('index')}}/assets/colors/color1.css" />
@@ -48,7 +48,7 @@
                 <!-- CONTAINER OPEN -->
                 <div class="col col-login mx-auto mt-7">
                     <div class="text-center">
-                        <img src="{{route('index')}}/assets/images/brand/logo.png" class="header-brand-img" alt="">
+                        <img src="{{route('index')}}/webassets/loggg.png" class="header-brand-img" alt="">
                     </div>
                 </div>
 
