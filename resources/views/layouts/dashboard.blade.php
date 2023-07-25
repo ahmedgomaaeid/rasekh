@@ -67,8 +67,8 @@
                         <!-- sidebar-toggle-->
                         <a class="logo-horizontal " href="{{route('get.admin.dashboard')}}">
                             <img src="{{route('index')}}/assets/images/brand/logo.png" class="header-brand-img desktop-logo" alt="logo">
-                            <img src="{{route('index')}}/assets/images/brand/logo3.png" class="header-brand-img light-logo1"
-                                alt="logo">
+                            <img src="{{route('index')}}/webassets/loggg.png" class="header-brand-img light-logo1"
+                                alt="logo" style="width: 190px;">
                         </a>
                         <!-- LOGO -->
                     </div>
@@ -86,7 +86,7 @@
                             <img src="{{route('index')}}/assets/images/brand/logo-1.png" class="header-brand-img toggle-logo"
                                 alt="logo">
                             <img src="{{route('index')}}/assets/images/brand/logo-2.png" class="header-brand-img light-logo" alt="logo">
-                            <img src="{{route('index')}}/assets/images/brand/logo3.png" class="header-brand-img light-logo1"
+                            <img src="{{route('index')}}/webassets/loggg.png" class="header-brand-img light-logo1"
                                 alt="logo">
                         </a>
                         <!-- LOGO -->
