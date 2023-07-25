@@ -33,7 +33,7 @@
 <body class="app sidebar-mini rtl">
 
     <!-- BACKGROUND-IMAGE -->
-    <div class="login-img">
+    <div class="login-img" style="{{route('index')}}/public/bg2.jpeg">
 
         <!-- GLOABAL LOADER -->
         <div id="global-loader">
