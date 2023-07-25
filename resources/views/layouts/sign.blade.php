@@ -31,7 +31,13 @@
 </head>
 
 <body class="app sidebar-mini rtl">
-
+    <style>
+        .btn-primary
+        {
+            background-color: #84aa7d !important;
+            border-color: #84aa7d !important;
+        }
+    </style>
     <!-- BACKGROUND-IMAGE -->
     <div style="background-image: url({{route('index')}}/public/bg2.jpeg);
     background-position: center;
