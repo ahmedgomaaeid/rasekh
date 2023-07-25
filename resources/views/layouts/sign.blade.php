@@ -33,7 +33,11 @@
 <body class="app sidebar-mini rtl">
 
     <!-- BACKGROUND-IMAGE -->
-    <div class="login-img" style="background-image: url({{route('index')}}/public/bg2.jpeg);">
+    <div class="login-img" style="background-image: url({{route('index')}}/public/bg2.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    ">
 
         <!-- GLOABAL LOADER -->
         <div id="global-loader">
@@ -48,7 +52,7 @@
                 <!-- CONTAINER OPEN -->
                 <div class="col col-login mx-auto mt-7">
                     <div class="text-center">
-                        <img src="{{route('index')}}/webassets/loggg.png" class="header-brand-img" alt="" style="width:200px;">
+                        <img src="{{route('index')}}/webassets/loggg.png" class="header-brand-img" alt="" style="width:300px;">
                     </div>
                 </div>
 
