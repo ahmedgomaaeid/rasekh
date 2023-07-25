@@ -48,7 +48,7 @@
                 <!-- CONTAINER OPEN -->
                 <div class="col col-login mx-auto mt-7">
                     <div class="text-center">
-                        <img src="{{route('index')}}/webassets/loggg.png" class="header-brand-img" alt="">
+                        <img src="{{route('index')}}/webassets/loggg.png" class="header-brand-img" alt="" style="width:200px;">
                     </div>
                 </div>
 

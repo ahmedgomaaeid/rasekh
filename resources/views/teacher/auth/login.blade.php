@@ -4,7 +4,7 @@
 <form method="POST" action="{{route('teacher.login')}}" class="login100-form validate-form">
     @csrf
     <span class="login100-form-title pb-5">
-        تسجيل الدخول
+        تسجيل دخول المعلم
     </span>
     <div class="panel panel-primary">
         @if(session()->has('status'))

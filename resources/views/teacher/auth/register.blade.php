@@ -3,7 +3,7 @@
 <form method="POST" action="{{route('teacher.register')}}" enctype="multipart/form-data" class="login100-form validate-form">
 @csrf
     <span class="login100-form-title">
-        تسجيل حساب
+        تسجيل حساب المعلم
     </span>
     <div class="row">
         <div class="col-lg-12 col-sm-12 mb-12 mb-lg-0" style="margin: auto;">
