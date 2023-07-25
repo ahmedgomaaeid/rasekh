@@ -85,9 +85,9 @@
                             <img src="{{route('index')}}/assets/images/brand/logo.png" class="header-brand-img desktop-logo" alt="logo">
                             <img src="{{route('index')}}/assets/images/brand/logo-1.png" class="header-brand-img toggle-logo"
                                 alt="logo">
-                            <img src="{{route('index')}}/assets/images/brand/logo-2.png" class="header-brand-img light-logo" alt="logo">
+                            <img src="{{route('index')}}/webassets/fav-icon.png" class="header-brand-img light-logo" alt="logo">
                             <img src="{{route('index')}}/webassets/loggg.png" class="header-brand-img light-logo1"
-                                alt="logo">
+                                alt="logo" style="width: 80%; margin: auto;">
                         </a>
                         <!-- LOGO -->
                     </div>
