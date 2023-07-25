@@ -36,7 +36,15 @@
 </head>
 
 <body class="app sidebar-mini rtl light-mode">
-
+    <style>
+        .btn-primary {
+            background-color: #84aa7d !important;
+            border-color: #84aa7d !important;
+        }
+        .side-menu .side-menu__icon {
+            color: #84aa7d !important;
+        }
+    </style>
     <!-- GLOBAL-LOADER -->
     <div id="global-loader">
         <img src="{{route('index')}}/assets/images/loader.svg" class="loader-img" alt="Loader">
