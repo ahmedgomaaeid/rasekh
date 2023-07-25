@@ -32,6 +32,10 @@
 
 <body class="app sidebar-mini rtl">
     <style>
+        :root
+        {
+            --primary-bg-color: #84aa7d !important;
+        }
         .btn-primary
         {
             background-color: #84aa7d !important;
