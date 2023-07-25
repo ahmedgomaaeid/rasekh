@@ -16,7 +16,7 @@
         content="admin,admin dashboard,admin panel,admin template,bootstrap,clean,dashboard,flat,jquery,modern,responsive,premium admin templates,responsive admin,ui,ui kit.">
 
     <!-- FAVICON -->
-    <link rel="shortcut icon" type="image/x-icon" href="{{route('index')}}/assets/images/brand/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{route('index')}}/webassets/fav-icon.png" />
 
     <!-- TITLE -->
     <title>لوحة التحكم </title>
@@ -70,8 +70,8 @@
                         <!-- sidebar-toggle-->
                         <a class="logo-horizontal " href="{{route('get.teacher.dashboard')}}">
                             <img src="{{route('index')}}/assets/images/brand/logo.png" class="header-brand-img desktop-logo" alt="logo">
-                            <img src="{{route('index')}}/assets/images/brand/logo3.png" class="header-brand-img light-logo1"
-                                alt="logo">
+                            <img src="{{route('index')}}/webassets/loggg.png" class="header-brand-img light-logo1"
+                                alt="logo" style="width: 190px;">
                         </a>
                         <!-- LOGO -->
                         <div class="d-flex order-lg-2 ms-auto header-right-icons">
@@ -135,9 +135,9 @@
                             <img src="{{route('index')}}/assets/images/brand/logo.png" class="header-brand-img desktop-logo" alt="logo">
                             <img src="{{route('index')}}/assets/images/brand/logo-1.png" class="header-brand-img toggle-logo"
                                 alt="logo">
-                            <img src="{{route('index')}}/assets/images/brand/logo-2.png" class="header-brand-img light-logo" alt="logo">
-                            <img src="{{route('index')}}/assets/images/brand/logo3.png" class="header-brand-img light-logo1"
-                                alt="logo">
+                            <img src="{{route('index')}}/webassets/fav-icon.png" class="header-brand-img light-logo" alt="logo">
+                            <img src="{{route('index')}}/webassets/loggg.png" class="header-brand-img light-logo1"
+                                alt="logo" style="width: 80%; margin: auto;">
                         </a>
                         <!-- LOGO -->
                     </div>
