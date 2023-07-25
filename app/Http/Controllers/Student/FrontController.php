@@ -27,4 +27,8 @@ class FrontController extends Controller
         $shops = Shop::all();
         return view('student.cards', compact('shops'));
     }
+    public function terms()
+    {
+        return view('student.terms');
+    }
 }

@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group.
 |
 */
-Route::get('/phpinfo', function() {
-    phpinfo();
-});
+// Route::get('/phpinfo', function() {
+//     phpinfo();
+// });
 Route::group(['namespace' => 'Student'], function () {
     Route::get('/', 'IndexController@index')->name('index');
     Route::get('/all-courses', 'AllCoursesController@index')->name('allCourses');
@@ -28,6 +28,7 @@ Route::group(['namespace' => 'Student'], function () {
     Route::get('offers', 'FrontController@offers')->name('offers');
     Route::get('about', 'FrontController@about')->name('about');
     Route::get('cards', 'FrontController@cards')->name('cards');
+    Route::get('terms-of-service', 'FrontController@terms')->name('terms');
     Route::group(['middleware' => ['auth:student','student.verify']], function () {
         Route::get('/cart', 'CartController@index')->name('cart');
         Route::get('/my-courses', 'MyCoursesController@index')->name('myCourses');
