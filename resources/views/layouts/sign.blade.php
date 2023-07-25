@@ -33,7 +33,7 @@
 <body class="app sidebar-mini rtl">
 
     <!-- BACKGROUND-IMAGE -->
-    <div class="login-img" style="background-image: url({{route('index')}}/public/bg2.jpeg);
+    <div style="background-image: url({{route('index')}}/public/bg2.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
