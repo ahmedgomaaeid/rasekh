@@ -43,8 +43,7 @@ class Handler extends ExceptionHandler
         $notify->seen = 0;
         $notify->type = 2;
         $notify->save();
-        return redirect()->back()->with('status', 'حدث خطأ ما يرجى المحاولة مرة أخرى');
-        // parent::report($exception);
+        parent::report($exception);
     }
 
     /**
