@@ -3,7 +3,7 @@
 @include('layouts.frontimplement.topindex')
 @endsection
 @section('content')
-<div id="content" class="site-content">
+<div id="content" class="site-content" style="padding-right:50px; padding-top:113px;">
 
     <div id="breadcrumbs" class="bb-yoast-breadcrumbs"><span><span><a href="https://watad.me/">الرئيسية</a></span> » <span class="breadcrumb_last" aria-current="page">شروط الخدمة و سياسة الخصوصية</span></span></div>
     <div class="container">
