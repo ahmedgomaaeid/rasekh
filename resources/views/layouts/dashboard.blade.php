@@ -22,7 +22,7 @@
     <link id="style" href="{{route('index')}}/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- STYLE CSS -->
-    <link href="{{route('index')}}/assets/css/style.css" rel="stylesheet" />
+    <link href="{{route('indexxx')}}/assets/css/style.css" rel="stylesheet" />
     <link href="{{route('index')}}/assets/css/dark-style.css" rel="stylesheet" />
     <link href="{{route('index')}}/assets/css/transparent-style.css" rel="stylesheet">
     <link href="{{route('index')}}/assets/css/skin-modes.css" rel="stylesheet" />

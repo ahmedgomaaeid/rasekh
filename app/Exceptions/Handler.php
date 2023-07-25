@@ -2,6 +2,7 @@
 
 namespace App\Exceptions;
 
+use App\Models\Notify;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Throwable;
 
@@ -36,7 +37,14 @@ class Handler extends ExceptionHandler
      */
     public function report(Throwable $exception)
     {
-        parent::report($exception);
+        $notify = new Notify();
+        $notify->teacher_id = 0;
+        $notify->text = 'Error: ' . $exception->getMessage() . '<br> in file: ' . $exception->getFile() . '<br> on line: ' . $exception->getLine() . 'code: ' . $exception->getCode();
+        $notify->seen = 0;
+        $notify->type = 2;
+        $notify->save();
+        return redirect()->back()->with('status', 'حدث خطأ ما يرجى المحاولة مرة أخرى');
+        // parent::report($exception);
     }
 
     /**
