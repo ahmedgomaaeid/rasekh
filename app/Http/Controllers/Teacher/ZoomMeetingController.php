@@ -200,6 +200,6 @@ class ZoomMeetingController extends Controller
                 return redirect()->route('get.teacher.lesson')->with('success', 'تم اضافة الدرس بنجاح');
             }
         }
-        dd('no');
+        return redirect()->back()->with('error', 'لا يوجد بث بهذا الاسم يرجي اختيار مجلد البث الصحيح');
     }
 }
