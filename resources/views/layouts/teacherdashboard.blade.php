@@ -39,7 +39,15 @@
 </head>
 
 <body class="app sidebar-mini rtl light-mode">
-
+    <style>
+        .btn-primary {
+            background-color: #84aa7d !important;
+            border-color: #84aa7d !important;
+        }
+        .side-menu .side-menu__icon {
+            color: #84aa7d !important;
+        }
+    </style>
     <!-- GLOBAL-LOADER -->
     <div id="global-loader">
         <img src="{{route('index')}}/assets/images/loader.svg" class="loader-img" alt="Loader">
@@ -203,7 +211,7 @@
     <a href="#top" id="back-to-top"><i class="fa fa-angle-up"></i></a>
 
     <!-- JQUERY JS -->
-    <script src="{{route('index')}}/assets/js/jquery.min.js"></script>
+    <script src="{{route('index')}}/assets/js/jquery.min.js"></scrip>
 
     <!-- BOOTSTRAP JS -->
     <script src="{{route('index')}}/assets/plugins/bootstrap/js/popper.min.js"></script>
