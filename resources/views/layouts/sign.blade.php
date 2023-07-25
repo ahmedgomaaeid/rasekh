@@ -8,7 +8,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- FAVICON -->
-    <link rel="shortcut icon" type="image/x-icon" href="{{route('index')}}/assets/images/1.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{route('index')}}/webassets/fav-icon.png" />
 
     <!-- TITLE -->
     <title>تسجيل الدخول</title>
@@ -23,7 +23,7 @@
     <link href="{{route('index')}}/assets/css/skin-modes.css" rel="stylesheet" />
 
     <!--- FONT-ICONS CSS -->
-    <link href="{{route('index')}}/webassets/fav-icon.png" rel="stylesheet" />
+    <link href="{{route('index')}}/assets/css/icons.css" rel="stylesheet" />
 
     <!-- COLOR SKIN CSS -->
     <link id="theme" rel="stylesheet" type="text/css" media="all" href="{{route('index')}}/assets/colors/color1.css" />
