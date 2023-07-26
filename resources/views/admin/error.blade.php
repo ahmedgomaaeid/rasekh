@@ -16,7 +16,7 @@
                      </div>
                      @endif
                      @foreach ($errors as $error)
-                        <div class="col-md-6 col-xl-4">
+                        <div class="col-md-12 col-xl-12">
                             <div class="card text-danger bg-danger-transparent card-transparent">
                                 <div class="card-body">
                                     <p class="card-text">{{$error->text}}</p>
