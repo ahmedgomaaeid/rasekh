@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Livewire\Teacher\Notify;
 use App\Models\Purchase;
 use App\Models\Student;
 use App\Models\Teacher;
@@ -21,5 +22,10 @@ class dashboardController extends Controller
         $dues = Teacher::all()->sum('dues');
         $received = Teacher::all()->sum('received');
         return view('admin.index', compact('teachers', 'unapp_teachers', 'app_teachers','teacher_dues', 'students', 'price', 'dues', 'received'));
+    }
+    public function error()
+    {
+        $notifies = Notify::where('teacher_id', 0)->where('seen', 0)->get();
+        return view('admin.error', compact('notifies'));
     }
 }
