@@ -18,7 +18,7 @@
 
                      <div class="example">
                          <div class="d-grid gap-2">
-                             <button type="button" class="btn btn-danger-light mb-1">مسح الجميع</button>
+                             <button type="button" class="btn btn-secondary-light mb-1">مسح الجميع</button>
                          </div>
                      </div>
                      @foreach ($errors as $error)
