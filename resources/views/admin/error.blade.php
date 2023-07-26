@@ -26,7 +26,7 @@
                          <div class="card text-danger bg-danger-transparent card-transparent">
                              <div class="card-body">
                                  <h4 class="card-title">{{$error->created_at}}</h4>
-                                 <p class="card-text">{!!$error->message!!}</p>
+                                 <p class="card-text">{!!$error->text!!}</p>
                              </div>
                          </div>
                      </div>
