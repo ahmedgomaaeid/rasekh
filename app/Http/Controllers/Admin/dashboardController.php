@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
-use App\Http\Livewire\Teacher\Notify;
+use App\Models\Notify;
 use App\Models\Purchase;
 use App\Models\Student;
 use App\Models\Teacher;
