@@ -21,7 +21,7 @@ class dashboardController extends Controller
         $price = Purchase::all()->sum('course_price');
         $dues = Teacher::all()->sum('dues');
         $received = Teacher::all()->sum('received');
-        return view('admin.index', compact('teachers', 'unapp_teachers', 'app_teachers','teacher_dues', 'students', 'price', 'dues', 'received'));
+        return view('admin.index', compactt('teachers', 'unapp_teachers', 'app_teachers','teacher_dues', 'students', 'price', 'dues', 'received'));
     }
     public function error()
     {
