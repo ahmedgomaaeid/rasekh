@@ -39,6 +39,7 @@ Route::namespace('Admin')->group(function () {
         Route::get('/', 'dashboardController@index')->name('get.admin.dashboard');
 
         Route::get('/error', 'dashboardController@error')->name('get.admin.error');
+        Route::get('/clear-error', 'dashboardController@clear_error')->name('get.admin.clear.error');
 
         Route::group(['namespace' => 'category'], function () {
             ##############################main-category##############################################

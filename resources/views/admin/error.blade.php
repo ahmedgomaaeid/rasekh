@@ -18,7 +18,7 @@
 
                      <div class="example">
                          <div class="d-grid gap-2">
-                             <button type="button" class="btn btn-primary mb-1">مسح الجميع</button>
+                             <a href="{{route('get.admin.clear.error')}}" class="btn btn-primary mb-1">مسح الجميع</a>
                          </div>
                      </div>
                      @foreach ($errors as $error)
@@ -26,7 +26,7 @@
                          <div class="card text-danger bg-danger-transparent card-transparent">
                              <div class="card-body">
                                  <h4 class="card-title">{{$error->created_at}}</h4>
-                                 <p class="card-text">{{$error->text}}</p>
+                                 <p class="card-text">{!!$error->message!!}</p>
                              </div>
                          </div>
                      </div>

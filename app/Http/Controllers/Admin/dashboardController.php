@@ -25,7 +25,15 @@ class dashboardController extends Controller
     }
     public function error()
     {
-        $errors = Notify::where('teacher_id', 0)->where('seen', 0)->get();
+        $errors = Notify::where('teacher_id', 0)->get();
         return view('admin.error', compact('errors'));
+    }
+    public function clear_error()
+    {
+        $errors = Notify::where('teacher_id', 0)->get();
+        foreach ($errors as $error) {
+            $error->delete();
+        }
+        return redirect()->back()->with('success', 'تم مسح الاخطاء بنجاح');
     }
 }
