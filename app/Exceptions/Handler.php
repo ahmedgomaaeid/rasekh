@@ -37,7 +37,7 @@ class Handler extends ExceptionHandler
      */
     public function report(Throwable $exception)
     {
-        if($exception->getFile() != '/www/wwwroot/rasekhpal.com/vendor/laravel/framework/src/Illuminate/Routing/AbstractRouteCollection.php')
+        if($exception->getFile() != '/www/wwwroot/rasekhpal.com/vendor/laravel/framework/src/Illuminate/Routing/AbstractRouteCollection.php' or $exception->getMessage() != 'Unauthenticated')
         {
             //check what guard is using
             $uid = 0;
