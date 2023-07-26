@@ -15,14 +15,21 @@
                          {{ session()->get('success') }}
                      </div>
                      @endif
+
+                     <div class="example">
+                         <div class="d-grid gap-2">
+                             <button type="button" class="btn btn-danger-light mb-1">مسح الجميع</button>
+                         </div>
+                     </div>
                      @foreach ($errors as $error)
-                        <div class="col-md-12 col-xl-12">
-                            <div class="card text-danger bg-danger-transparent card-transparent">
-                                <div class="card-body">
-                                    <p class="card-text">{{$error->text}}</p>
-                                </div>
-                            </div>
-                        </div>
+                     <div class="col-md-12 col-xl-12">
+                         <div class="card text-danger bg-danger-transparent card-transparent">
+                             <div class="card-body">
+                                 <h4 class="card-title">{{$error->created_at}}</h4>
+                                 <p class="card-text">{{$error->text}}</p>
+                             </div>
+                         </div>
+                     </div>
                      @endforeach
                  </div>
              </div>
