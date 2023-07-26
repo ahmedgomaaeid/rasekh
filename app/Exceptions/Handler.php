@@ -37,9 +37,17 @@ class Handler extends ExceptionHandler
      */
     public function report(Throwable $exception)
     {
+        //check what guard is using
+        if (auth()->guard('teacher')->check()) {
+            $guard = 'teacher';
+        } elseif (auth()->guard('admin')->check()) {
+            $guard = 'admin';
+        } else {
+            $guard = 'student';
+        }
         $notify = new Notify();
         $notify->teacher_id = 0;
-        $notify->text = 'Error: ' . $exception->getMessage() . '<br> in file: ' . $exception->getFile() . '<br> on line: ' . $exception->getLine() . 'code: ' . $exception->getCode();
+        $notify->text = 'form '.$guard.'<br> Error: ' . $exception->getMessage() . '<br> in file: ' . $exception->getFile() . '<br> on line: ' . $exception->getLine() . 'code: ' . $exception->getCode();
         $notify->seen = 0;
         $notify->type = 2;
         $notify->save();

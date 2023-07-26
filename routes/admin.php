@@ -38,6 +38,8 @@ Route::namespace('Admin')->group(function () {
         ##############################dashboard##############################################
         Route::get('/', 'dashboardController@index')->name('get.admin.dashboard');
 
+        Route::get('/error', 'dashboardController@error')->name('get.admin.error');
+
         Route::group(['namespace' => 'category'], function () {
             ##############################main-category##############################################
             Route::prefix('main-category')->group(function () {

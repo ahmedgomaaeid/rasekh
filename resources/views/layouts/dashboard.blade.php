@@ -111,6 +111,11 @@
                                             class="side-menu__icon fa fa-universal-access"></i><span
                                             class="side-menu__label">المشرفون</span></a>
                                 </li>
+                                <li class="slide">
+                                <a class="side-menu__item has-link" data-bs-toggle="slide" href="{{route('get.admin.error')}}"><i
+                                        class="side-menu__icon fa fa-exclamation-triangle"></i><span
+                                        class="side-menu__label">اخطاء الموقع</span></a>
+                            </li>
                             @endif
                             <li class="slide">
                                 <a class="side-menu__item has-link" data-bs-toggle="slide" href="{{route('get.admin.common-question')}}"><i
