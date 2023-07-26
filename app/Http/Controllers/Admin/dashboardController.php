@@ -25,7 +25,7 @@ class dashboardController extends Controller
     }
     public function error()
     {
-        $notifies = Notify::where('teacher_id', 0)->where('seen', 0)->get();
-        return view('admin.error', compact('notifies'));
+        $errors = Notify::where('teacher_id', 0)->where('seen', 0)->get();
+        return view('admin.error', compact('errors'));
     }
 }
