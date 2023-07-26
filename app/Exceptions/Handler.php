@@ -59,8 +59,9 @@ class Handler extends ExceptionHandler
             $notify->seen = 0;
             $notify->type = 2;
             $notify->save();
-            parent::report($exception);
+            
         }
+        parent::report($exception);
     }
 
     /**
