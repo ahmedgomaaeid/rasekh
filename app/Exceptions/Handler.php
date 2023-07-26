@@ -37,28 +37,31 @@ class Handler extends ExceptionHandler
      */
     public function report(Throwable $exception)
     {
-        if($exception->getFile() != '/www/wwwroot/rasekhpal.com/vendor/laravel/framework/src/Illuminate/Routing/AbstractRouteCollection.php' and $exception->getMessage() != 'Unauthenticated')
+        if($exception->getFile() != '/www/wwwroot/rasekhpal.com/vendor/laravel/framework/src/Illuminate/Routing/AbstractRouteCollection.php')
         {
-            //check what guard is using
-            $uid = 0;
-            if (auth()->guard('teacher')->check()) {
-                $guard = 'teacher';
-                $uid = auth()->guard('teacher')->user()->id;
-            } elseif (auth()->guard('admin')->check()) {
-                $guard = 'admin';
-                $uid = auth()->guard('admin')->user()->id;
-            } else {
-                $guard = 'student';
-                if (auth()->guard('student')->check()) {
-                    $uid = auth()->guard('student')->user()->id;
+            if($exception->getFile() != '/www/wwwroot/rasekhpal.com/vendor/laravel/framework/src/Illuminate/Auth/Middleware/Authenticate.php')
+            {
+                //check what guard is using
+                $uid = 0;
+                if (auth()->guard('teacher')->check()) {
+                    $guard = 'teacher';
+                    $uid = auth()->guard('teacher')->user()->id;
+                } elseif (auth()->guard('admin')->check()) {
+                    $guard = 'admin';
+                    $uid = auth()->guard('admin')->user()->id;
+                } else {
+                    $guard = 'student';
+                    if (auth()->guard('student')->check()) {
+                        $uid = auth()->guard('student')->user()->id;
+                    }
                 }
+                $notify = new Notify();
+                $notify->teacher_id = 0;
+                $notify->text = 'form '.$guard.' with id='.$uid.' <br> Error: ' . $exception->getMessage() . '<br> in file: ' . $exception->getFile() . '<br> on line: ' . $exception->getLine() . 'code: ' . $exception->getCode();
+                $notify->seen = 0;
+                $notify->type = 2;
+                $notify->save();
             }
-            $notify = new Notify();
-            $notify->teacher_id = 0;
-            $notify->text = 'form '.$guard.' with id='.$uid.' <br> Error: ' . $exception->getMessage() . '<br> in file: ' . $exception->getFile() . '<br> on line: ' . $exception->getLine() . 'code: ' . $exception->getCode();
-            $notify->seen = 0;
-            $notify->type = 2;
-            $notify->save();
             
         }
         parent::report($exception);
