@@ -116,7 +116,7 @@
 
                                                                                             <div class="bb-course-cover">
                                                                                                 <a title="{{$course->steacher->name}}" class="bb-cover-wrap">
-                                                                                                    <img loading="lazy" width="624" height="374" src="{{route('index')}}/assets/images/teachers/{{$course->steacher->photo}}" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" sizes="(max-width: 624px) 100vw, 624px" />
+                                                                                                    <img loading="lazy" width="624" height="374" src="{{route('index')}}/assets/images/teachers/{{$course->image}}" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" sizes="(max-width: 624px) 100vw, 624px" />
                                                                                                 </a>
                                                                                             </div>
                                                                                             <div class="bb-course-footer bb-course-pay">
