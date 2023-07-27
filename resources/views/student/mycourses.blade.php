@@ -156,8 +156,8 @@
 
 
                                                                                                 <div class="bb-card-course-details">
-                                                                                                    <div class="course-lesson-count" style="text-align: center;">{{$course->course->name}}</div>
-                                                                                                    <h2 class="bb-course-title"><a style="text-align: center;" href="{{route('course',$course->course->id)}}">{{$course->course->name}}</a></h2>
+                                                                                                    <div class="course-lesson-count">{{$course->course->name}}</div>
+                                                                                                    <h2 class="bb-course-title"><a href="{{route('course',$course->course->id)}}">{{$course->course->name}}</a></h2>
                                                                                                     <div class="bb-course-meta">
                                                                                                         <a class="item-avatar" href="" class="item-avatar">
                                                                                                     </div>
