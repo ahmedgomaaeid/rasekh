@@ -163,7 +163,7 @@
                                                                                                             <img alt="" src="{{route('index')}}/assets/images/teachers/{{$course->course->steacher->photo}}" srcset="{{route('index')}}/assets/images/teachers/{{$course->course->steacher->photo}} 2x" class="avatar avatar-80 photo" height="80" width="80" loading="lazy">
                                                                                                         </a>
                                                                                                         <strong>
-                                                                                                            <a href="#">الاستاذ / {{$course->steacher->name}}</a>
+                                                                                                            <a href="#">الاستاذ / {{$course->course->steacher->name}}</a>
                                                                                                         </strong>
                                                                                                     </div>
                                                                                                     
