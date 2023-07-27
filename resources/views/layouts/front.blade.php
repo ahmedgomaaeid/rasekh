@@ -61,7 +61,7 @@
                             <li><a href="https://www.youtube.com/@rasekhpal" target="_blank" data-balloon-pos="up" data-balloon="youtube"><i class="fab fa-youtube"></i></a></li>
                         </ul>
                         <div class="footer-desc">
-                            <div><a href="{{route('terms')}}">شروط الخدمة و سياسة الخصوصية</a></div>
+                            <div><a href="{{route('terms')}}">شروط الخدمة و سياسة الخصوصية والاسترجاع</a></div>
                             <div><img src="{{route('index')}}/webassets/Visa-Mastercard-logos-footer.png" alt="Visa &amp; Mastercard Logos">
                                 <img src="https://rasekhpal.com/public/paypal.png" alt="Visa &amp; Mastercard Logos" style="width: 125px;">
                             </div>
