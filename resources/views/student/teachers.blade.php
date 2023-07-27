@@ -75,7 +75,7 @@
                                                                                             <div class="elementor-widget-container">
                                                                                                 <div class="elementor-image-box-wrapper">
                                                                                                     <div class="elementor-image-box-content">
-                                                                                                        <h2 class="elementor-image-box-title">اختر المعلم</h2>
+                                                                                                        <h2 class="elementor-image-box-title">اختر المادة</h2>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
