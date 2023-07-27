@@ -149,15 +149,15 @@
                                                                                                         </div>
                                                                                                     @endif
                                                                                                     <a title="{{$course->course->steacher->name}}" href="{{route('course',$course->course->id)}}" class="bb-cover-wrap">
-                                                                                                        <img loading="lazy" width="624" height="374" src="{{route('index')}}/assets/images/teachers/{{$course->course->steacher->photo}}" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="" sizes="(max-width: 624px) 100vw, 624px" />
+                                                                                                        <img loading="lazy" width="624" height="374" src="{{route('index')}}/assets/images/courses/{{$course->course->image}}" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="" sizes="(max-width: 624px) 100vw, 624px" />
                                                                                                     </a>
                                                                                                 </div>
 
 
 
                                                                                                 <div class="bb-card-course-details">
-                                                                                                    <div class="course-lesson-count" style="text-align: center;">{{$course->course->steacher->name}}</div>
-                                                                                                    <h2 class="bb-course-title"><a style="text-align: center;" href="{{route('course',$course->course->id)}}">{{$course->course->steacher->name}}</a></h2>
+                                                                                                    <div class="course-lesson-count" style="text-align: center;">{{$course->course->name}}</div>
+                                                                                                    <h2 class="bb-course-title"><a style="text-align: center;" href="{{route('course',$course->course->id)}}">{{$course->course->name}}</a></h2>
                                                                                                     <div class="bb-course-meta">
                                                                                                         <a class="item-avatar" href="" class="item-avatar">
                                                                                                     </div>
