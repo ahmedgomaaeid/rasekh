@@ -160,7 +160,7 @@
                                                                                                     <h2 class="bb-course-title"><a href="{{route('course',$course->course->id)}}">{{$course->course->name}}</a></h2>
                                                                                                     <div class="bb-course-meta">
                                                                                                         <a class="item-avatar" href="#">
-                                                                                                            <img alt="" src="{{route('index')}}/assets/images/teachers/{{$course->steacher->photo}}" srcset="{{route('index')}}/assets/images/teachers/{{$course->steacher->photo}} 2x" class="avatar avatar-80 photo" height="80" width="80" loading="lazy">
+                                                                                                            <img alt="" src="{{route('index')}}/assets/images/teachers/{{$course->course->steacher->photo}}" srcset="{{route('index')}}/assets/images/teachers/{{$course->course->steacher->photo}} 2x" class="avatar avatar-80 photo" height="80" width="80" loading="lazy">
                                                                                                         </a>
                                                                                                         <strong>
                                                                                                             <a href="#">الاستاذ / {{$course->steacher->name}}</a>
