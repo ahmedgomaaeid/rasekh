@@ -126,9 +126,15 @@
 
 
                                                                                             <div class="bb-card-course-details">
-                                                                                                <div class="course-lesson-count">{{$course->steacher->name}}</div>
-                                                                                                <h2 class="bb-course-title"><a>{{$course->steacher->name}}</a></h2>
-
+                                                                                                <div class="course-lesson-count">{{$course->name}}</div>
+                                                                                                <h2 class="bb-course-title"><a>{{$course->name}}</a></h2>
+                                                                                                <div class="bb-course-meta">
+                                                                                                    <a class="item-avatar" href="#">
+                                                                                                        <img alt="" src="{{route('index')}}/assets/images/teachers/{{$course->steacher->photo}}" srcset="{{route('index')}}/assets/images/teachers/{{$course->steacher->photo}} 2x" class="avatar avatar-80 photo" height="80" width="80" loading="lazy"> </a>
+                                                                                                    <strong>
+                                                                                                        <a href="#">{{$course->steacher->name}}</a>
+                                                                                                    </strong>
+                                                                                                </div>
 
                                                                                                 <div class="learndash-wrapper learndash-wrap learndash-shortcode-wrap"><a class="btn-join" href="{{route('addToCart',$course->id)}}" id="btn-join">اضافة الى السلة</a></div>
                                                                                             </div><!-- .entry-header -->
