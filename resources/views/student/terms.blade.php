@@ -14,7 +14,7 @@
 
                     <article id="post-24950" class="post-24950 page type-page status-publish hentry">
                         <header class="entry-header">
-                            <h1 class="entry-title">شروط الخدمة و سياسة الخصوصية</h1>
+                            <h1 class="entry-title">شروط الخدمة و سياسة الخصوصية والاسترجاع</h1>
                         </header>
 
                         <div class="entry-content">
