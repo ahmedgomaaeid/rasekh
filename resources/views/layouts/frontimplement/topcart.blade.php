@@ -1879,4 +1879,5 @@ display:none;
 	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <script src="https://use.fontawesome.com/432ad9925a.js"></script>
 	<link rel="icon" href="{{route('index')}}/webassets/fav-icon.png" type="image/x-icon" />
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
