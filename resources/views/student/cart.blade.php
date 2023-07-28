@@ -119,7 +119,7 @@
 
 
                                                 <div class="wc-proceed-to-checkout">
-                                                    <div class="g-recaptcha" data-sitekey="6Le-mGEnAAAAAHfxlIg8mApw6aC1gbKzACw5T4zW" style="display:flex;justify-content:left;" id="recaptcha"></div>
+                                                    <div class="g-recaptcha" data-sitekey="6Le-mGEnAAAAAHfxlIg8mApw6aC1gbKzACw5T4zW" style="display:flex;justify-content:left;" id="recaptcha" onchange="recaptchaCallback()"></div>
                                                     <div id="pay_methods" style="display:none;">
                                                         @if($points>=$total_price)
                                                         <a href="{{route('pay')}}" class="checkout-button button alt wc-forward">
@@ -188,15 +188,9 @@
     </div><!-- #page -->
     <script>
     //show pay methods and hide recaptcha when recaptcha is done
-    grecaptcha.getResponse = function() {
-        var response = jQuery('#g-recaptcha-response').val();
-        if (response.length == 0) {
-            jQuery('#pay_methods').hide();
-            document.getElementById('pay_methods').style.display = 'block';
-        } else {
-            jQuery('#pay_methods').show();
-        }
-        return response;
+    function recaptchaCallback() {
+        document.getElementById('recaptcha').style.display = 'none';
+        document.getElementById('pay_methods').style.display = 'block';
     }
     </script>
     <script src="https://js.lahza.io/inline.min.js"></script>
