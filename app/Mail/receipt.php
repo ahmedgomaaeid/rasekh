@@ -18,9 +18,10 @@ class receipt extends Mailable
      *
      * @return void
      */
-    public function __construct()
+    public $order;
+    public function __construct($order)
     {
-        //
+        $this->order = $order;
     }
 
     /**
@@ -31,7 +32,7 @@ class receipt extends Mailable
     public function envelope()
     {
         return new Envelope(
-            subject: 'Receipt',
+            subject: 'منصة راسخ',
         );
     }
 
@@ -43,7 +44,7 @@ class receipt extends Mailable
     public function content()
     {
         return new Content(
-            view: 'view.name',
+            view: 'student.emails.receipt',
         );
     }
 

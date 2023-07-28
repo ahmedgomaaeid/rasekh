@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Student;
 
 use App\Http\Controllers\Controller;
+use App\Mail\receipt;
 use App\Models\ChargingCard;
 use App\Models\Notify;
 use App\Models\Payment;
@@ -12,6 +13,7 @@ use App\Models\Teacher;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Cookie;
+use Illuminate\Support\Facades\Mail;
 use Nafezly\Payments\Classes\PayPalPayment;
 
 class PaymentController extends Controller
@@ -150,6 +152,8 @@ class PaymentController extends Controller
                 $notify->seen = 0;
                 $notify->type = 0;
                 $notify->save();
+                //send email
+                Mail::to($student->email)->send(new receipt($purchase));
             }
             Cookie::queue('shopping_cart', json_encode(array()), 60);
             Student::find(auth()->user()->id)->update(['points' => 0]);
