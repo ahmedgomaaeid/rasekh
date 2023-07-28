@@ -119,7 +119,8 @@
 
 
                                                 <div class="wc-proceed-to-checkout">
-                                                    <div class="g-recaptcha" data-sitekey="6Le-mGEnAAAAAHfxlIg8mApw6aC1gbKzACw5T4zW"></div>
+                                                    <div class="g-recaptcha" data-sitekey="6Le-mGEnAAAAAHfxlIg8mApw6aC1gbKzACw5T4zW" style="display:flex;justify-content:left;"></div>
+                                                    <div>
                                                     @if($points>=$total_price)
                                                     <a href="{{route('pay')}}" class="checkout-button button alt wc-forward">
                                                         التقدم لإتمام الطلب</a>
@@ -133,6 +134,7 @@
                                                         <img src="{{route('index')}}/public/badge.png" style="width: 200px;">
                                                     </a>
                                                     @endif
+                                                    </div>
 
                                                 </div>
 
