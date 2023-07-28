@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Receipt Sample</title>
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
@@ -134,6 +132,8 @@ h3 {
     text-transform: uppercase;
 }
     </style>
+</head>
+<body>
 <div class="container">
     
     <div class="receipt_header">
