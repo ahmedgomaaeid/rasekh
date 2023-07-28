@@ -202,6 +202,8 @@ class PaymentController extends Controller
                 $notify->seen = 0;
                 $notify->type = 0;
                 $notify->save();
+                //send email
+                Mail::to($student->email)->send(new receipt($purchase));
             }
             $payment->delete();
             Cookie::queue('shopping_cart', json_encode(array()), 60);
