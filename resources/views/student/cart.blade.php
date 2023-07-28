@@ -120,20 +120,20 @@
 
                                                 <div class="wc-proceed-to-checkout">
                                                     <div class="g-recaptcha" data-sitekey="6Le-mGEnAAAAAHfxlIg8mApw6aC1gbKzACw5T4zW" style="display:flex;justify-content:left;"></div>
-                                                    <div>
-                                                    @if($points>=$total_price)
-                                                    <a href="{{route('pay')}}" class="checkout-button button alt wc-forward">
-                                                        التقدم لإتمام الطلب</a>
-                                                    @else
-                                                    <p>اختر طريقة الدفع</p>
-                                                    <a href="{{route('pay')}}">
-                                                        <img src="{{route('index')}}/public/paypal.png" style="width: 200px;">
-                                                    </a>
+                                                    <div id="pay_methods" style="display:none;">
+                                                        @if($points>=$total_price)
+                                                        <a href="{{route('pay')}}" class="checkout-button button alt wc-forward">
+                                                            التقدم لإتمام الطلب</a>
+                                                        @else
+                                                        <p>اختر طريقة الدفع</p>
+                                                        <a href="{{route('pay')}}">
+                                                            <img src="{{route('index')}}/public/paypal.png" style="width: 200px;">
+                                                        </a>
 
-                                                    <a href="{{route('lahza.pay')}}">
-                                                        <img src="{{route('index')}}/public/badge.png" style="width: 200px;">
-                                                    </a>
-                                                    @endif
+                                                        <a href="{{route('lahza.pay')}}">
+                                                            <img src="{{route('index')}}/public/badge.png" style="width: 200px;">
+                                                        </a>
+                                                        @endif
                                                     </div>
 
                                                 </div>
@@ -186,7 +186,12 @@
 
 
     </div><!-- #page -->
-
+    <script>
+    //show pay methods when captcha is verified
+    function recaptchaCallback() {
+        document.getElementById('pay_methods').style.display = 'block';
+    }
+    </script>
     <script src="https://js.lahza.io/inline.min.js"></script>
     @include('layouts.frontimplement.bottomcart')
 
