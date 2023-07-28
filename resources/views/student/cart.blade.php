@@ -114,11 +114,12 @@
                                                     
                                                 </table>
 
-                                                    <div class="g-recaptcha" data-sitekey="6Le-mGEnAAAAAHfxlIg8mApw6aC1gbKzACw5T4zW"></div>
+                                                    
 
 
 
                                                 <div class="wc-proceed-to-checkout">
+                                                    <div class="g-recaptcha" data-sitekey="6Le-mGEnAAAAAHfxlIg8mApw6aC1gbKzACw5T4zW"></div>
                                                     @if($points>=$total_price)
                                                     <a href="{{route('pay')}}" class="checkout-button button alt wc-forward">
                                                         التقدم لإتمام الطلب</a>
