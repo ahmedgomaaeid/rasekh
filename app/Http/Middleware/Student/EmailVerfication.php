@@ -19,7 +19,7 @@ class EmailVerfication
         if(Auth::guard('student')->check()){
             if(Auth::guard('student')->user()->email_verified_at == null){
                 Auth::guard('student')->logout();
-                return redirect()->route('login')->with('status', 'تم ارسال رسالة تفعيل الى بريدك الالكتروني');
+                return redirect()->route('login')->with('status', 'تم ارسال رسالة تفعيل الى بريدك الالكتروني , يرجى فحص البريد الوارد او junk');
             }else
             {
                 return $next($request);
