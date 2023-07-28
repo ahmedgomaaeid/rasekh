@@ -188,14 +188,16 @@
     </div><!-- #page -->
     <script>
     //show pay methods and hide recaptcha when recaptcha is done
-    function onCaptchaComplete(token) {
-    document.getElementById("pay_methods").style.display = "block";
-    document.getElementById("recaptcha").style.display = "none";
+    grecaptcha.getResponse = function() {
+        var response = jQuery('#g-recaptcha-response').val();
+        if (response.length == 0) {
+            jQuery('#pay_methods').hide();
+            document.getElementById('pay_methods').style.display = 'block';
+        } else {
+            jQuery('#pay_methods').show();
+        }
+        return response;
     }
-
-    grecaptcha.ready(function() {
-    grecaptcha.execute('6Le-mGEnAAAAAHfxlIg8mApw6aC1gbKzACw5T4zW', {action: 'submit'}).then(onCaptchaComplete);
-    });
     </script>
     <script src="https://js.lahza.io/inline.min.js"></script>
     @include('layouts.frontimplement.bottomcart')
