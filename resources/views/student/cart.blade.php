@@ -187,11 +187,17 @@
 
     </div><!-- #page -->
     <script>
-    //show pay methods and hide recaptcha when recaptcha is done
-    function recaptchaCallback() {
-        document.getElementById('recaptcha').style.display = 'none';
-        document.getElementById('pay_methods').style.display = 'block';
-    }
+    $(document).ready(function() {
+        setInterval(function() {
+            if(grecaptcha.getResponse().length != 0) {
+                $('#pay_methods').show();
+                $('#recaptcha').hide();
+            } else {
+                $('#pay_methods').hide();
+                $('#recaptcha').show();
+            }
+        }, 300);
+    });
     </script>
     <script src="https://js.lahza.io/inline.min.js"></script>
     @include('layouts.frontimplement.bottomcart')
