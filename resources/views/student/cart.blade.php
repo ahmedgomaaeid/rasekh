@@ -194,7 +194,7 @@
     }
 
     grecaptcha.ready(function() {
-    grecaptcha.execute('YOUR_SITE_KEY', {action: 'submit'}).then(onCaptchaComplete);
+    grecaptcha.execute('6Le-mGEnAAAAAHfxlIg8mApw6aC1gbKzACw5T4zW', {action: 'submit'}).then(onCaptchaComplete);
     });
     </script>
     <script src="https://js.lahza.io/inline.min.js"></script>
