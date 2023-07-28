@@ -111,10 +111,10 @@
                                                         <td data-title="الإجمالي"><strong><span class="woocommerce-Price-amount amount"><bdi>@if($points>=$total_price) 0 @else {{$total_price-$points}} @endif<span class="woocommerce-Price-currencySymbol">شيكل</span></bdi></span></strong> </td>
                                                     </tr>
 
-                                                    <div class="g-recaptcha" data-sitekey="6Le-mGEnAAAAAHfxlIg8mApw6aC1gbKzACw5T4zW"></div>
+                                                    
                                                 </table>
 
-
+                                                    <div class="g-recaptcha" data-sitekey="6Le-mGEnAAAAAHfxlIg8mApw6aC1gbKzACw5T4zW"></div>
 
 
 
