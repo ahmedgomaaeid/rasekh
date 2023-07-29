@@ -120,7 +120,7 @@
                                         <img width="300" height="180" src="
 
                                                 @if($item->image != null)
-                                                    {{route('index')}}/assets/images/teachers/{{$item->image}}
+                                                    {{route('index')}}/assets/images/courses/{{$item->image}}
                                                 @else
                                                     {{route('index')}}/assets/images/orders/10.jpg
                                                 @endif
@@ -128,7 +128,7 @@
                                                 " class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" loading="lazy" srcset="
 
                                                 @if($item->image != null)
-                                                    {{route('index')}}/assets/images/teachers/{{$item->image}}
+                                                    {{route('index')}}/assets/images/courses/{{$item->image}}
                                                 @else
                                                     {{route('index')}}/assets/images/orders/10.jpg
                                                 @endif
