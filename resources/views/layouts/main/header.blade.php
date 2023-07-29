@@ -133,7 +133,7 @@
                                                     {{route('index')}}/assets/images/orders/10.jpg
                                                 @endif
 
-                                                " sizes="(max-width: 300px) 100vw, 300px" />{{$item->name}}</a>
+                                                " sizes="(max-width: 300px) 100vw, 300px" />{{$item->name}} للاستاذ {{$item->steacher->name}}</a>
                                     <span class="quantity"><span class="woocommerce-Price-amount amount"><bdi>{{$item->price}} <span class="woocommerce-Price-currencySymbol"><i class="fa fa-shekel" style="font-size:13px; color:#9b9c9f;"></i></span></bdi></span></span> </li>
                                 <?php
                                                 $total_price += $item->price;
