@@ -115,7 +115,7 @@
           <tr>
             <td align="center" valign="top" style="padding: 36px 24px;">
               <a href="{{route('index')}}" target="_blank" style="display: inline-block;">
-                <img src="https://lh3.googleusercontent.com/drive-viewer/AFGJ81oUz_q5KYbG04ANcYLBZn5ZGhYFGe2kKP-H9up1JGRS2bklIN31aR4K0i3Nq-ICFXuKLDcIjM_fnZKPxcffueJsm4wF=s1600" alt="" border="0" width="48" style="display: block; width: 219px;">
+                <img src="https://i.ibb.co/jW7FH45/loggg.png" alt="" border="0" width="48" style="display: block; width: 219px;">
               </a>
             </td>
           </tr>
