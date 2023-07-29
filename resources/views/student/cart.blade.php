@@ -69,7 +69,7 @@
                                                                 " sizes="(max-width: 300px) 100vw, 300px" /></a> </td>
 
                                                         <td class="product-name" data-title="المنتج">
-                                                            <a href="">{{$item->steacher->name}}</a> </td>
+                                                            <a href="">{{$item->name}}</a> </td>
 
                                                         <td class="product-price" data-title="السعر">
                                                             <span class="woocommerce-Price-amount amount"><bdi>{{$item->price}}<span class="woocommerce-Price-currencySymbol">شيكل</span></bdi></span> </td>
