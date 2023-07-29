@@ -61,8 +61,8 @@
 
                                                         <td class="product-thumbnail">
                                                             <a href=""><img width="300" height="180" src="
-                                                                    @if($item->steacher->photo != null)
-                                                                        {{route('index')}}/assets/images/teachers/{{$item->steacher->photo}}
+                                                                    @if($item->image != null)
+                                                                        {{route('index')}}/assets/images/courses/{{$item->image}}
                                                                     @else
                                                                         {{route('index')}}/assets/images/orders/10.jpg
                                                                     @endif
