@@ -119,21 +119,21 @@
                                     <a href="{{route('cart.removeItem',$item->id)}}" class="remove remove_from_cart_button" aria-label="إزالة هذا المنتج" data-product_id="1058603" data-cart_item_key="af375b6608ccb86fa2cd7bbc2d72d402" data-product_sku="">&times;</a> <a href="">
                                         <img width="300" height="180" src="
 
-                                                @if($item->steacher->photo != null)
-                                                    {{route('index')}}/assets/images/teachers/{{$item->steacher->photo}}
+                                                @if($item->image != null)
+                                                    {{route('index')}}/assets/images/teachers/{{$item->image}}
                                                 @else
                                                     {{route('index')}}/assets/images/orders/10.jpg
                                                 @endif
                                                 
                                                 " class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" loading="lazy" srcset="
 
-                                                @if($item->steacher->photo != null)
-                                                    {{route('index')}}/assets/images/teachers/{{$item->steacher->photo}}
+                                                @if($item->image != null)
+                                                    {{route('index')}}/assets/images/teachers/{{$item->image}}
                                                 @else
                                                     {{route('index')}}/assets/images/orders/10.jpg
                                                 @endif
 
-                                                " sizes="(max-width: 300px) 100vw, 300px" />{{$item->steacher->name}}</a>
+                                                " sizes="(max-width: 300px) 100vw, 300px" />{{$item->name}}</a>
                                     <span class="quantity"><span class="woocommerce-Price-amount amount"><bdi>{{$item->price}} <span class="woocommerce-Price-currencySymbol"><i class="fa fa-shekel" style="font-size:13px; color:#9b9c9f;"></i></span></bdi></span></span> </li>
                                 <?php
                                                 $total_price += $item->price;
