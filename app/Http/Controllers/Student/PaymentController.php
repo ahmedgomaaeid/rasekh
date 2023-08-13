@@ -97,7 +97,7 @@ class PaymentController extends Controller
         curl_setopt($ch, CURLOPT_POST, true);
         curl_setopt($ch, CURLOPT_POSTFIELDS, $fields_string);
         curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-            "Authorization: Bearer sk_test_2lo4ccnqjkQ70vuilbGUWTee5pzOW4CZ1",
+            "Authorization: Bearer sk_live_WCN3AEnZzohnUzE0Zk8lt5KAVKGESU7lw",
             "Cache-Control: no-cache",
         ));
 
@@ -171,7 +171,7 @@ class PaymentController extends Controller
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-            "Authorization: Bearer sk_test_2lo4ccnqjkQ70vuilbGUWTee5pzOW4CZ1",
+            "Authorization: Bearer sk_live_WCN3AEnZzohnUzE0Zk8lt5KAVKGESU7lw",
             "Cache-Control: no-cache",
         ));
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
